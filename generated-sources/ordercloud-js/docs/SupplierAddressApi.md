@@ -4,17 +4,17 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1supplierssupplierIDaddresses**](SupplierAddressApi.md#createV1supplierssupplierIDaddresses) | **POST** /suppliers/{supplierID}/addresses | 
-[**deleteV1supplierssupplierIDaddressesaddressID**](SupplierAddressApi.md#deleteV1supplierssupplierIDaddressesaddressID) | **DELETE** /suppliers/{supplierID}/addresses/{addressID} | 
-[**getV1supplierssupplierIDaddressesaddressID**](SupplierAddressApi.md#getV1supplierssupplierIDaddressesaddressID) | **GET** /suppliers/{supplierID}/addresses/{addressID} | 
-[**listV1supplierssupplierIDaddresses**](SupplierAddressApi.md#listV1supplierssupplierIDaddresses) | **GET** /suppliers/{supplierID}/addresses | 
-[**patchV1supplierssupplierIDaddressesaddressID**](SupplierAddressApi.md#patchV1supplierssupplierIDaddressesaddressID) | **PATCH** /suppliers/{supplierID}/addresses/{addressID} | 
-[**saveV1supplierssupplierIDaddressesaddressID**](SupplierAddressApi.md#saveV1supplierssupplierIDaddressesaddressID) | **PUT** /suppliers/{supplierID}/addresses/{addressID} | 
+[**createSupplierAddresses**](SupplierAddressApi.md#createSupplierAddresses) | **POST** /suppliers/{supplierID}/addresses | 
+[**deleteSupplierAddresses**](SupplierAddressApi.md#deleteSupplierAddresses) | **DELETE** /suppliers/{supplierID}/addresses/{addressID} | 
+[**getSupplierAddresses**](SupplierAddressApi.md#getSupplierAddresses) | **GET** /suppliers/{supplierID}/addresses/{addressID} | 
+[**listSupplierAddresses**](SupplierAddressApi.md#listSupplierAddresses) | **GET** /suppliers/{supplierID}/addresses | 
+[**patchSupplierAddresses**](SupplierAddressApi.md#patchSupplierAddresses) | **PATCH** /suppliers/{supplierID}/addresses/{addressID} | 
+[**saveSupplierAddresses**](SupplierAddressApi.md#saveSupplierAddresses) | **PUT** /suppliers/{supplierID}/addresses/{addressID} | 
 
 
-<a name="createV1supplierssupplierIDaddresses"></a>
-# **createV1supplierssupplierIDaddresses**
-> Address createV1supplierssupplierIDaddresses(supplierID, address)
+<a name="createSupplierAddresses"></a>
+# **createSupplierAddresses**
+> Address createSupplierAddresses(supplierID, address)
 
 
 
@@ -36,7 +36,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1supplierssupplierIDaddresses(supplierID, address, callback);
+apiInstance.createSupplierAddresses(supplierID, address, callback);
 ```
 
 ### Parameters
@@ -59,9 +59,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteV1supplierssupplierIDaddressesaddressID"></a>
-# **deleteV1supplierssupplierIDaddressesaddressID**
-> deleteV1supplierssupplierIDaddressesaddressID(supplierID, addressID)
+<a name="deleteSupplierAddresses"></a>
+# **deleteSupplierAddresses**
+> deleteSupplierAddresses(supplierID, addressID)
 
 
 
@@ -83,7 +83,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1supplierssupplierIDaddressesaddressID(supplierID, addressID, callback);
+apiInstance.deleteSupplierAddresses(supplierID, addressID, callback);
 ```
 
 ### Parameters
@@ -106,9 +106,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1supplierssupplierIDaddressesaddressID"></a>
-# **getV1supplierssupplierIDaddressesaddressID**
-> Address getV1supplierssupplierIDaddressesaddressID(supplierID, addressID)
+<a name="getSupplierAddresses"></a>
+# **getSupplierAddresses**
+> Address getSupplierAddresses(supplierID, addressID)
 
 
 
@@ -130,7 +130,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1supplierssupplierIDaddressesaddressID(supplierID, addressID, callback);
+apiInstance.getSupplierAddresses(supplierID, addressID, callback);
 ```
 
 ### Parameters
@@ -153,9 +153,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1supplierssupplierIDaddresses"></a>
-# **listV1supplierssupplierIDaddresses**
-> ListAddress listV1supplierssupplierIDaddresses(supplierID, opts)
+<a name="listSupplierAddresses"></a>
+# **listSupplierAddresses**
+> ListAddress listSupplierAddresses(supplierID, opts)
 
 
 
@@ -184,7 +184,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1supplierssupplierIDaddresses(supplierID, opts, callback);
+apiInstance.listSupplierAddresses(supplierID, opts, callback);
 ```
 
 ### Parameters
@@ -212,9 +212,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1supplierssupplierIDaddressesaddressID"></a>
-# **patchV1supplierssupplierIDaddressesaddressID**
-> Address patchV1supplierssupplierIDaddressesaddressID(supplierID, addressID, address)
+<a name="patchSupplierAddresses"></a>
+# **patchSupplierAddresses**
+> Address patchSupplierAddresses(supplierID, addressID, address)
 
 
 
@@ -237,7 +237,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1supplierssupplierIDaddressesaddressID(supplierID, addressID, address, callback);
+apiInstance.patchSupplierAddresses(supplierID, addressID, address, callback);
 ```
 
 ### Parameters
@@ -261,9 +261,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveV1supplierssupplierIDaddressesaddressID"></a>
-# **saveV1supplierssupplierIDaddressesaddressID**
-> Address saveV1supplierssupplierIDaddressesaddressID(supplierID, addressID, address)
+<a name="saveSupplierAddresses"></a>
+# **saveSupplierAddresses**
+> Address saveSupplierAddresses(supplierID, addressID, address)
 
 
 
@@ -286,7 +286,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1supplierssupplierIDaddressesaddressID(supplierID, addressID, address, callback);
+apiInstance.saveSupplierAddresses(supplierID, addressID, address, callback);
 ```
 
 ### Parameters

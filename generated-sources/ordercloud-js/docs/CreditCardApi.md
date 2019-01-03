@@ -4,20 +4,20 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1buyersbuyerIDcreditcards**](CreditCardApi.md#createV1buyersbuyerIDcreditcards) | **POST** /buyers/{buyerID}/creditcards | 
-[**deleteAssignmentV1buyersbuyerIDcreditcardscreditCardIDassignments**](CreditCardApi.md#deleteAssignmentV1buyersbuyerIDcreditcardscreditCardIDassignments) | **DELETE** /buyers/{buyerID}/creditcards/{creditCardID}/assignments | 
-[**deleteV1buyersbuyerIDcreditcardscreditCardID**](CreditCardApi.md#deleteV1buyersbuyerIDcreditcardscreditCardID) | **DELETE** /buyers/{buyerID}/creditcards/{creditCardID} | 
-[**getV1buyersbuyerIDcreditcardscreditCardID**](CreditCardApi.md#getV1buyersbuyerIDcreditcardscreditCardID) | **GET** /buyers/{buyerID}/creditcards/{creditCardID} | 
-[**listAssignmentsV1buyersbuyerIDcreditcardsassignments**](CreditCardApi.md#listAssignmentsV1buyersbuyerIDcreditcardsassignments) | **GET** /buyers/{buyerID}/creditcards/assignments | 
-[**listV1buyersbuyerIDcreditcards**](CreditCardApi.md#listV1buyersbuyerIDcreditcards) | **GET** /buyers/{buyerID}/creditcards | 
-[**patchV1buyersbuyerIDcreditcardscreditCardID**](CreditCardApi.md#patchV1buyersbuyerIDcreditcardscreditCardID) | **PATCH** /buyers/{buyerID}/creditcards/{creditCardID} | 
-[**saveAssignmentV1buyersbuyerIDcreditcardsassignments**](CreditCardApi.md#saveAssignmentV1buyersbuyerIDcreditcardsassignments) | **POST** /buyers/{buyerID}/creditcards/assignments | 
-[**saveV1buyersbuyerIDcreditcardscreditCardID**](CreditCardApi.md#saveV1buyersbuyerIDcreditcardscreditCardID) | **PUT** /buyers/{buyerID}/creditcards/{creditCardID} | 
+[**createCreditCards**](CreditCardApi.md#createCreditCards) | **POST** /buyers/{buyerID}/creditcards | 
+[**deleteAssignmentCreditCards**](CreditCardApi.md#deleteAssignmentCreditCards) | **DELETE** /buyers/{buyerID}/creditcards/{creditCardID}/assignments | 
+[**deleteCreditCards**](CreditCardApi.md#deleteCreditCards) | **DELETE** /buyers/{buyerID}/creditcards/{creditCardID} | 
+[**getCreditCards**](CreditCardApi.md#getCreditCards) | **GET** /buyers/{buyerID}/creditcards/{creditCardID} | 
+[**listAssignmentsCreditCards**](CreditCardApi.md#listAssignmentsCreditCards) | **GET** /buyers/{buyerID}/creditcards/assignments | 
+[**listCreditCards**](CreditCardApi.md#listCreditCards) | **GET** /buyers/{buyerID}/creditcards | 
+[**patchCreditCards**](CreditCardApi.md#patchCreditCards) | **PATCH** /buyers/{buyerID}/creditcards/{creditCardID} | 
+[**saveAssignmentCreditCards**](CreditCardApi.md#saveAssignmentCreditCards) | **POST** /buyers/{buyerID}/creditcards/assignments | 
+[**saveCreditCards**](CreditCardApi.md#saveCreditCards) | **PUT** /buyers/{buyerID}/creditcards/{creditCardID} | 
 
 
-<a name="createV1buyersbuyerIDcreditcards"></a>
-# **createV1buyersbuyerIDcreditcards**
-> CreditCard createV1buyersbuyerIDcreditcards(buyerID, creditCard)
+<a name="createCreditCards"></a>
+# **createCreditCards**
+> CreditCard createCreditCards(buyerID, creditCard)
 
 
 
@@ -39,7 +39,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1buyersbuyerIDcreditcards(buyerID, creditCard, callback);
+apiInstance.createCreditCards(buyerID, creditCard, callback);
 ```
 
 ### Parameters
@@ -62,9 +62,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteAssignmentV1buyersbuyerIDcreditcardscreditCardIDassignments"></a>
-# **deleteAssignmentV1buyersbuyerIDcreditcardscreditCardIDassignments**
-> deleteAssignmentV1buyersbuyerIDcreditcardscreditCardIDassignments(buyerID, creditCardID, opts)
+<a name="deleteAssignmentCreditCards"></a>
+# **deleteAssignmentCreditCards**
+> deleteAssignmentCreditCards(buyerID, creditCardID, opts)
 
 
 
@@ -90,7 +90,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteAssignmentV1buyersbuyerIDcreditcardscreditCardIDassignments(buyerID, creditCardID, opts, callback);
+apiInstance.deleteAssignmentCreditCards(buyerID, creditCardID, opts, callback);
 ```
 
 ### Parameters
@@ -115,9 +115,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="deleteV1buyersbuyerIDcreditcardscreditCardID"></a>
-# **deleteV1buyersbuyerIDcreditcardscreditCardID**
-> deleteV1buyersbuyerIDcreditcardscreditCardID(buyerID, creditCardID)
+<a name="deleteCreditCards"></a>
+# **deleteCreditCards**
+> deleteCreditCards(buyerID, creditCardID)
 
 
 
@@ -139,7 +139,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1buyersbuyerIDcreditcardscreditCardID(buyerID, creditCardID, callback);
+apiInstance.deleteCreditCards(buyerID, creditCardID, callback);
 ```
 
 ### Parameters
@@ -162,9 +162,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1buyersbuyerIDcreditcardscreditCardID"></a>
-# **getV1buyersbuyerIDcreditcardscreditCardID**
-> CreditCard getV1buyersbuyerIDcreditcardscreditCardID(buyerID, creditCardID)
+<a name="getCreditCards"></a>
+# **getCreditCards**
+> CreditCard getCreditCards(buyerID, creditCardID)
 
 
 
@@ -186,7 +186,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1buyersbuyerIDcreditcardscreditCardID(buyerID, creditCardID, callback);
+apiInstance.getCreditCards(buyerID, creditCardID, callback);
 ```
 
 ### Parameters
@@ -209,9 +209,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listAssignmentsV1buyersbuyerIDcreditcardsassignments"></a>
-# **listAssignmentsV1buyersbuyerIDcreditcardsassignments**
-> ListCreditCardAssignment listAssignmentsV1buyersbuyerIDcreditcardsassignments(buyerID, opts)
+<a name="listAssignmentsCreditCards"></a>
+# **listAssignmentsCreditCards**
+> ListCreditCardAssignment listAssignmentsCreditCards(buyerID, opts)
 
 
 
@@ -240,7 +240,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listAssignmentsV1buyersbuyerIDcreditcardsassignments(buyerID, opts, callback);
+apiInstance.listAssignmentsCreditCards(buyerID, opts, callback);
 ```
 
 ### Parameters
@@ -268,9 +268,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1buyersbuyerIDcreditcards"></a>
-# **listV1buyersbuyerIDcreditcards**
-> ListCreditCard listV1buyersbuyerIDcreditcards(buyerID, opts)
+<a name="listCreditCards"></a>
+# **listCreditCards**
+> ListCreditCard listCreditCards(buyerID, opts)
 
 
 
@@ -299,7 +299,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1buyersbuyerIDcreditcards(buyerID, opts, callback);
+apiInstance.listCreditCards(buyerID, opts, callback);
 ```
 
 ### Parameters
@@ -327,9 +327,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1buyersbuyerIDcreditcardscreditCardID"></a>
-# **patchV1buyersbuyerIDcreditcardscreditCardID**
-> CreditCard patchV1buyersbuyerIDcreditcardscreditCardID(buyerID, creditCardID, creditCard)
+<a name="patchCreditCards"></a>
+# **patchCreditCards**
+> CreditCard patchCreditCards(buyerID, creditCardID, creditCard)
 
 
 
@@ -352,7 +352,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1buyersbuyerIDcreditcardscreditCardID(buyerID, creditCardID, creditCard, callback);
+apiInstance.patchCreditCards(buyerID, creditCardID, creditCard, callback);
 ```
 
 ### Parameters
@@ -376,9 +376,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveAssignmentV1buyersbuyerIDcreditcardsassignments"></a>
-# **saveAssignmentV1buyersbuyerIDcreditcardsassignments**
-> saveAssignmentV1buyersbuyerIDcreditcardsassignments(buyerID, creditCardAssignment)
+<a name="saveAssignmentCreditCards"></a>
+# **saveAssignmentCreditCards**
+> saveAssignmentCreditCards(buyerID, creditCardAssignment)
 
 
 
@@ -400,7 +400,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.saveAssignmentV1buyersbuyerIDcreditcardsassignments(buyerID, creditCardAssignment, callback);
+apiInstance.saveAssignmentCreditCards(buyerID, creditCardAssignment, callback);
 ```
 
 ### Parameters
@@ -423,9 +423,9 @@ null (empty response body)
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-<a name="saveV1buyersbuyerIDcreditcardscreditCardID"></a>
-# **saveV1buyersbuyerIDcreditcardscreditCardID**
-> CreditCard saveV1buyersbuyerIDcreditcardscreditCardID(buyerID, creditCardID, creditCard)
+<a name="saveCreditCards"></a>
+# **saveCreditCards**
+> CreditCard saveCreditCards(buyerID, creditCardID, creditCard)
 
 
 
@@ -448,7 +448,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1buyersbuyerIDcreditcardscreditCardID(buyerID, creditCardID, creditCard, callback);
+apiInstance.saveCreditCards(buyerID, creditCardID, creditCard, callback);
 ```
 
 ### Parameters

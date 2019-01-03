@@ -4,18 +4,18 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1supplierssupplierIDusers**](SupplierUserApi.md#createV1supplierssupplierIDusers) | **POST** /suppliers/{supplierID}/users | 
-[**deleteV1supplierssupplierIDusersuserID**](SupplierUserApi.md#deleteV1supplierssupplierIDusersuserID) | **DELETE** /suppliers/{supplierID}/users/{userID} | 
-[**getAccessTokenV1supplierssupplierIDusersuserIDaccesstoken**](SupplierUserApi.md#getAccessTokenV1supplierssupplierIDusersuserIDaccesstoken) | **POST** /suppliers/{supplierID}/users/{userID}/accesstoken | 
-[**getV1supplierssupplierIDusersuserID**](SupplierUserApi.md#getV1supplierssupplierIDusersuserID) | **GET** /suppliers/{supplierID}/users/{userID} | 
-[**listV1supplierssupplierIDusers**](SupplierUserApi.md#listV1supplierssupplierIDusers) | **GET** /suppliers/{supplierID}/users | 
-[**patchV1supplierssupplierIDusersuserID**](SupplierUserApi.md#patchV1supplierssupplierIDusersuserID) | **PATCH** /suppliers/{supplierID}/users/{userID} | 
-[**saveV1supplierssupplierIDusersuserID**](SupplierUserApi.md#saveV1supplierssupplierIDusersuserID) | **PUT** /suppliers/{supplierID}/users/{userID} | 
+[**createSupplierUsers**](SupplierUserApi.md#createSupplierUsers) | **POST** /suppliers/{supplierID}/users | 
+[**deleteSupplierUsers**](SupplierUserApi.md#deleteSupplierUsers) | **DELETE** /suppliers/{supplierID}/users/{userID} | 
+[**getAccessTokenSupplierUsers**](SupplierUserApi.md#getAccessTokenSupplierUsers) | **POST** /suppliers/{supplierID}/users/{userID}/accesstoken | 
+[**getSupplierUsers**](SupplierUserApi.md#getSupplierUsers) | **GET** /suppliers/{supplierID}/users/{userID} | 
+[**listSupplierUsers**](SupplierUserApi.md#listSupplierUsers) | **GET** /suppliers/{supplierID}/users | 
+[**patchSupplierUsers**](SupplierUserApi.md#patchSupplierUsers) | **PATCH** /suppliers/{supplierID}/users/{userID} | 
+[**saveSupplierUsers**](SupplierUserApi.md#saveSupplierUsers) | **PUT** /suppliers/{supplierID}/users/{userID} | 
 
 
-<a name="createV1supplierssupplierIDusers"></a>
-# **createV1supplierssupplierIDusers**
-> User createV1supplierssupplierIDusers(supplierID, user)
+<a name="createSupplierUsers"></a>
+# **createSupplierUsers**
+> User createSupplierUsers(supplierID, user)
 
 
 
@@ -37,7 +37,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1supplierssupplierIDusers(supplierID, user, callback);
+apiInstance.createSupplierUsers(supplierID, user, callback);
 ```
 
 ### Parameters
@@ -60,9 +60,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteV1supplierssupplierIDusersuserID"></a>
-# **deleteV1supplierssupplierIDusersuserID**
-> deleteV1supplierssupplierIDusersuserID(supplierID, userID)
+<a name="deleteSupplierUsers"></a>
+# **deleteSupplierUsers**
+> deleteSupplierUsers(supplierID, userID)
 
 
 
@@ -84,7 +84,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1supplierssupplierIDusersuserID(supplierID, userID, callback);
+apiInstance.deleteSupplierUsers(supplierID, userID, callback);
 ```
 
 ### Parameters
@@ -107,9 +107,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getAccessTokenV1supplierssupplierIDusersuserIDaccesstoken"></a>
-# **getAccessTokenV1supplierssupplierIDusersuserIDaccesstoken**
-> AccessToken getAccessTokenV1supplierssupplierIDusersuserIDaccesstoken(supplierID, userID, impersonateTokenRequest)
+<a name="getAccessTokenSupplierUsers"></a>
+# **getAccessTokenSupplierUsers**
+> AccessToken getAccessTokenSupplierUsers(supplierID, userID, impersonateTokenRequest)
 
 
 
@@ -132,7 +132,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getAccessTokenV1supplierssupplierIDusersuserIDaccesstoken(supplierID, userID, impersonateTokenRequest, callback);
+apiInstance.getAccessTokenSupplierUsers(supplierID, userID, impersonateTokenRequest, callback);
 ```
 
 ### Parameters
@@ -156,9 +156,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="getV1supplierssupplierIDusersuserID"></a>
-# **getV1supplierssupplierIDusersuserID**
-> User getV1supplierssupplierIDusersuserID(supplierID, userID)
+<a name="getSupplierUsers"></a>
+# **getSupplierUsers**
+> User getSupplierUsers(supplierID, userID)
 
 
 
@@ -180,7 +180,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1supplierssupplierIDusersuserID(supplierID, userID, callback);
+apiInstance.getSupplierUsers(supplierID, userID, callback);
 ```
 
 ### Parameters
@@ -203,9 +203,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1supplierssupplierIDusers"></a>
-# **listV1supplierssupplierIDusers**
-> ListUser listV1supplierssupplierIDusers(supplierID, opts)
+<a name="listSupplierUsers"></a>
+# **listSupplierUsers**
+> ListUser listSupplierUsers(supplierID, opts)
 
 
 
@@ -235,7 +235,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1supplierssupplierIDusers(supplierID, opts, callback);
+apiInstance.listSupplierUsers(supplierID, opts, callback);
 ```
 
 ### Parameters
@@ -264,9 +264,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1supplierssupplierIDusersuserID"></a>
-# **patchV1supplierssupplierIDusersuserID**
-> User patchV1supplierssupplierIDusersuserID(supplierID, userID, user)
+<a name="patchSupplierUsers"></a>
+# **patchSupplierUsers**
+> User patchSupplierUsers(supplierID, userID, user)
 
 
 
@@ -289,7 +289,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1supplierssupplierIDusersuserID(supplierID, userID, user, callback);
+apiInstance.patchSupplierUsers(supplierID, userID, user, callback);
 ```
 
 ### Parameters
@@ -313,9 +313,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveV1supplierssupplierIDusersuserID"></a>
-# **saveV1supplierssupplierIDusersuserID**
-> User saveV1supplierssupplierIDusersuserID(supplierID, userID, user)
+<a name="saveSupplierUsers"></a>
+# **saveSupplierUsers**
+> User saveSupplierUsers(supplierID, userID, user)
 
 
 
@@ -338,7 +338,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1supplierssupplierIDusersuserID(supplierID, userID, user, callback);
+apiInstance.saveSupplierUsers(supplierID, userID, user, callback);
 ```
 
 ### Parameters

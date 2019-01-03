@@ -4,20 +4,20 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1buyersbuyerIDcostcenters**](CostCenterApi.md#createV1buyersbuyerIDcostcenters) | **POST** /buyers/{buyerID}/costcenters | 
-[**deleteAssignmentV1buyersbuyerIDcostcenterscostCenterIDassignments**](CostCenterApi.md#deleteAssignmentV1buyersbuyerIDcostcenterscostCenterIDassignments) | **DELETE** /buyers/{buyerID}/costcenters/{costCenterID}/assignments | 
-[**deleteV1buyersbuyerIDcostcenterscostCenterID**](CostCenterApi.md#deleteV1buyersbuyerIDcostcenterscostCenterID) | **DELETE** /buyers/{buyerID}/costcenters/{costCenterID} | 
-[**getV1buyersbuyerIDcostcenterscostCenterID**](CostCenterApi.md#getV1buyersbuyerIDcostcenterscostCenterID) | **GET** /buyers/{buyerID}/costcenters/{costCenterID} | 
-[**listAssignmentsV1buyersbuyerIDcostcentersassignments**](CostCenterApi.md#listAssignmentsV1buyersbuyerIDcostcentersassignments) | **GET** /buyers/{buyerID}/costcenters/assignments | 
-[**listV1buyersbuyerIDcostcenters**](CostCenterApi.md#listV1buyersbuyerIDcostcenters) | **GET** /buyers/{buyerID}/costcenters | 
-[**patchV1buyersbuyerIDcostcenterscostCenterID**](CostCenterApi.md#patchV1buyersbuyerIDcostcenterscostCenterID) | **PATCH** /buyers/{buyerID}/costcenters/{costCenterID} | 
-[**saveAssignmentV1buyersbuyerIDcostcentersassignments**](CostCenterApi.md#saveAssignmentV1buyersbuyerIDcostcentersassignments) | **POST** /buyers/{buyerID}/costcenters/assignments | 
-[**saveV1buyersbuyerIDcostcenterscostCenterID**](CostCenterApi.md#saveV1buyersbuyerIDcostcenterscostCenterID) | **PUT** /buyers/{buyerID}/costcenters/{costCenterID} | 
+[**createCostCenters**](CostCenterApi.md#createCostCenters) | **POST** /buyers/{buyerID}/costcenters | 
+[**deleteAssignmentCostCenters**](CostCenterApi.md#deleteAssignmentCostCenters) | **DELETE** /buyers/{buyerID}/costcenters/{costCenterID}/assignments | 
+[**deleteCostCenters**](CostCenterApi.md#deleteCostCenters) | **DELETE** /buyers/{buyerID}/costcenters/{costCenterID} | 
+[**getCostCenters**](CostCenterApi.md#getCostCenters) | **GET** /buyers/{buyerID}/costcenters/{costCenterID} | 
+[**listAssignmentsCostCenters**](CostCenterApi.md#listAssignmentsCostCenters) | **GET** /buyers/{buyerID}/costcenters/assignments | 
+[**listCostCenters**](CostCenterApi.md#listCostCenters) | **GET** /buyers/{buyerID}/costcenters | 
+[**patchCostCenters**](CostCenterApi.md#patchCostCenters) | **PATCH** /buyers/{buyerID}/costcenters/{costCenterID} | 
+[**saveAssignmentCostCenters**](CostCenterApi.md#saveAssignmentCostCenters) | **POST** /buyers/{buyerID}/costcenters/assignments | 
+[**saveCostCenters**](CostCenterApi.md#saveCostCenters) | **PUT** /buyers/{buyerID}/costcenters/{costCenterID} | 
 
 
-<a name="createV1buyersbuyerIDcostcenters"></a>
-# **createV1buyersbuyerIDcostcenters**
-> CostCenter createV1buyersbuyerIDcostcenters(buyerID, costCenter)
+<a name="createCostCenters"></a>
+# **createCostCenters**
+> CostCenter createCostCenters(buyerID, costCenter)
 
 
 
@@ -39,7 +39,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1buyersbuyerIDcostcenters(buyerID, costCenter, callback);
+apiInstance.createCostCenters(buyerID, costCenter, callback);
 ```
 
 ### Parameters
@@ -62,9 +62,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteAssignmentV1buyersbuyerIDcostcenterscostCenterIDassignments"></a>
-# **deleteAssignmentV1buyersbuyerIDcostcenterscostCenterIDassignments**
-> deleteAssignmentV1buyersbuyerIDcostcenterscostCenterIDassignments(buyerID, costCenterID, opts)
+<a name="deleteAssignmentCostCenters"></a>
+# **deleteAssignmentCostCenters**
+> deleteAssignmentCostCenters(buyerID, costCenterID, opts)
 
 
 
@@ -90,7 +90,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteAssignmentV1buyersbuyerIDcostcenterscostCenterIDassignments(buyerID, costCenterID, opts, callback);
+apiInstance.deleteAssignmentCostCenters(buyerID, costCenterID, opts, callback);
 ```
 
 ### Parameters
@@ -115,9 +115,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="deleteV1buyersbuyerIDcostcenterscostCenterID"></a>
-# **deleteV1buyersbuyerIDcostcenterscostCenterID**
-> deleteV1buyersbuyerIDcostcenterscostCenterID(buyerID, costCenterID)
+<a name="deleteCostCenters"></a>
+# **deleteCostCenters**
+> deleteCostCenters(buyerID, costCenterID)
 
 
 
@@ -139,7 +139,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1buyersbuyerIDcostcenterscostCenterID(buyerID, costCenterID, callback);
+apiInstance.deleteCostCenters(buyerID, costCenterID, callback);
 ```
 
 ### Parameters
@@ -162,9 +162,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1buyersbuyerIDcostcenterscostCenterID"></a>
-# **getV1buyersbuyerIDcostcenterscostCenterID**
-> CostCenter getV1buyersbuyerIDcostcenterscostCenterID(buyerID, costCenterID)
+<a name="getCostCenters"></a>
+# **getCostCenters**
+> CostCenter getCostCenters(buyerID, costCenterID)
 
 
 
@@ -186,7 +186,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1buyersbuyerIDcostcenterscostCenterID(buyerID, costCenterID, callback);
+apiInstance.getCostCenters(buyerID, costCenterID, callback);
 ```
 
 ### Parameters
@@ -209,9 +209,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listAssignmentsV1buyersbuyerIDcostcentersassignments"></a>
-# **listAssignmentsV1buyersbuyerIDcostcentersassignments**
-> ListCostCenterAssignment listAssignmentsV1buyersbuyerIDcostcentersassignments(buyerID, opts)
+<a name="listAssignmentsCostCenters"></a>
+# **listAssignmentsCostCenters**
+> ListCostCenterAssignment listAssignmentsCostCenters(buyerID, opts)
 
 
 
@@ -240,7 +240,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listAssignmentsV1buyersbuyerIDcostcentersassignments(buyerID, opts, callback);
+apiInstance.listAssignmentsCostCenters(buyerID, opts, callback);
 ```
 
 ### Parameters
@@ -268,9 +268,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1buyersbuyerIDcostcenters"></a>
-# **listV1buyersbuyerIDcostcenters**
-> ListCostCenter listV1buyersbuyerIDcostcenters(buyerID, opts)
+<a name="listCostCenters"></a>
+# **listCostCenters**
+> ListCostCenter listCostCenters(buyerID, opts)
 
 
 
@@ -299,7 +299,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1buyersbuyerIDcostcenters(buyerID, opts, callback);
+apiInstance.listCostCenters(buyerID, opts, callback);
 ```
 
 ### Parameters
@@ -327,9 +327,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1buyersbuyerIDcostcenterscostCenterID"></a>
-# **patchV1buyersbuyerIDcostcenterscostCenterID**
-> CostCenter patchV1buyersbuyerIDcostcenterscostCenterID(buyerID, costCenterID, costCenter)
+<a name="patchCostCenters"></a>
+# **patchCostCenters**
+> CostCenter patchCostCenters(buyerID, costCenterID, costCenter)
 
 
 
@@ -352,7 +352,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1buyersbuyerIDcostcenterscostCenterID(buyerID, costCenterID, costCenter, callback);
+apiInstance.patchCostCenters(buyerID, costCenterID, costCenter, callback);
 ```
 
 ### Parameters
@@ -376,9 +376,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveAssignmentV1buyersbuyerIDcostcentersassignments"></a>
-# **saveAssignmentV1buyersbuyerIDcostcentersassignments**
-> saveAssignmentV1buyersbuyerIDcostcentersassignments(buyerID, costCenterAssignment)
+<a name="saveAssignmentCostCenters"></a>
+# **saveAssignmentCostCenters**
+> saveAssignmentCostCenters(buyerID, costCenterAssignment)
 
 
 
@@ -400,7 +400,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.saveAssignmentV1buyersbuyerIDcostcentersassignments(buyerID, costCenterAssignment, callback);
+apiInstance.saveAssignmentCostCenters(buyerID, costCenterAssignment, callback);
 ```
 
 ### Parameters
@@ -423,9 +423,9 @@ null (empty response body)
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-<a name="saveV1buyersbuyerIDcostcenterscostCenterID"></a>
-# **saveV1buyersbuyerIDcostcenterscostCenterID**
-> CostCenter saveV1buyersbuyerIDcostcenterscostCenterID(buyerID, costCenterID, costCenter)
+<a name="saveCostCenters"></a>
+# **saveCostCenters**
+> CostCenter saveCostCenters(buyerID, costCenterID, costCenter)
 
 
 
@@ -448,7 +448,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1buyersbuyerIDcostcenterscostCenterID(buyerID, costCenterID, costCenter, callback);
+apiInstance.saveCostCenters(buyerID, costCenterID, costCenter, callback);
 ```
 
 ### Parameters

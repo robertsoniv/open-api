@@ -4,28 +4,28 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1products**](ProductApi.md#createV1products) | **POST** /products | 
-[**deleteAssignmentV1productsproductIDassignmentsbuyerID**](ProductApi.md#deleteAssignmentV1productsproductIDassignmentsbuyerID) | **DELETE** /products/{productID}/assignments/{buyerID} | 
-[**deleteV1productsproductID**](ProductApi.md#deleteV1productsproductID) | **DELETE** /products/{productID} | 
-[**generateVariantsV1productsproductIDvariantsgenerate**](ProductApi.md#generateVariantsV1productsproductIDvariantsgenerate) | **POST** /products/{productID}/variants/generate | 
-[**getV1productsproductID**](ProductApi.md#getV1productsproductID) | **GET** /products/{productID} | 
-[**getVariantV1productsproductIDvariantsvariantID**](ProductApi.md#getVariantV1productsproductIDvariantsvariantID) | **GET** /products/{productID}/variants/{variantID} | 
-[**listAssignmentsV1productsassignments**](ProductApi.md#listAssignmentsV1productsassignments) | **GET** /products/assignments | 
-[**listSuppliersV1productsproductIDsuppliers**](ProductApi.md#listSuppliersV1productsproductIDsuppliers) | **GET** /products/{productID}/suppliers | 
-[**listV1products**](ProductApi.md#listV1products) | **GET** /products | 
-[**listVariantsV1productsproductIDvariants**](ProductApi.md#listVariantsV1productsproductIDvariants) | **GET** /products/{productID}/variants | 
-[**patchV1productsproductID**](ProductApi.md#patchV1productsproductID) | **PATCH** /products/{productID} | 
-[**patchVariantV1productsproductIDvariantsvariantID**](ProductApi.md#patchVariantV1productsproductIDvariantsvariantID) | **PATCH** /products/{productID}/variants/{variantID} | 
-[**removeSupplierV1productsproductIDsupplierssupplierID**](ProductApi.md#removeSupplierV1productsproductIDsupplierssupplierID) | **DELETE** /products/{productID}/suppliers/{supplierID} | 
-[**saveAssignmentV1productsassignments**](ProductApi.md#saveAssignmentV1productsassignments) | **POST** /products/assignments | 
-[**saveSupplierV1productsproductIDsupplierssupplierID**](ProductApi.md#saveSupplierV1productsproductIDsupplierssupplierID) | **PUT** /products/{productID}/suppliers/{supplierID} | 
-[**saveV1productsproductID**](ProductApi.md#saveV1productsproductID) | **PUT** /products/{productID} | 
-[**saveVariantV1productsproductIDvariantsvariantID**](ProductApi.md#saveVariantV1productsproductIDvariantsvariantID) | **PUT** /products/{productID}/variants/{variantID} | 
+[**createProducts**](ProductApi.md#createProducts) | **POST** /products | 
+[**deleteAssignmentProducts**](ProductApi.md#deleteAssignmentProducts) | **DELETE** /products/{productID}/assignments/{buyerID} | 
+[**deleteProducts**](ProductApi.md#deleteProducts) | **DELETE** /products/{productID} | 
+[**generateVariantsProducts**](ProductApi.md#generateVariantsProducts) | **POST** /products/{productID}/variants/generate | 
+[**getProducts**](ProductApi.md#getProducts) | **GET** /products/{productID} | 
+[**getVariantProducts**](ProductApi.md#getVariantProducts) | **GET** /products/{productID}/variants/{variantID} | 
+[**listAssignmentsProducts**](ProductApi.md#listAssignmentsProducts) | **GET** /products/assignments | 
+[**listProducts**](ProductApi.md#listProducts) | **GET** /products | 
+[**listSuppliersProducts**](ProductApi.md#listSuppliersProducts) | **GET** /products/{productID}/suppliers | 
+[**listVariantsProducts**](ProductApi.md#listVariantsProducts) | **GET** /products/{productID}/variants | 
+[**patchProducts**](ProductApi.md#patchProducts) | **PATCH** /products/{productID} | 
+[**patchVariantProducts**](ProductApi.md#patchVariantProducts) | **PATCH** /products/{productID}/variants/{variantID} | 
+[**removeSupplierProducts**](ProductApi.md#removeSupplierProducts) | **DELETE** /products/{productID}/suppliers/{supplierID} | 
+[**saveAssignmentProducts**](ProductApi.md#saveAssignmentProducts) | **POST** /products/assignments | 
+[**saveProducts**](ProductApi.md#saveProducts) | **PUT** /products/{productID} | 
+[**saveSupplierProducts**](ProductApi.md#saveSupplierProducts) | **PUT** /products/{productID}/suppliers/{supplierID} | 
+[**saveVariantProducts**](ProductApi.md#saveVariantProducts) | **PUT** /products/{productID}/variants/{variantID} | 
 
 
-<a name="createV1products"></a>
-# **createV1products**
-> Product createV1products(product)
+<a name="createProducts"></a>
+# **createProducts**
+> Product createProducts(product)
 
 
 
@@ -46,7 +46,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1products(product, callback);
+apiInstance.createProducts(product, callback);
 ```
 
 ### Parameters
@@ -68,9 +68,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteAssignmentV1productsproductIDassignmentsbuyerID"></a>
-# **deleteAssignmentV1productsproductIDassignmentsbuyerID**
-> deleteAssignmentV1productsproductIDassignmentsbuyerID(productID, buyerID, opts)
+<a name="deleteAssignmentProducts"></a>
+# **deleteAssignmentProducts**
+> deleteAssignmentProducts(productID, buyerID, opts)
 
 
 
@@ -96,7 +96,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteAssignmentV1productsproductIDassignmentsbuyerID(productID, buyerID, opts, callback);
+apiInstance.deleteAssignmentProducts(productID, buyerID, opts, callback);
 ```
 
 ### Parameters
@@ -121,9 +121,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="deleteV1productsproductID"></a>
-# **deleteV1productsproductID**
-> deleteV1productsproductID(productID)
+<a name="deleteProducts"></a>
+# **deleteProducts**
+> deleteProducts(productID)
 
 
 
@@ -144,7 +144,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1productsproductID(productID, callback);
+apiInstance.deleteProducts(productID, callback);
 ```
 
 ### Parameters
@@ -166,9 +166,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="generateVariantsV1productsproductIDvariantsgenerate"></a>
-# **generateVariantsV1productsproductIDvariantsgenerate**
-> Product generateVariantsV1productsproductIDvariantsgenerate(productID, opts)
+<a name="generateVariantsProducts"></a>
+# **generateVariantsProducts**
+> Product generateVariantsProducts(productID, opts)
 
 
 
@@ -192,7 +192,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.generateVariantsV1productsproductIDvariantsgenerate(productID, opts, callback);
+apiInstance.generateVariantsProducts(productID, opts, callback);
 ```
 
 ### Parameters
@@ -215,9 +215,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getV1productsproductID"></a>
-# **getV1productsproductID**
-> Product getV1productsproductID(productID)
+<a name="getProducts"></a>
+# **getProducts**
+> Product getProducts(productID)
 
 
 
@@ -238,7 +238,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1productsproductID(productID, callback);
+apiInstance.getProducts(productID, callback);
 ```
 
 ### Parameters
@@ -260,9 +260,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getVariantV1productsproductIDvariantsvariantID"></a>
-# **getVariantV1productsproductIDvariantsvariantID**
-> Variant getVariantV1productsproductIDvariantsvariantID(productID, variantID)
+<a name="getVariantProducts"></a>
+# **getVariantProducts**
+> Variant getVariantProducts(productID, variantID)
 
 
 
@@ -284,7 +284,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getVariantV1productsproductIDvariantsvariantID(productID, variantID, callback);
+apiInstance.getVariantProducts(productID, variantID, callback);
 ```
 
 ### Parameters
@@ -307,9 +307,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listAssignmentsV1productsassignments"></a>
-# **listAssignmentsV1productsassignments**
-> ListProductAssignment listAssignmentsV1productsassignments(opts)
+<a name="listAssignmentsProducts"></a>
+# **listAssignmentsProducts**
+> ListProductAssignment listAssignmentsProducts(opts)
 
 
 
@@ -339,7 +339,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listAssignmentsV1productsassignments(opts, callback);
+apiInstance.listAssignmentsProducts(opts, callback);
 ```
 
 ### Parameters
@@ -368,68 +368,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listSuppliersV1productsproductIDsuppliers"></a>
-# **listSuppliersV1productsproductIDsuppliers**
-> ListSupplier listSuppliersV1productsproductIDsuppliers(productID, opts)
-
-
-
-### Example
-```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.instance;
-// Configure OAuth2 access token for authorization: OAuth2
-var OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-
-var apiInstance = new OrderCloud.ProductApi();
-var productID = "productID_example"; // String | ID of the product.
-var opts = {
-  'search': "search_example", // String | Word or phrase to search for.
-  'searchOn': "searchOn_example", // String | Comma-delimited list of fields to search on.
-  'sortBy': "sortBy_example", // String | Comma-delimited list of fields to sort by.
-  'page': 56, // Number | Page of results to return. Default: 1
-  'pageSize': 56, // Number | Number of results to return per page. Default: 20, max: 100.
-  'filters': null // Object | Any additional key/value pairs passed in the query string are interpretted as filters. Valid keys are top-level properties of the returned model or 'xp.???'
-};
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.listSuppliersV1productsproductIDsuppliers(productID, opts, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **productID** | **String**| ID of the product. | 
- **search** | **String**| Word or phrase to search for. | [optional] 
- **searchOn** | **String**| Comma-delimited list of fields to search on. | [optional] 
- **sortBy** | **String**| Comma-delimited list of fields to sort by. | [optional] 
- **page** | **Number**| Page of results to return. Default: 1 | [optional] 
- **pageSize** | **Number**| Number of results to return per page. Default: 20, max: 100. | [optional] 
- **filters** | [**Object**](.md)| Any additional key/value pairs passed in the query string are interpretted as filters. Valid keys are top-level properties of the returned model or &#39;xp.???&#39; | [optional] 
-
-### Return type
-
-[**ListSupplier**](ListSupplier.md)
-
-### Authorization
-
-[OAuth2](../README.md#OAuth2)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-<a name="listV1products"></a>
-# **listV1products**
-> ListProduct listV1products(opts)
+<a name="listProducts"></a>
+# **listProducts**
+> ListProduct listProducts(opts)
 
 
 
@@ -460,7 +401,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1products(opts, callback);
+apiInstance.listProducts(opts, callback);
 ```
 
 ### Parameters
@@ -490,9 +431,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listVariantsV1productsproductIDvariants"></a>
-# **listVariantsV1productsproductIDvariants**
-> ListVariant listVariantsV1productsproductIDvariants(productID, opts)
+<a name="listSuppliersProducts"></a>
+# **listSuppliersProducts**
+> ListSupplier listSuppliersProducts(productID, opts)
 
 
 
@@ -521,7 +462,66 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listVariantsV1productsproductIDvariants(productID, opts, callback);
+apiInstance.listSuppliersProducts(productID, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **productID** | **String**| ID of the product. | 
+ **search** | **String**| Word or phrase to search for. | [optional] 
+ **searchOn** | **String**| Comma-delimited list of fields to search on. | [optional] 
+ **sortBy** | **String**| Comma-delimited list of fields to sort by. | [optional] 
+ **page** | **Number**| Page of results to return. Default: 1 | [optional] 
+ **pageSize** | **Number**| Number of results to return per page. Default: 20, max: 100. | [optional] 
+ **filters** | [**Object**](.md)| Any additional key/value pairs passed in the query string are interpretted as filters. Valid keys are top-level properties of the returned model or &#39;xp.???&#39; | [optional] 
+
+### Return type
+
+[**ListSupplier**](ListSupplier.md)
+
+### Authorization
+
+[OAuth2](../README.md#OAuth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="listVariantsProducts"></a>
+# **listVariantsProducts**
+> ListVariant listVariantsProducts(productID, opts)
+
+
+
+### Example
+```javascript
+var OrderCloud = require('order_cloud');
+var defaultClient = OrderCloud.ApiClient.instance;
+// Configure OAuth2 access token for authorization: OAuth2
+var OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new OrderCloud.ProductApi();
+var productID = "productID_example"; // String | ID of the product.
+var opts = {
+  'search': "search_example", // String | Word or phrase to search for.
+  'searchOn': "searchOn_example", // String | Comma-delimited list of fields to search on.
+  'sortBy': "sortBy_example", // String | Comma-delimited list of fields to sort by.
+  'page': 56, // Number | Page of results to return. Default: 1
+  'pageSize': 56, // Number | Number of results to return per page. Default: 20, max: 100.
+  'filters': null // Object | Any additional key/value pairs passed in the query string are interpretted as filters. Valid keys are top-level properties of the returned model or 'xp.???'
+};
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.listVariantsProducts(productID, opts, callback);
 ```
 
 ### Parameters
@@ -549,9 +549,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1productsproductID"></a>
-# **patchV1productsproductID**
-> Product patchV1productsproductID(productID, product)
+<a name="patchProducts"></a>
+# **patchProducts**
+> Product patchProducts(productID, product)
 
 
 
@@ -573,7 +573,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1productsproductID(productID, product, callback);
+apiInstance.patchProducts(productID, product, callback);
 ```
 
 ### Parameters
@@ -596,9 +596,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="patchVariantV1productsproductIDvariantsvariantID"></a>
-# **patchVariantV1productsproductIDvariantsvariantID**
-> Variant patchVariantV1productsproductIDvariantsvariantID(productID, variantID, variant)
+<a name="patchVariantProducts"></a>
+# **patchVariantProducts**
+> Variant patchVariantProducts(productID, variantID, variant)
 
 
 
@@ -621,7 +621,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchVariantV1productsproductIDvariantsvariantID(productID, variantID, variant, callback);
+apiInstance.patchVariantProducts(productID, variantID, variant, callback);
 ```
 
 ### Parameters
@@ -645,9 +645,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="removeSupplierV1productsproductIDsupplierssupplierID"></a>
-# **removeSupplierV1productsproductIDsupplierssupplierID**
-> removeSupplierV1productsproductIDsupplierssupplierID(productID, supplierID)
+<a name="removeSupplierProducts"></a>
+# **removeSupplierProducts**
+> removeSupplierProducts(productID, supplierID)
 
 
 
@@ -669,7 +669,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.removeSupplierV1productsproductIDsupplierssupplierID(productID, supplierID, callback);
+apiInstance.removeSupplierProducts(productID, supplierID, callback);
 ```
 
 ### Parameters
@@ -692,9 +692,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="saveAssignmentV1productsassignments"></a>
-# **saveAssignmentV1productsassignments**
-> saveAssignmentV1productsassignments(productAssignment)
+<a name="saveAssignmentProducts"></a>
+# **saveAssignmentProducts**
+> saveAssignmentProducts(productAssignment)
 
 
 
@@ -715,7 +715,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.saveAssignmentV1productsassignments(productAssignment, callback);
+apiInstance.saveAssignmentProducts(productAssignment, callback);
 ```
 
 ### Parameters
@@ -737,56 +737,9 @@ null (empty response body)
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-<a name="saveSupplierV1productsproductIDsupplierssupplierID"></a>
-# **saveSupplierV1productsproductIDsupplierssupplierID**
-> saveSupplierV1productsproductIDsupplierssupplierID(productID, supplierID)
-
-
-
-### Example
-```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.instance;
-// Configure OAuth2 access token for authorization: OAuth2
-var OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-
-var apiInstance = new OrderCloud.ProductApi();
-var productID = "productID_example"; // String | ID of the product.
-var supplierID = "supplierID_example"; // String | ID of the supplier.
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully.');
-  }
-};
-apiInstance.saveSupplierV1productsproductIDsupplierssupplierID(productID, supplierID, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **productID** | **String**| ID of the product. | 
- **supplierID** | **String**| ID of the supplier. | 
-
-### Return type
-
-null (empty response body)
-
-### Authorization
-
-[OAuth2](../README.md#OAuth2)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: Not defined
-
-<a name="saveV1productsproductID"></a>
-# **saveV1productsproductID**
-> Product saveV1productsproductID(productID, product)
+<a name="saveProducts"></a>
+# **saveProducts**
+> Product saveProducts(productID, product)
 
 
 
@@ -808,7 +761,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1productsproductID(productID, product, callback);
+apiInstance.saveProducts(productID, product, callback);
 ```
 
 ### Parameters
@@ -831,9 +784,56 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveVariantV1productsproductIDvariantsvariantID"></a>
-# **saveVariantV1productsproductIDvariantsvariantID**
-> Variant saveVariantV1productsproductIDvariantsvariantID(productID, variantID, variant)
+<a name="saveSupplierProducts"></a>
+# **saveSupplierProducts**
+> saveSupplierProducts(productID, supplierID)
+
+
+
+### Example
+```javascript
+var OrderCloud = require('order_cloud');
+var defaultClient = OrderCloud.ApiClient.instance;
+// Configure OAuth2 access token for authorization: OAuth2
+var OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new OrderCloud.ProductApi();
+var productID = "productID_example"; // String | ID of the product.
+var supplierID = "supplierID_example"; // String | ID of the supplier.
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully.');
+  }
+};
+apiInstance.saveSupplierProducts(productID, supplierID, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **productID** | **String**| ID of the product. | 
+ **supplierID** | **String**| ID of the supplier. | 
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[OAuth2](../README.md#OAuth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+<a name="saveVariantProducts"></a>
+# **saveVariantProducts**
+> Variant saveVariantProducts(productID, variantID, variant)
 
 
 
@@ -856,7 +856,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveVariantV1productsproductIDvariantsvariantID(productID, variantID, variant, callback);
+apiInstance.saveVariantProducts(productID, variantID, variant, callback);
 ```
 
 ### Parameters

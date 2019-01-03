@@ -4,20 +4,20 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1buyersbuyerIDspendingaccounts**](SpendingAccountApi.md#createV1buyersbuyerIDspendingaccounts) | **POST** /buyers/{buyerID}/spendingaccounts | 
-[**deleteAssignmentV1buyersbuyerIDspendingaccountsspendingAccountIDassignments**](SpendingAccountApi.md#deleteAssignmentV1buyersbuyerIDspendingaccountsspendingAccountIDassignments) | **DELETE** /buyers/{buyerID}/spendingaccounts/{spendingAccountID}/assignments | 
-[**deleteV1buyersbuyerIDspendingaccountsspendingAccountID**](SpendingAccountApi.md#deleteV1buyersbuyerIDspendingaccountsspendingAccountID) | **DELETE** /buyers/{buyerID}/spendingaccounts/{spendingAccountID} | 
-[**getV1buyersbuyerIDspendingaccountsspendingAccountID**](SpendingAccountApi.md#getV1buyersbuyerIDspendingaccountsspendingAccountID) | **GET** /buyers/{buyerID}/spendingaccounts/{spendingAccountID} | 
-[**listAssignmentsV1buyersbuyerIDspendingaccountsassignments**](SpendingAccountApi.md#listAssignmentsV1buyersbuyerIDspendingaccountsassignments) | **GET** /buyers/{buyerID}/spendingaccounts/assignments | 
-[**listV1buyersbuyerIDspendingaccounts**](SpendingAccountApi.md#listV1buyersbuyerIDspendingaccounts) | **GET** /buyers/{buyerID}/spendingaccounts | 
-[**patchV1buyersbuyerIDspendingaccountsspendingAccountID**](SpendingAccountApi.md#patchV1buyersbuyerIDspendingaccountsspendingAccountID) | **PATCH** /buyers/{buyerID}/spendingaccounts/{spendingAccountID} | 
-[**saveAssignmentV1buyersbuyerIDspendingaccountsassignments**](SpendingAccountApi.md#saveAssignmentV1buyersbuyerIDspendingaccountsassignments) | **POST** /buyers/{buyerID}/spendingaccounts/assignments | 
-[**saveV1buyersbuyerIDspendingaccountsspendingAccountID**](SpendingAccountApi.md#saveV1buyersbuyerIDspendingaccountsspendingAccountID) | **PUT** /buyers/{buyerID}/spendingaccounts/{spendingAccountID} | 
+[**createSpendingAccounts**](SpendingAccountApi.md#createSpendingAccounts) | **POST** /buyers/{buyerID}/spendingaccounts | 
+[**deleteAssignmentSpendingAccounts**](SpendingAccountApi.md#deleteAssignmentSpendingAccounts) | **DELETE** /buyers/{buyerID}/spendingaccounts/{spendingAccountID}/assignments | 
+[**deleteSpendingAccounts**](SpendingAccountApi.md#deleteSpendingAccounts) | **DELETE** /buyers/{buyerID}/spendingaccounts/{spendingAccountID} | 
+[**getSpendingAccounts**](SpendingAccountApi.md#getSpendingAccounts) | **GET** /buyers/{buyerID}/spendingaccounts/{spendingAccountID} | 
+[**listAssignmentsSpendingAccounts**](SpendingAccountApi.md#listAssignmentsSpendingAccounts) | **GET** /buyers/{buyerID}/spendingaccounts/assignments | 
+[**listSpendingAccounts**](SpendingAccountApi.md#listSpendingAccounts) | **GET** /buyers/{buyerID}/spendingaccounts | 
+[**patchSpendingAccounts**](SpendingAccountApi.md#patchSpendingAccounts) | **PATCH** /buyers/{buyerID}/spendingaccounts/{spendingAccountID} | 
+[**saveAssignmentSpendingAccounts**](SpendingAccountApi.md#saveAssignmentSpendingAccounts) | **POST** /buyers/{buyerID}/spendingaccounts/assignments | 
+[**saveSpendingAccounts**](SpendingAccountApi.md#saveSpendingAccounts) | **PUT** /buyers/{buyerID}/spendingaccounts/{spendingAccountID} | 
 
 
-<a name="createV1buyersbuyerIDspendingaccounts"></a>
-# **createV1buyersbuyerIDspendingaccounts**
-> SpendingAccount createV1buyersbuyerIDspendingaccounts(buyerID, spendingAccount)
+<a name="createSpendingAccounts"></a>
+# **createSpendingAccounts**
+> SpendingAccount createSpendingAccounts(buyerID, spendingAccount)
 
 
 
@@ -39,7 +39,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1buyersbuyerIDspendingaccounts(buyerID, spendingAccount, callback);
+apiInstance.createSpendingAccounts(buyerID, spendingAccount, callback);
 ```
 
 ### Parameters
@@ -62,9 +62,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteAssignmentV1buyersbuyerIDspendingaccountsspendingAccountIDassignments"></a>
-# **deleteAssignmentV1buyersbuyerIDspendingaccountsspendingAccountIDassignments**
-> deleteAssignmentV1buyersbuyerIDspendingaccountsspendingAccountIDassignments(buyerID, spendingAccountID, opts)
+<a name="deleteAssignmentSpendingAccounts"></a>
+# **deleteAssignmentSpendingAccounts**
+> deleteAssignmentSpendingAccounts(buyerID, spendingAccountID, opts)
 
 
 
@@ -90,7 +90,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteAssignmentV1buyersbuyerIDspendingaccountsspendingAccountIDassignments(buyerID, spendingAccountID, opts, callback);
+apiInstance.deleteAssignmentSpendingAccounts(buyerID, spendingAccountID, opts, callback);
 ```
 
 ### Parameters
@@ -115,9 +115,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="deleteV1buyersbuyerIDspendingaccountsspendingAccountID"></a>
-# **deleteV1buyersbuyerIDspendingaccountsspendingAccountID**
-> deleteV1buyersbuyerIDspendingaccountsspendingAccountID(buyerID, spendingAccountID)
+<a name="deleteSpendingAccounts"></a>
+# **deleteSpendingAccounts**
+> deleteSpendingAccounts(buyerID, spendingAccountID)
 
 
 
@@ -139,7 +139,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1buyersbuyerIDspendingaccountsspendingAccountID(buyerID, spendingAccountID, callback);
+apiInstance.deleteSpendingAccounts(buyerID, spendingAccountID, callback);
 ```
 
 ### Parameters
@@ -162,9 +162,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1buyersbuyerIDspendingaccountsspendingAccountID"></a>
-# **getV1buyersbuyerIDspendingaccountsspendingAccountID**
-> SpendingAccount getV1buyersbuyerIDspendingaccountsspendingAccountID(buyerID, spendingAccountID)
+<a name="getSpendingAccounts"></a>
+# **getSpendingAccounts**
+> SpendingAccount getSpendingAccounts(buyerID, spendingAccountID)
 
 
 
@@ -186,7 +186,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1buyersbuyerIDspendingaccountsspendingAccountID(buyerID, spendingAccountID, callback);
+apiInstance.getSpendingAccounts(buyerID, spendingAccountID, callback);
 ```
 
 ### Parameters
@@ -209,9 +209,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listAssignmentsV1buyersbuyerIDspendingaccountsassignments"></a>
-# **listAssignmentsV1buyersbuyerIDspendingaccountsassignments**
-> ListSpendingAccountAssignment listAssignmentsV1buyersbuyerIDspendingaccountsassignments(buyerID, opts)
+<a name="listAssignmentsSpendingAccounts"></a>
+# **listAssignmentsSpendingAccounts**
+> ListSpendingAccountAssignment listAssignmentsSpendingAccounts(buyerID, opts)
 
 
 
@@ -240,7 +240,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listAssignmentsV1buyersbuyerIDspendingaccountsassignments(buyerID, opts, callback);
+apiInstance.listAssignmentsSpendingAccounts(buyerID, opts, callback);
 ```
 
 ### Parameters
@@ -268,9 +268,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1buyersbuyerIDspendingaccounts"></a>
-# **listV1buyersbuyerIDspendingaccounts**
-> ListSpendingAccount listV1buyersbuyerIDspendingaccounts(buyerID, opts)
+<a name="listSpendingAccounts"></a>
+# **listSpendingAccounts**
+> ListSpendingAccount listSpendingAccounts(buyerID, opts)
 
 
 
@@ -299,7 +299,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1buyersbuyerIDspendingaccounts(buyerID, opts, callback);
+apiInstance.listSpendingAccounts(buyerID, opts, callback);
 ```
 
 ### Parameters
@@ -327,9 +327,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1buyersbuyerIDspendingaccountsspendingAccountID"></a>
-# **patchV1buyersbuyerIDspendingaccountsspendingAccountID**
-> SpendingAccount patchV1buyersbuyerIDspendingaccountsspendingAccountID(buyerID, spendingAccountID, spendingAccount)
+<a name="patchSpendingAccounts"></a>
+# **patchSpendingAccounts**
+> SpendingAccount patchSpendingAccounts(buyerID, spendingAccountID, spendingAccount)
 
 
 
@@ -352,7 +352,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1buyersbuyerIDspendingaccountsspendingAccountID(buyerID, spendingAccountID, spendingAccount, callback);
+apiInstance.patchSpendingAccounts(buyerID, spendingAccountID, spendingAccount, callback);
 ```
 
 ### Parameters
@@ -376,9 +376,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveAssignmentV1buyersbuyerIDspendingaccountsassignments"></a>
-# **saveAssignmentV1buyersbuyerIDspendingaccountsassignments**
-> saveAssignmentV1buyersbuyerIDspendingaccountsassignments(buyerID, spendingAccountAssignment)
+<a name="saveAssignmentSpendingAccounts"></a>
+# **saveAssignmentSpendingAccounts**
+> saveAssignmentSpendingAccounts(buyerID, spendingAccountAssignment)
 
 
 
@@ -400,7 +400,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.saveAssignmentV1buyersbuyerIDspendingaccountsassignments(buyerID, spendingAccountAssignment, callback);
+apiInstance.saveAssignmentSpendingAccounts(buyerID, spendingAccountAssignment, callback);
 ```
 
 ### Parameters
@@ -423,9 +423,9 @@ null (empty response body)
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-<a name="saveV1buyersbuyerIDspendingaccountsspendingAccountID"></a>
-# **saveV1buyersbuyerIDspendingaccountsspendingAccountID**
-> SpendingAccount saveV1buyersbuyerIDspendingaccountsspendingAccountID(buyerID, spendingAccountID, spendingAccount)
+<a name="saveSpendingAccounts"></a>
+# **saveSpendingAccounts**
+> SpendingAccount saveSpendingAccounts(buyerID, spendingAccountID, spendingAccount)
 
 
 
@@ -448,7 +448,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1buyersbuyerIDspendingaccountsspendingAccountID(buyerID, spendingAccountID, spendingAccount, callback);
+apiInstance.saveSpendingAccounts(buyerID, spendingAccountID, spendingAccount, callback);
 ```
 
 ### Parameters

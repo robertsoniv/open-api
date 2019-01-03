@@ -4,18 +4,18 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**deleteAssignmentV1messagesendersmessageSenderIDassignments**](MessageSenderApi.md#deleteAssignmentV1messagesendersmessageSenderIDassignments) | **DELETE** /messagesenders/{messageSenderID}/assignments | 
-[**getV1messagesendersmessageSenderID**](MessageSenderApi.md#getV1messagesendersmessageSenderID) | **GET** /messagesenders/{messageSenderID} | 
-[**listAssignmentsV1messagesendersassignments**](MessageSenderApi.md#listAssignmentsV1messagesendersassignments) | **GET** /messagesenders/assignments | 
-[**listCCListenerAssignmentsV1messagesendersCCListenerAssignments**](MessageSenderApi.md#listCCListenerAssignmentsV1messagesendersCCListenerAssignments) | **GET** /messagesenders/CCListenerAssignments | 
-[**listV1messagesenders**](MessageSenderApi.md#listV1messagesenders) | **GET** /messagesenders | 
-[**saveAssignmentV1messagesendersassignments**](MessageSenderApi.md#saveAssignmentV1messagesendersassignments) | **POST** /messagesenders/assignments | 
-[**saveCCListenerAssignmentV1messagesendersCCListenerAssignments**](MessageSenderApi.md#saveCCListenerAssignmentV1messagesendersCCListenerAssignments) | **POST** /messagesenders/CCListenerAssignments | 
+[**deleteAssignmentMessageSenders**](MessageSenderApi.md#deleteAssignmentMessageSenders) | **DELETE** /messagesenders/{messageSenderID}/assignments | 
+[**getMessageSenders**](MessageSenderApi.md#getMessageSenders) | **GET** /messagesenders/{messageSenderID} | 
+[**listAssignmentsMessageSenders**](MessageSenderApi.md#listAssignmentsMessageSenders) | **GET** /messagesenders/assignments | 
+[**listCCListenerAssignmentsMessageSenders**](MessageSenderApi.md#listCCListenerAssignmentsMessageSenders) | **GET** /messagesenders/CCListenerAssignments | 
+[**listMessageSenders**](MessageSenderApi.md#listMessageSenders) | **GET** /messagesenders | 
+[**saveAssignmentMessageSenders**](MessageSenderApi.md#saveAssignmentMessageSenders) | **POST** /messagesenders/assignments | 
+[**saveCCListenerAssignmentMessageSenders**](MessageSenderApi.md#saveCCListenerAssignmentMessageSenders) | **POST** /messagesenders/CCListenerAssignments | 
 
 
-<a name="deleteAssignmentV1messagesendersmessageSenderIDassignments"></a>
-# **deleteAssignmentV1messagesendersmessageSenderIDassignments**
-> deleteAssignmentV1messagesendersmessageSenderIDassignments(messageSenderID, opts)
+<a name="deleteAssignmentMessageSenders"></a>
+# **deleteAssignmentMessageSenders**
+> deleteAssignmentMessageSenders(messageSenderID, opts)
 
 
 
@@ -42,7 +42,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteAssignmentV1messagesendersmessageSenderIDassignments(messageSenderID, opts, callback);
+apiInstance.deleteAssignmentMessageSenders(messageSenderID, opts, callback);
 ```
 
 ### Parameters
@@ -68,9 +68,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1messagesendersmessageSenderID"></a>
-# **getV1messagesendersmessageSenderID**
-> MessageSender getV1messagesendersmessageSenderID(messageSenderID)
+<a name="getMessageSenders"></a>
+# **getMessageSenders**
+> MessageSender getMessageSenders(messageSenderID)
 
 
 
@@ -91,7 +91,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1messagesendersmessageSenderID(messageSenderID, callback);
+apiInstance.getMessageSenders(messageSenderID, callback);
 ```
 
 ### Parameters
@@ -113,9 +113,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listAssignmentsV1messagesendersassignments"></a>
-# **listAssignmentsV1messagesendersassignments**
-> ListMessageSenderAssignment listAssignmentsV1messagesendersassignments(opts)
+<a name="listAssignmentsMessageSenders"></a>
+# **listAssignmentsMessageSenders**
+> ListMessageSenderAssignment listAssignmentsMessageSenders(opts)
 
 
 
@@ -145,7 +145,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listAssignmentsV1messagesendersassignments(opts, callback);
+apiInstance.listAssignmentsMessageSenders(opts, callback);
 ```
 
 ### Parameters
@@ -174,9 +174,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listCCListenerAssignmentsV1messagesendersCCListenerAssignments"></a>
-# **listCCListenerAssignmentsV1messagesendersCCListenerAssignments**
-> ListMessageCCListenerAssignment listCCListenerAssignmentsV1messagesendersCCListenerAssignments(opts)
+<a name="listCCListenerAssignmentsMessageSenders"></a>
+# **listCCListenerAssignmentsMessageSenders**
+> ListMessageCCListenerAssignment listCCListenerAssignmentsMessageSenders(opts)
 
 
 
@@ -204,7 +204,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listCCListenerAssignmentsV1messagesendersCCListenerAssignments(opts, callback);
+apiInstance.listCCListenerAssignmentsMessageSenders(opts, callback);
 ```
 
 ### Parameters
@@ -231,9 +231,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1messagesenders"></a>
-# **listV1messagesenders**
-> ListMessageSender listV1messagesenders(opts)
+<a name="listMessageSenders"></a>
+# **listMessageSenders**
+> ListMessageSender listMessageSenders(opts)
 
 
 
@@ -261,7 +261,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1messagesenders(opts, callback);
+apiInstance.listMessageSenders(opts, callback);
 ```
 
 ### Parameters
@@ -288,9 +288,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="saveAssignmentV1messagesendersassignments"></a>
-# **saveAssignmentV1messagesendersassignments**
-> saveAssignmentV1messagesendersassignments(messageSenderAssignment)
+<a name="saveAssignmentMessageSenders"></a>
+# **saveAssignmentMessageSenders**
+> saveAssignmentMessageSenders(messageSenderAssignment)
 
 
 
@@ -311,7 +311,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.saveAssignmentV1messagesendersassignments(messageSenderAssignment, callback);
+apiInstance.saveAssignmentMessageSenders(messageSenderAssignment, callback);
 ```
 
 ### Parameters
@@ -333,9 +333,9 @@ null (empty response body)
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-<a name="saveCCListenerAssignmentV1messagesendersCCListenerAssignments"></a>
-# **saveCCListenerAssignmentV1messagesendersCCListenerAssignments**
-> saveCCListenerAssignmentV1messagesendersCCListenerAssignments(messageCCListenerAssignment)
+<a name="saveCCListenerAssignmentMessageSenders"></a>
+# **saveCCListenerAssignmentMessageSenders**
+> saveCCListenerAssignmentMessageSenders(messageCCListenerAssignment)
 
 
 
@@ -356,7 +356,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.saveCCListenerAssignmentV1messagesendersCCListenerAssignments(messageCCListenerAssignment, callback);
+apiInstance.saveCCListenerAssignmentMessageSenders(messageCCListenerAssignment, callback);
 ```
 
 ### Parameters

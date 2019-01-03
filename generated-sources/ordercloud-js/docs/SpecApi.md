@@ -4,26 +4,26 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createOptionV1specsspecIDoptions**](SpecApi.md#createOptionV1specsspecIDoptions) | **POST** /specs/{specID}/options | 
-[**createV1specs**](SpecApi.md#createV1specs) | **POST** /specs | 
-[**deleteOptionV1specsspecIDoptionsoptionID**](SpecApi.md#deleteOptionV1specsspecIDoptionsoptionID) | **DELETE** /specs/{specID}/options/{optionID} | 
-[**deleteProductAssignmentV1specsspecIDproductassignmentsproductID**](SpecApi.md#deleteProductAssignmentV1specsspecIDproductassignmentsproductID) | **DELETE** /specs/{specID}/productassignments/{productID} | 
-[**deleteV1specsspecID**](SpecApi.md#deleteV1specsspecID) | **DELETE** /specs/{specID} | 
-[**getOptionV1specsspecIDoptionsoptionID**](SpecApi.md#getOptionV1specsspecIDoptionsoptionID) | **GET** /specs/{specID}/options/{optionID} | 
-[**getV1specsspecID**](SpecApi.md#getV1specsspecID) | **GET** /specs/{specID} | 
-[**listOptionsV1specsspecIDoptions**](SpecApi.md#listOptionsV1specsspecIDoptions) | **GET** /specs/{specID}/options | 
-[**listProductAssignmentsV1specsproductassignments**](SpecApi.md#listProductAssignmentsV1specsproductassignments) | **GET** /specs/productassignments | 
-[**listV1specs**](SpecApi.md#listV1specs) | **GET** /specs | 
-[**patchOptionV1specsspecIDoptionsoptionID**](SpecApi.md#patchOptionV1specsspecIDoptionsoptionID) | **PATCH** /specs/{specID}/options/{optionID} | 
-[**patchV1specsspecID**](SpecApi.md#patchV1specsspecID) | **PATCH** /specs/{specID} | 
-[**saveOptionV1specsspecIDoptionsoptionID**](SpecApi.md#saveOptionV1specsspecIDoptionsoptionID) | **PUT** /specs/{specID}/options/{optionID} | 
-[**saveProductAssignmentV1specsproductassignments**](SpecApi.md#saveProductAssignmentV1specsproductassignments) | **POST** /specs/productassignments | 
-[**saveV1specsspecID**](SpecApi.md#saveV1specsspecID) | **PUT** /specs/{specID} | 
+[**createOptionSpecs**](SpecApi.md#createOptionSpecs) | **POST** /specs/{specID}/options | 
+[**createSpecs**](SpecApi.md#createSpecs) | **POST** /specs | 
+[**deleteOptionSpecs**](SpecApi.md#deleteOptionSpecs) | **DELETE** /specs/{specID}/options/{optionID} | 
+[**deleteProductAssignmentSpecs**](SpecApi.md#deleteProductAssignmentSpecs) | **DELETE** /specs/{specID}/productassignments/{productID} | 
+[**deleteSpecs**](SpecApi.md#deleteSpecs) | **DELETE** /specs/{specID} | 
+[**getOptionSpecs**](SpecApi.md#getOptionSpecs) | **GET** /specs/{specID}/options/{optionID} | 
+[**getSpecs**](SpecApi.md#getSpecs) | **GET** /specs/{specID} | 
+[**listOptionsSpecs**](SpecApi.md#listOptionsSpecs) | **GET** /specs/{specID}/options | 
+[**listProductAssignmentsSpecs**](SpecApi.md#listProductAssignmentsSpecs) | **GET** /specs/productassignments | 
+[**listSpecs**](SpecApi.md#listSpecs) | **GET** /specs | 
+[**patchOptionSpecs**](SpecApi.md#patchOptionSpecs) | **PATCH** /specs/{specID}/options/{optionID} | 
+[**patchSpecs**](SpecApi.md#patchSpecs) | **PATCH** /specs/{specID} | 
+[**saveOptionSpecs**](SpecApi.md#saveOptionSpecs) | **PUT** /specs/{specID}/options/{optionID} | 
+[**saveProductAssignmentSpecs**](SpecApi.md#saveProductAssignmentSpecs) | **POST** /specs/productassignments | 
+[**saveSpecs**](SpecApi.md#saveSpecs) | **PUT** /specs/{specID} | 
 
 
-<a name="createOptionV1specsspecIDoptions"></a>
-# **createOptionV1specsspecIDoptions**
-> SpecOption createOptionV1specsspecIDoptions(specID, specOption)
+<a name="createOptionSpecs"></a>
+# **createOptionSpecs**
+> SpecOption createOptionSpecs(specID, specOption)
 
 
 
@@ -45,7 +45,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createOptionV1specsspecIDoptions(specID, specOption, callback);
+apiInstance.createOptionSpecs(specID, specOption, callback);
 ```
 
 ### Parameters
@@ -68,9 +68,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="createV1specs"></a>
-# **createV1specs**
-> Spec createV1specs(spec)
+<a name="createSpecs"></a>
+# **createSpecs**
+> Spec createSpecs(spec)
 
 
 
@@ -91,7 +91,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1specs(spec, callback);
+apiInstance.createSpecs(spec, callback);
 ```
 
 ### Parameters
@@ -113,9 +113,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteOptionV1specsspecIDoptionsoptionID"></a>
-# **deleteOptionV1specsspecIDoptionsoptionID**
-> deleteOptionV1specsspecIDoptionsoptionID(specID, optionID)
+<a name="deleteOptionSpecs"></a>
+# **deleteOptionSpecs**
+> deleteOptionSpecs(specID, optionID)
 
 
 
@@ -137,7 +137,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteOptionV1specsspecIDoptionsoptionID(specID, optionID, callback);
+apiInstance.deleteOptionSpecs(specID, optionID, callback);
 ```
 
 ### Parameters
@@ -160,9 +160,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="deleteProductAssignmentV1specsspecIDproductassignmentsproductID"></a>
-# **deleteProductAssignmentV1specsspecIDproductassignmentsproductID**
-> deleteProductAssignmentV1specsspecIDproductassignmentsproductID(specID, productID)
+<a name="deleteProductAssignmentSpecs"></a>
+# **deleteProductAssignmentSpecs**
+> deleteProductAssignmentSpecs(specID, productID)
 
 
 
@@ -184,7 +184,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteProductAssignmentV1specsspecIDproductassignmentsproductID(specID, productID, callback);
+apiInstance.deleteProductAssignmentSpecs(specID, productID, callback);
 ```
 
 ### Parameters
@@ -207,9 +207,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="deleteV1specsspecID"></a>
-# **deleteV1specsspecID**
-> deleteV1specsspecID(specID)
+<a name="deleteSpecs"></a>
+# **deleteSpecs**
+> deleteSpecs(specID)
 
 
 
@@ -230,7 +230,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1specsspecID(specID, callback);
+apiInstance.deleteSpecs(specID, callback);
 ```
 
 ### Parameters
@@ -252,9 +252,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getOptionV1specsspecIDoptionsoptionID"></a>
-# **getOptionV1specsspecIDoptionsoptionID**
-> SpecOption getOptionV1specsspecIDoptionsoptionID(specID, optionID)
+<a name="getOptionSpecs"></a>
+# **getOptionSpecs**
+> SpecOption getOptionSpecs(specID, optionID)
 
 
 
@@ -276,7 +276,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getOptionV1specsspecIDoptionsoptionID(specID, optionID, callback);
+apiInstance.getOptionSpecs(specID, optionID, callback);
 ```
 
 ### Parameters
@@ -299,9 +299,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getV1specsspecID"></a>
-# **getV1specsspecID**
-> Spec getV1specsspecID(specID)
+<a name="getSpecs"></a>
+# **getSpecs**
+> Spec getSpecs(specID)
 
 
 
@@ -322,7 +322,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1specsspecID(specID, callback);
+apiInstance.getSpecs(specID, callback);
 ```
 
 ### Parameters
@@ -344,9 +344,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listOptionsV1specsspecIDoptions"></a>
-# **listOptionsV1specsspecIDoptions**
-> ListSpecOption listOptionsV1specsspecIDoptions(specID, opts)
+<a name="listOptionsSpecs"></a>
+# **listOptionsSpecs**
+> ListSpecOption listOptionsSpecs(specID, opts)
 
 
 
@@ -375,7 +375,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listOptionsV1specsspecIDoptions(specID, opts, callback);
+apiInstance.listOptionsSpecs(specID, opts, callback);
 ```
 
 ### Parameters
@@ -403,9 +403,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listProductAssignmentsV1specsproductassignments"></a>
-# **listProductAssignmentsV1specsproductassignments**
-> ListSpecProductAssignment listProductAssignmentsV1specsproductassignments(opts)
+<a name="listProductAssignmentsSpecs"></a>
+# **listProductAssignmentsSpecs**
+> ListSpecProductAssignment listProductAssignmentsSpecs(opts)
 
 
 
@@ -433,7 +433,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listProductAssignmentsV1specsproductassignments(opts, callback);
+apiInstance.listProductAssignmentsSpecs(opts, callback);
 ```
 
 ### Parameters
@@ -460,9 +460,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1specs"></a>
-# **listV1specs**
-> ListSpec listV1specs(opts)
+<a name="listSpecs"></a>
+# **listSpecs**
+> ListSpec listSpecs(opts)
 
 
 
@@ -490,7 +490,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1specs(opts, callback);
+apiInstance.listSpecs(opts, callback);
 ```
 
 ### Parameters
@@ -517,9 +517,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchOptionV1specsspecIDoptionsoptionID"></a>
-# **patchOptionV1specsspecIDoptionsoptionID**
-> SpecOption patchOptionV1specsspecIDoptionsoptionID(specID, optionID, specOption)
+<a name="patchOptionSpecs"></a>
+# **patchOptionSpecs**
+> SpecOption patchOptionSpecs(specID, optionID, specOption)
 
 
 
@@ -542,7 +542,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchOptionV1specsspecIDoptionsoptionID(specID, optionID, specOption, callback);
+apiInstance.patchOptionSpecs(specID, optionID, specOption, callback);
 ```
 
 ### Parameters
@@ -566,9 +566,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="patchV1specsspecID"></a>
-# **patchV1specsspecID**
-> Spec patchV1specsspecID(specID, spec)
+<a name="patchSpecs"></a>
+# **patchSpecs**
+> Spec patchSpecs(specID, spec)
 
 
 
@@ -590,7 +590,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1specsspecID(specID, spec, callback);
+apiInstance.patchSpecs(specID, spec, callback);
 ```
 
 ### Parameters
@@ -613,9 +613,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveOptionV1specsspecIDoptionsoptionID"></a>
-# **saveOptionV1specsspecIDoptionsoptionID**
-> SpecOption saveOptionV1specsspecIDoptionsoptionID(specID, optionID, specOption)
+<a name="saveOptionSpecs"></a>
+# **saveOptionSpecs**
+> SpecOption saveOptionSpecs(specID, optionID, specOption)
 
 
 
@@ -638,7 +638,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveOptionV1specsspecIDoptionsoptionID(specID, optionID, specOption, callback);
+apiInstance.saveOptionSpecs(specID, optionID, specOption, callback);
 ```
 
 ### Parameters
@@ -662,9 +662,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveProductAssignmentV1specsproductassignments"></a>
-# **saveProductAssignmentV1specsproductassignments**
-> saveProductAssignmentV1specsproductassignments(specProductAssignment)
+<a name="saveProductAssignmentSpecs"></a>
+# **saveProductAssignmentSpecs**
+> saveProductAssignmentSpecs(specProductAssignment)
 
 
 
@@ -685,7 +685,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.saveProductAssignmentV1specsproductassignments(specProductAssignment, callback);
+apiInstance.saveProductAssignmentSpecs(specProductAssignment, callback);
 ```
 
 ### Parameters
@@ -707,9 +707,9 @@ null (empty response body)
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-<a name="saveV1specsspecID"></a>
-# **saveV1specsspecID**
-> Spec saveV1specsspecID(specID, spec)
+<a name="saveSpecs"></a>
+# **saveSpecs**
+> Spec saveSpecs(specID, spec)
 
 
 
@@ -731,7 +731,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1specsspecID(specID, spec, callback);
+apiInstance.saveSpecs(specID, spec, callback);
 ```
 
 ### Parameters

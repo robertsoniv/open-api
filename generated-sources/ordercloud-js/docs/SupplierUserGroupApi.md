@@ -4,20 +4,20 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1supplierssupplierIDusergroups**](SupplierUserGroupApi.md#createV1supplierssupplierIDusergroups) | **POST** /suppliers/{supplierID}/usergroups | 
-[**deleteUserAssignmentV1supplierssupplierIDusergroupsuserGroupIDassignmentsuserID**](SupplierUserGroupApi.md#deleteUserAssignmentV1supplierssupplierIDusergroupsuserGroupIDassignmentsuserID) | **DELETE** /suppliers/{supplierID}/usergroups/{userGroupID}/assignments/{userID} | 
-[**deleteV1supplierssupplierIDusergroupsuserGroupID**](SupplierUserGroupApi.md#deleteV1supplierssupplierIDusergroupsuserGroupID) | **DELETE** /suppliers/{supplierID}/usergroups/{userGroupID} | 
-[**getV1supplierssupplierIDusergroupsuserGroupID**](SupplierUserGroupApi.md#getV1supplierssupplierIDusergroupsuserGroupID) | **GET** /suppliers/{supplierID}/usergroups/{userGroupID} | 
-[**listUserAssignmentsV1supplierssupplierIDusergroupsassignments**](SupplierUserGroupApi.md#listUserAssignmentsV1supplierssupplierIDusergroupsassignments) | **GET** /suppliers/{supplierID}/usergroups/assignments | 
-[**listV1supplierssupplierIDusergroups**](SupplierUserGroupApi.md#listV1supplierssupplierIDusergroups) | **GET** /suppliers/{supplierID}/usergroups | 
-[**patchV1supplierssupplierIDusergroupsuserGroupID**](SupplierUserGroupApi.md#patchV1supplierssupplierIDusergroupsuserGroupID) | **PATCH** /suppliers/{supplierID}/usergroups/{userGroupID} | 
-[**saveUserAssignmentV1supplierssupplierIDusergroupsassignments**](SupplierUserGroupApi.md#saveUserAssignmentV1supplierssupplierIDusergroupsassignments) | **POST** /suppliers/{supplierID}/usergroups/assignments | 
-[**saveV1supplierssupplierIDusergroupsuserGroupID**](SupplierUserGroupApi.md#saveV1supplierssupplierIDusergroupsuserGroupID) | **PUT** /suppliers/{supplierID}/usergroups/{userGroupID} | 
+[**createSupplierUserGroups**](SupplierUserGroupApi.md#createSupplierUserGroups) | **POST** /suppliers/{supplierID}/usergroups | 
+[**deleteSupplierUserGroups**](SupplierUserGroupApi.md#deleteSupplierUserGroups) | **DELETE** /suppliers/{supplierID}/usergroups/{userGroupID} | 
+[**deleteUserAssignmentSupplierUserGroups**](SupplierUserGroupApi.md#deleteUserAssignmentSupplierUserGroups) | **DELETE** /suppliers/{supplierID}/usergroups/{userGroupID}/assignments/{userID} | 
+[**getSupplierUserGroups**](SupplierUserGroupApi.md#getSupplierUserGroups) | **GET** /suppliers/{supplierID}/usergroups/{userGroupID} | 
+[**listSupplierUserGroups**](SupplierUserGroupApi.md#listSupplierUserGroups) | **GET** /suppliers/{supplierID}/usergroups | 
+[**listUserAssignmentsSupplierUserGroups**](SupplierUserGroupApi.md#listUserAssignmentsSupplierUserGroups) | **GET** /suppliers/{supplierID}/usergroups/assignments | 
+[**patchSupplierUserGroups**](SupplierUserGroupApi.md#patchSupplierUserGroups) | **PATCH** /suppliers/{supplierID}/usergroups/{userGroupID} | 
+[**saveSupplierUserGroups**](SupplierUserGroupApi.md#saveSupplierUserGroups) | **PUT** /suppliers/{supplierID}/usergroups/{userGroupID} | 
+[**saveUserAssignmentSupplierUserGroups**](SupplierUserGroupApi.md#saveUserAssignmentSupplierUserGroups) | **POST** /suppliers/{supplierID}/usergroups/assignments | 
 
 
-<a name="createV1supplierssupplierIDusergroups"></a>
-# **createV1supplierssupplierIDusergroups**
-> UserGroup createV1supplierssupplierIDusergroups(supplierID, userGroup)
+<a name="createSupplierUserGroups"></a>
+# **createSupplierUserGroups**
+> UserGroup createSupplierUserGroups(supplierID, userGroup)
 
 
 
@@ -39,7 +39,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1supplierssupplierIDusergroups(supplierID, userGroup, callback);
+apiInstance.createSupplierUserGroups(supplierID, userGroup, callback);
 ```
 
 ### Parameters
@@ -62,9 +62,56 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteUserAssignmentV1supplierssupplierIDusergroupsuserGroupIDassignmentsuserID"></a>
-# **deleteUserAssignmentV1supplierssupplierIDusergroupsuserGroupIDassignmentsuserID**
-> deleteUserAssignmentV1supplierssupplierIDusergroupsuserGroupIDassignmentsuserID(supplierID, userGroupID, userID)
+<a name="deleteSupplierUserGroups"></a>
+# **deleteSupplierUserGroups**
+> deleteSupplierUserGroups(supplierID, userGroupID)
+
+
+
+### Example
+```javascript
+var OrderCloud = require('order_cloud');
+var defaultClient = OrderCloud.ApiClient.instance;
+// Configure OAuth2 access token for authorization: OAuth2
+var OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new OrderCloud.SupplierUserGroupApi();
+var supplierID = "supplierID_example"; // String | ID of the supplier.
+var userGroupID = "userGroupID_example"; // String | ID of the user group.
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully.');
+  }
+};
+apiInstance.deleteSupplierUserGroups(supplierID, userGroupID, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **supplierID** | **String**| ID of the supplier. | 
+ **userGroupID** | **String**| ID of the user group. | 
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[OAuth2](../README.md#OAuth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+<a name="deleteUserAssignmentSupplierUserGroups"></a>
+# **deleteUserAssignmentSupplierUserGroups**
+> deleteUserAssignmentSupplierUserGroups(supplierID, userGroupID, userID)
 
 
 
@@ -87,7 +134,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteUserAssignmentV1supplierssupplierIDusergroupsuserGroupIDassignmentsuserID(supplierID, userGroupID, userID, callback);
+apiInstance.deleteUserAssignmentSupplierUserGroups(supplierID, userGroupID, userID, callback);
 ```
 
 ### Parameters
@@ -111,56 +158,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="deleteV1supplierssupplierIDusergroupsuserGroupID"></a>
-# **deleteV1supplierssupplierIDusergroupsuserGroupID**
-> deleteV1supplierssupplierIDusergroupsuserGroupID(supplierID, userGroupID)
-
-
-
-### Example
-```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.instance;
-// Configure OAuth2 access token for authorization: OAuth2
-var OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-
-var apiInstance = new OrderCloud.SupplierUserGroupApi();
-var supplierID = "supplierID_example"; // String | ID of the supplier.
-var userGroupID = "userGroupID_example"; // String | ID of the user group.
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully.');
-  }
-};
-apiInstance.deleteV1supplierssupplierIDusergroupsuserGroupID(supplierID, userGroupID, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **supplierID** | **String**| ID of the supplier. | 
- **userGroupID** | **String**| ID of the user group. | 
-
-### Return type
-
-null (empty response body)
-
-### Authorization
-
-[OAuth2](../README.md#OAuth2)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: Not defined
-
-<a name="getV1supplierssupplierIDusergroupsuserGroupID"></a>
-# **getV1supplierssupplierIDusergroupsuserGroupID**
-> UserGroup getV1supplierssupplierIDusergroupsuserGroupID(supplierID, userGroupID)
+<a name="getSupplierUserGroups"></a>
+# **getSupplierUserGroups**
+> UserGroup getSupplierUserGroups(supplierID, userGroupID)
 
 
 
@@ -182,7 +182,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1supplierssupplierIDusergroupsuserGroupID(supplierID, userGroupID, callback);
+apiInstance.getSupplierUserGroups(supplierID, userGroupID, callback);
 ```
 
 ### Parameters
@@ -205,64 +205,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listUserAssignmentsV1supplierssupplierIDusergroupsassignments"></a>
-# **listUserAssignmentsV1supplierssupplierIDusergroupsassignments**
-> ListUserGroupAssignment listUserAssignmentsV1supplierssupplierIDusergroupsassignments(supplierID, opts)
-
-
-
-### Example
-```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.instance;
-// Configure OAuth2 access token for authorization: OAuth2
-var OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-
-var apiInstance = new OrderCloud.SupplierUserGroupApi();
-var supplierID = "supplierID_example"; // String | ID of the supplier.
-var opts = {
-  'userGroupID': "userGroupID_example", // String | ID of the user group.
-  'userID': "userID_example", // String | ID of the user.
-  'page': 56, // Number | Page of results to return. Default: 1
-  'pageSize': 56 // Number | Number of results to return per page. Default: 20, max: 100.
-};
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.listUserAssignmentsV1supplierssupplierIDusergroupsassignments(supplierID, opts, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **supplierID** | **String**| ID of the supplier. | 
- **userGroupID** | **String**| ID of the user group. | [optional] 
- **userID** | **String**| ID of the user. | [optional] 
- **page** | **Number**| Page of results to return. Default: 1 | [optional] 
- **pageSize** | **Number**| Number of results to return per page. Default: 20, max: 100. | [optional] 
-
-### Return type
-
-[**ListUserGroupAssignment**](ListUserGroupAssignment.md)
-
-### Authorization
-
-[OAuth2](../README.md#OAuth2)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-<a name="listV1supplierssupplierIDusergroups"></a>
-# **listV1supplierssupplierIDusergroups**
-> ListUserGroup listV1supplierssupplierIDusergroups(supplierID, opts)
+<a name="listSupplierUserGroups"></a>
+# **listSupplierUserGroups**
+> ListUserGroup listSupplierUserGroups(supplierID, opts)
 
 
 
@@ -291,7 +236,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1supplierssupplierIDusergroups(supplierID, opts, callback);
+apiInstance.listSupplierUserGroups(supplierID, opts, callback);
 ```
 
 ### Parameters
@@ -319,9 +264,64 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1supplierssupplierIDusergroupsuserGroupID"></a>
-# **patchV1supplierssupplierIDusergroupsuserGroupID**
-> UserGroup patchV1supplierssupplierIDusergroupsuserGroupID(supplierID, userGroupID, userGroup)
+<a name="listUserAssignmentsSupplierUserGroups"></a>
+# **listUserAssignmentsSupplierUserGroups**
+> ListUserGroupAssignment listUserAssignmentsSupplierUserGroups(supplierID, opts)
+
+
+
+### Example
+```javascript
+var OrderCloud = require('order_cloud');
+var defaultClient = OrderCloud.ApiClient.instance;
+// Configure OAuth2 access token for authorization: OAuth2
+var OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new OrderCloud.SupplierUserGroupApi();
+var supplierID = "supplierID_example"; // String | ID of the supplier.
+var opts = {
+  'userGroupID': "userGroupID_example", // String | ID of the user group.
+  'userID': "userID_example", // String | ID of the user.
+  'page': 56, // Number | Page of results to return. Default: 1
+  'pageSize': 56 // Number | Number of results to return per page. Default: 20, max: 100.
+};
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.listUserAssignmentsSupplierUserGroups(supplierID, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **supplierID** | **String**| ID of the supplier. | 
+ **userGroupID** | **String**| ID of the user group. | [optional] 
+ **userID** | **String**| ID of the user. | [optional] 
+ **page** | **Number**| Page of results to return. Default: 1 | [optional] 
+ **pageSize** | **Number**| Number of results to return per page. Default: 20, max: 100. | [optional] 
+
+### Return type
+
+[**ListUserGroupAssignment**](ListUserGroupAssignment.md)
+
+### Authorization
+
+[OAuth2](../README.md#OAuth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="patchSupplierUserGroups"></a>
+# **patchSupplierUserGroups**
+> UserGroup patchSupplierUserGroups(supplierID, userGroupID, userGroup)
 
 
 
@@ -344,7 +344,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1supplierssupplierIDusergroupsuserGroupID(supplierID, userGroupID, userGroup, callback);
+apiInstance.patchSupplierUserGroups(supplierID, userGroupID, userGroup, callback);
 ```
 
 ### Parameters
@@ -368,9 +368,58 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveUserAssignmentV1supplierssupplierIDusergroupsassignments"></a>
-# **saveUserAssignmentV1supplierssupplierIDusergroupsassignments**
-> saveUserAssignmentV1supplierssupplierIDusergroupsassignments(supplierID, userGroupAssignment)
+<a name="saveSupplierUserGroups"></a>
+# **saveSupplierUserGroups**
+> UserGroup saveSupplierUserGroups(supplierID, userGroupID, userGroup)
+
+
+
+### Example
+```javascript
+var OrderCloud = require('order_cloud');
+var defaultClient = OrderCloud.ApiClient.instance;
+// Configure OAuth2 access token for authorization: OAuth2
+var OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new OrderCloud.SupplierUserGroupApi();
+var supplierID = "supplierID_example"; // String | ID of the supplier.
+var userGroupID = "userGroupID_example"; // String | ID of the user group.
+var userGroup = new OrderCloud.UserGroup(); // UserGroup | 
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.saveSupplierUserGroups(supplierID, userGroupID, userGroup, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **supplierID** | **String**| ID of the supplier. | 
+ **userGroupID** | **String**| ID of the user group. | 
+ **userGroup** | [**UserGroup**](UserGroup.md)|  | 
+
+### Return type
+
+[**UserGroup**](UserGroup.md)
+
+### Authorization
+
+[OAuth2](../README.md#OAuth2)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="saveUserAssignmentSupplierUserGroups"></a>
+# **saveUserAssignmentSupplierUserGroups**
+> saveUserAssignmentSupplierUserGroups(supplierID, userGroupAssignment)
 
 
 
@@ -392,7 +441,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.saveUserAssignmentV1supplierssupplierIDusergroupsassignments(supplierID, userGroupAssignment, callback);
+apiInstance.saveUserAssignmentSupplierUserGroups(supplierID, userGroupAssignment, callback);
 ```
 
 ### Parameters
@@ -414,53 +463,4 @@ null (empty response body)
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
-
-<a name="saveV1supplierssupplierIDusergroupsuserGroupID"></a>
-# **saveV1supplierssupplierIDusergroupsuserGroupID**
-> UserGroup saveV1supplierssupplierIDusergroupsuserGroupID(supplierID, userGroupID, userGroup)
-
-
-
-### Example
-```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.instance;
-// Configure OAuth2 access token for authorization: OAuth2
-var OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-
-var apiInstance = new OrderCloud.SupplierUserGroupApi();
-var supplierID = "supplierID_example"; // String | ID of the supplier.
-var userGroupID = "userGroupID_example"; // String | ID of the user group.
-var userGroup = new OrderCloud.UserGroup(); // UserGroup | 
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.saveV1supplierssupplierIDusergroupsuserGroupID(supplierID, userGroupID, userGroup, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **supplierID** | **String**| ID of the supplier. | 
- **userGroupID** | **String**| ID of the user group. | 
- **userGroup** | [**UserGroup**](UserGroup.md)|  | 
-
-### Return type
-
-[**UserGroup**](UserGroup.md)
-
-### Authorization
-
-[OAuth2](../README.md#OAuth2)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
 

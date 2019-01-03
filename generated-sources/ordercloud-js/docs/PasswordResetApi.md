@@ -4,13 +4,13 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**resetPasswordByVerificationCodeV1passwordresetverificationCode**](PasswordResetApi.md#resetPasswordByVerificationCodeV1passwordresetverificationCode) | **PUT** /password/reset/{verificationCode} | 
-[**sendVerificationCodeV1passwordreset**](PasswordResetApi.md#sendVerificationCodeV1passwordreset) | **POST** /password/reset | 
+[**resetPasswordByVerificationCodePasswordResets**](PasswordResetApi.md#resetPasswordByVerificationCodePasswordResets) | **PUT** /password/reset/{verificationCode} | 
+[**sendVerificationCodePasswordResets**](PasswordResetApi.md#sendVerificationCodePasswordResets) | **POST** /password/reset | 
 
 
-<a name="resetPasswordByVerificationCodeV1passwordresetverificationCode"></a>
-# **resetPasswordByVerificationCodeV1passwordresetverificationCode**
-> resetPasswordByVerificationCodeV1passwordresetverificationCode(verificationCode, passwordReset)
+<a name="resetPasswordByVerificationCodePasswordResets"></a>
+# **resetPasswordByVerificationCodePasswordResets**
+> resetPasswordByVerificationCodePasswordResets(verificationCode, passwordReset)
 
 
 
@@ -32,7 +32,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.resetPasswordByVerificationCodeV1passwordresetverificationCode(verificationCode, passwordReset, callback);
+apiInstance.resetPasswordByVerificationCodePasswordResets(verificationCode, passwordReset, callback);
 ```
 
 ### Parameters
@@ -55,9 +55,9 @@ null (empty response body)
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-<a name="sendVerificationCodeV1passwordreset"></a>
-# **sendVerificationCodeV1passwordreset**
-> sendVerificationCodeV1passwordreset(passwordResetRequest)
+<a name="sendVerificationCodePasswordResets"></a>
+# **sendVerificationCodePasswordResets**
+> sendVerificationCodePasswordResets(passwordResetRequest)
 
 
 
@@ -78,7 +78,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.sendVerificationCodeV1passwordreset(passwordResetRequest, callback);
+apiInstance.sendVerificationCodePasswordResets(passwordResetRequest, callback);
 ```
 
 ### Parameters

@@ -4,17 +4,17 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1addresses**](AdminAddressApi.md#createV1addresses) | **POST** /addresses | 
-[**deleteV1addressesaddressID**](AdminAddressApi.md#deleteV1addressesaddressID) | **DELETE** /addresses/{addressID} | 
-[**getV1addressesaddressID**](AdminAddressApi.md#getV1addressesaddressID) | **GET** /addresses/{addressID} | 
-[**listV1addresses**](AdminAddressApi.md#listV1addresses) | **GET** /addresses | 
-[**patchV1addressesaddressID**](AdminAddressApi.md#patchV1addressesaddressID) | **PATCH** /addresses/{addressID} | 
-[**saveV1addressesaddressID**](AdminAddressApi.md#saveV1addressesaddressID) | **PUT** /addresses/{addressID} | 
+[**createAdminAddresses**](AdminAddressApi.md#createAdminAddresses) | **POST** /addresses | 
+[**deleteAdminAddresses**](AdminAddressApi.md#deleteAdminAddresses) | **DELETE** /addresses/{addressID} | 
+[**getAdminAddresses**](AdminAddressApi.md#getAdminAddresses) | **GET** /addresses/{addressID} | 
+[**listAdminAddresses**](AdminAddressApi.md#listAdminAddresses) | **GET** /addresses | 
+[**patchAdminAddresses**](AdminAddressApi.md#patchAdminAddresses) | **PATCH** /addresses/{addressID} | 
+[**saveAdminAddresses**](AdminAddressApi.md#saveAdminAddresses) | **PUT** /addresses/{addressID} | 
 
 
-<a name="createV1addresses"></a>
-# **createV1addresses**
-> Address createV1addresses(address)
+<a name="createAdminAddresses"></a>
+# **createAdminAddresses**
+> Address createAdminAddresses(address)
 
 
 
@@ -35,7 +35,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1addresses(address, callback);
+apiInstance.createAdminAddresses(address, callback);
 ```
 
 ### Parameters
@@ -57,9 +57,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteV1addressesaddressID"></a>
-# **deleteV1addressesaddressID**
-> deleteV1addressesaddressID(addressID)
+<a name="deleteAdminAddresses"></a>
+# **deleteAdminAddresses**
+> deleteAdminAddresses(addressID)
 
 
 
@@ -80,7 +80,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1addressesaddressID(addressID, callback);
+apiInstance.deleteAdminAddresses(addressID, callback);
 ```
 
 ### Parameters
@@ -102,9 +102,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1addressesaddressID"></a>
-# **getV1addressesaddressID**
-> Address getV1addressesaddressID(addressID)
+<a name="getAdminAddresses"></a>
+# **getAdminAddresses**
+> Address getAdminAddresses(addressID)
 
 
 
@@ -125,7 +125,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1addressesaddressID(addressID, callback);
+apiInstance.getAdminAddresses(addressID, callback);
 ```
 
 ### Parameters
@@ -147,9 +147,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1addresses"></a>
-# **listV1addresses**
-> ListAddress listV1addresses(opts)
+<a name="listAdminAddresses"></a>
+# **listAdminAddresses**
+> ListAddress listAdminAddresses(opts)
 
 
 
@@ -177,7 +177,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1addresses(opts, callback);
+apiInstance.listAdminAddresses(opts, callback);
 ```
 
 ### Parameters
@@ -204,9 +204,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1addressesaddressID"></a>
-# **patchV1addressesaddressID**
-> Address patchV1addressesaddressID(addressID, address)
+<a name="patchAdminAddresses"></a>
+# **patchAdminAddresses**
+> Address patchAdminAddresses(addressID, address)
 
 
 
@@ -228,7 +228,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1addressesaddressID(addressID, address, callback);
+apiInstance.patchAdminAddresses(addressID, address, callback);
 ```
 
 ### Parameters
@@ -251,9 +251,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveV1addressesaddressID"></a>
-# **saveV1addressesaddressID**
-> Address saveV1addressesaddressID(addressID, address)
+<a name="saveAdminAddresses"></a>
+# **saveAdminAddresses**
+> Address saveAdminAddresses(addressID, address)
 
 
 
@@ -275,7 +275,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1addressesaddressID(addressID, address, callback);
+apiInstance.saveAdminAddresses(addressID, address, callback);
 ```
 
 ### Parameters

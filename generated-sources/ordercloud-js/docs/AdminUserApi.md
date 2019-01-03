@@ -4,17 +4,17 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1adminusers**](AdminUserApi.md#createV1adminusers) | **POST** /adminusers | 
-[**deleteV1adminusersuserID**](AdminUserApi.md#deleteV1adminusersuserID) | **DELETE** /adminusers/{userID} | 
-[**getV1adminusersuserID**](AdminUserApi.md#getV1adminusersuserID) | **GET** /adminusers/{userID} | 
-[**listV1adminusers**](AdminUserApi.md#listV1adminusers) | **GET** /adminusers | 
-[**patchV1adminusersuserID**](AdminUserApi.md#patchV1adminusersuserID) | **PATCH** /adminusers/{userID} | 
-[**saveV1adminusersuserID**](AdminUserApi.md#saveV1adminusersuserID) | **PUT** /adminusers/{userID} | 
+[**createAdminUsers**](AdminUserApi.md#createAdminUsers) | **POST** /adminusers | 
+[**deleteAdminUsers**](AdminUserApi.md#deleteAdminUsers) | **DELETE** /adminusers/{userID} | 
+[**getAdminUsers**](AdminUserApi.md#getAdminUsers) | **GET** /adminusers/{userID} | 
+[**listAdminUsers**](AdminUserApi.md#listAdminUsers) | **GET** /adminusers | 
+[**patchAdminUsers**](AdminUserApi.md#patchAdminUsers) | **PATCH** /adminusers/{userID} | 
+[**saveAdminUsers**](AdminUserApi.md#saveAdminUsers) | **PUT** /adminusers/{userID} | 
 
 
-<a name="createV1adminusers"></a>
-# **createV1adminusers**
-> User createV1adminusers(user)
+<a name="createAdminUsers"></a>
+# **createAdminUsers**
+> User createAdminUsers(user)
 
 
 
@@ -35,7 +35,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1adminusers(user, callback);
+apiInstance.createAdminUsers(user, callback);
 ```
 
 ### Parameters
@@ -57,9 +57,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteV1adminusersuserID"></a>
-# **deleteV1adminusersuserID**
-> deleteV1adminusersuserID(userID)
+<a name="deleteAdminUsers"></a>
+# **deleteAdminUsers**
+> deleteAdminUsers(userID)
 
 
 
@@ -80,7 +80,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1adminusersuserID(userID, callback);
+apiInstance.deleteAdminUsers(userID, callback);
 ```
 
 ### Parameters
@@ -102,9 +102,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1adminusersuserID"></a>
-# **getV1adminusersuserID**
-> User getV1adminusersuserID(userID)
+<a name="getAdminUsers"></a>
+# **getAdminUsers**
+> User getAdminUsers(userID)
 
 
 
@@ -125,7 +125,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1adminusersuserID(userID, callback);
+apiInstance.getAdminUsers(userID, callback);
 ```
 
 ### Parameters
@@ -147,9 +147,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1adminusers"></a>
-# **listV1adminusers**
-> ListUser listV1adminusers(opts)
+<a name="listAdminUsers"></a>
+# **listAdminUsers**
+> ListUser listAdminUsers(opts)
 
 
 
@@ -177,7 +177,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1adminusers(opts, callback);
+apiInstance.listAdminUsers(opts, callback);
 ```
 
 ### Parameters
@@ -204,9 +204,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1adminusersuserID"></a>
-# **patchV1adminusersuserID**
-> User patchV1adminusersuserID(userID, user)
+<a name="patchAdminUsers"></a>
+# **patchAdminUsers**
+> User patchAdminUsers(userID, user)
 
 
 
@@ -228,7 +228,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1adminusersuserID(userID, user, callback);
+apiInstance.patchAdminUsers(userID, user, callback);
 ```
 
 ### Parameters
@@ -251,9 +251,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveV1adminusersuserID"></a>
-# **saveV1adminusersuserID**
-> User saveV1adminusersuserID(userID, user)
+<a name="saveAdminUsers"></a>
+# **saveAdminUsers**
+> User saveAdminUsers(userID, user)
 
 
 
@@ -275,7 +275,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1adminusersuserID(userID, user, callback);
+apiInstance.saveAdminUsers(userID, user, callback);
 ```
 
 ### Parameters

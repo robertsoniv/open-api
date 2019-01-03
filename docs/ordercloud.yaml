@@ -2,7 +2,7 @@ openapi: 3.0.0
 info:
   title: OrderCloud
   description: 'OrderCloud is an awesome C# platform API for making eCommerce applications. It is NOT a complete solution. It''s designed to be used as the backend component with various other integrations and services.'
-  version: 1.0.89
+  version: 1.0.0
   contact:
     name: OrderCloud
     url: 'http://ordercloud.io'
@@ -2600,7 +2600,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListAddress'
-      operationId: List|v1/addresses
+      operationId: ListAdminAddresses
       tags:
         - AdminAddress
       parameters:
@@ -2653,7 +2653,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Address'
-      operationId: Create|v1/addresses
+      operationId: CreateAdminAddresses
       tags:
         - AdminAddress
       requestBody:
@@ -2677,7 +2677,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Address'
-      operationId: 'Get|v1/addresses/{addressID}'
+      operationId: GetAdminAddresses
       tags:
         - AdminAddress
       parameters:
@@ -2700,7 +2700,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Address'
-      operationId: 'Save|v1/addresses/{addressID}'
+      operationId: SaveAdminAddresses
       tags:
         - AdminAddress
       requestBody:
@@ -2725,7 +2725,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/addresses/{addressID}'
+      operationId: DeleteAdminAddresses
       tags:
         - AdminAddress
       parameters:
@@ -2747,7 +2747,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Address'
-      operationId: 'Patch|v1/addresses/{addressID}'
+      operationId: PatchAdminAddresses
       tags:
         - AdminAddress
       requestBody:
@@ -2777,7 +2777,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListUser'
-      operationId: List|v1/adminusers
+      operationId: ListAdminUsers
       tags:
         - AdminUser
       parameters:
@@ -2830,7 +2830,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
-      operationId: Create|v1/adminusers
+      operationId: CreateAdminUsers
       tags:
         - AdminUser
       requestBody:
@@ -2854,7 +2854,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
-      operationId: 'Get|v1/adminusers/{userID}'
+      operationId: GetAdminUsers
       tags:
         - AdminUser
       parameters:
@@ -2877,7 +2877,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
-      operationId: 'Save|v1/adminusers/{userID}'
+      operationId: SaveAdminUsers
       tags:
         - AdminUser
       requestBody:
@@ -2902,7 +2902,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/adminusers/{userID}'
+      operationId: DeleteAdminUsers
       tags:
         - AdminUser
       parameters:
@@ -2924,7 +2924,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
-      operationId: 'Patch|v1/adminusers/{userID}'
+      operationId: PatchAdminUsers
       tags:
         - AdminUser
       requestBody:
@@ -2954,7 +2954,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListApiClient'
-      operationId: List|v1/apiclients
+      operationId: ListApiClients
       tags:
         - ApiClient
       parameters:
@@ -3007,7 +3007,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ApiClient'
-      operationId: Create|v1/apiclients
+      operationId: CreateApiClients
       tags:
         - ApiClient
       requestBody:
@@ -3031,7 +3031,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ApiClient'
-      operationId: 'Get|v1/apiclients/{apiClientID}'
+      operationId: GetApiClients
       tags:
         - ApiClient
       parameters:
@@ -3054,7 +3054,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ApiClient'
-      operationId: 'Save|v1/apiclients/{apiClientID}'
+      operationId: SaveApiClients
       tags:
         - ApiClient
       requestBody:
@@ -3079,7 +3079,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/apiclients/{apiClientID}'
+      operationId: DeleteApiClients
       tags:
         - ApiClient
       parameters:
@@ -3101,7 +3101,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ApiClient'
-      operationId: 'Patch|v1/apiclients/{apiClientID}'
+      operationId: PatchApiClients
       tags:
         - ApiClient
       requestBody:
@@ -3131,7 +3131,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListApiClientAssignment'
-      operationId: ListAssignments|v1/apiclients/assignments
+      operationId: ListAssignmentsApiClients
       tags:
         - ApiClient
       parameters:
@@ -3174,7 +3174,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: SaveAssignment|v1/apiclients/assignments
+      operationId: SaveAssignmentApiClients
       tags:
         - ApiClient
       requestBody:
@@ -3198,7 +3198,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListBuyer'
-      operationId: List|v1/buyers
+      operationId: ListBuyers
       tags:
         - Buyer
       parameters:
@@ -3251,7 +3251,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Buyer'
-      operationId: Create|v1/buyers
+      operationId: CreateBuyers
       tags:
         - Buyer
       requestBody:
@@ -3275,7 +3275,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Buyer'
-      operationId: 'Get|v1/buyers/{buyerID}'
+      operationId: GetBuyers
       tags:
         - Buyer
       parameters:
@@ -3298,7 +3298,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Buyer'
-      operationId: 'Save|v1/buyers/{buyerID}'
+      operationId: SaveBuyers
       tags:
         - Buyer
       requestBody:
@@ -3323,7 +3323,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/buyers/{buyerID}'
+      operationId: DeleteBuyers
       tags:
         - Buyer
       parameters:
@@ -3345,7 +3345,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Buyer'
-      operationId: 'Patch|v1/buyers/{buyerID}'
+      operationId: PatchBuyers
       tags:
         - Buyer
       requestBody:
@@ -3375,7 +3375,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListAddress'
-      operationId: 'List|v1/buyers/{buyerID}/addresses'
+      operationId: ListAddresses
       tags:
         - Address
       parameters:
@@ -3434,7 +3434,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Address'
-      operationId: 'Create|v1/buyers/{buyerID}/addresses'
+      operationId: CreateAddresses
       tags:
         - Address
       requestBody:
@@ -3464,7 +3464,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Address'
-      operationId: 'Get|v1/buyers/{buyerID}/addresses/{addressID}'
+      operationId: GetAddresses
       tags:
         - Address
       parameters:
@@ -3493,7 +3493,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Address'
-      operationId: 'Save|v1/buyers/{buyerID}/addresses/{addressID}'
+      operationId: SaveAddresses
       tags:
         - Address
       requestBody:
@@ -3524,7 +3524,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/buyers/{buyerID}/addresses/{addressID}'
+      operationId: DeleteAddresses
       tags:
         - Address
       parameters:
@@ -3552,7 +3552,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Address'
-      operationId: 'Patch|v1/buyers/{buyerID}/addresses/{addressID}'
+      operationId: PatchAddresses
       tags:
         - Address
       requestBody:
@@ -3584,7 +3584,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteAssignment|v1/buyers/{buyerID}/addresses/{addressID}/assignments'
+      operationId: DeleteAssignmentAddresses
       tags:
         - Address
       parameters:
@@ -3625,7 +3625,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListAddressAssignment'
-      operationId: 'ListAssignments|v1/buyers/{buyerID}/addresses/assignments'
+      operationId: ListAssignmentsAddresses
       tags:
         - Address
       parameters:
@@ -3692,7 +3692,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'SaveAssignment|v1/buyers/{buyerID}/addresses/assignments'
+      operationId: SaveAssignmentAddresses
       tags:
         - Address
       requestBody:
@@ -3718,7 +3718,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteBuyerAssignment|v1/buyers/{buyerID}/ApiClients/Assignments/{apiClientID}'
+      operationId: DeleteBuyerAssignmentApiClients
       tags:
         - ApiClient
       parameters:
@@ -3747,7 +3747,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListApprovalRule'
-      operationId: 'List|v1/buyers/{buyerID}/approvalrules'
+      operationId: ListApprovalRules
       tags:
         - ApprovalRule
       parameters:
@@ -3806,7 +3806,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ApprovalRule'
-      operationId: 'Create|v1/buyers/{buyerID}/approvalrules'
+      operationId: CreateApprovalRules
       tags:
         - ApprovalRule
       requestBody:
@@ -3836,7 +3836,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ApprovalRule'
-      operationId: 'Get|v1/buyers/{buyerID}/approvalrules/{approvalRuleID}'
+      operationId: GetApprovalRules
       tags:
         - ApprovalRule
       parameters:
@@ -3865,7 +3865,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ApprovalRule'
-      operationId: 'Save|v1/buyers/{buyerID}/approvalrules/{approvalRuleID}'
+      operationId: SaveApprovalRules
       tags:
         - ApprovalRule
       requestBody:
@@ -3896,7 +3896,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/buyers/{buyerID}/approvalrules/{approvalRuleID}'
+      operationId: DeleteApprovalRules
       tags:
         - ApprovalRule
       parameters:
@@ -3924,7 +3924,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ApprovalRule'
-      operationId: 'Patch|v1/buyers/{buyerID}/approvalrules/{approvalRuleID}'
+      operationId: PatchApprovalRules
       tags:
         - ApprovalRule
       requestBody:
@@ -3960,7 +3960,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListCostCenter'
-      operationId: 'List|v1/buyers/{buyerID}/costcenters'
+      operationId: ListCostCenters
       tags:
         - CostCenter
       parameters:
@@ -4019,7 +4019,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CostCenter'
-      operationId: 'Create|v1/buyers/{buyerID}/costcenters'
+      operationId: CreateCostCenters
       tags:
         - CostCenter
       requestBody:
@@ -4049,7 +4049,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CostCenter'
-      operationId: 'Get|v1/buyers/{buyerID}/costcenters/{costCenterID}'
+      operationId: GetCostCenters
       tags:
         - CostCenter
       parameters:
@@ -4078,7 +4078,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CostCenter'
-      operationId: 'Save|v1/buyers/{buyerID}/costcenters/{costCenterID}'
+      operationId: SaveCostCenters
       tags:
         - CostCenter
       requestBody:
@@ -4109,7 +4109,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/buyers/{buyerID}/costcenters/{costCenterID}'
+      operationId: DeleteCostCenters
       tags:
         - CostCenter
       parameters:
@@ -4137,7 +4137,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CostCenter'
-      operationId: 'Patch|v1/buyers/{buyerID}/costcenters/{costCenterID}'
+      operationId: PatchCostCenters
       tags:
         - CostCenter
       requestBody:
@@ -4169,7 +4169,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteAssignment|v1/buyers/{buyerID}/costcenters/{costCenterID}/assignments'
+      operationId: DeleteAssignmentCostCenters
       tags:
         - CostCenter
       parameters:
@@ -4210,7 +4210,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListCostCenterAssignment'
-      operationId: 'ListAssignments|v1/buyers/{buyerID}/costcenters/assignments'
+      operationId: ListAssignmentsCostCenters
       tags:
         - CostCenter
       parameters:
@@ -4265,7 +4265,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'SaveAssignment|v1/buyers/{buyerID}/costcenters/assignments'
+      operationId: SaveAssignmentCostCenters
       tags:
         - CostCenter
       requestBody:
@@ -4295,7 +4295,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListCreditCard'
-      operationId: 'List|v1/buyers/{buyerID}/creditcards'
+      operationId: ListCreditCards
       tags:
         - CreditCard
       parameters:
@@ -4354,7 +4354,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CreditCard'
-      operationId: 'Create|v1/buyers/{buyerID}/creditcards'
+      operationId: CreateCreditCards
       tags:
         - CreditCard
       requestBody:
@@ -4384,7 +4384,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CreditCard'
-      operationId: 'Get|v1/buyers/{buyerID}/creditcards/{creditCardID}'
+      operationId: GetCreditCards
       tags:
         - CreditCard
       parameters:
@@ -4413,7 +4413,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CreditCard'
-      operationId: 'Save|v1/buyers/{buyerID}/creditcards/{creditCardID}'
+      operationId: SaveCreditCards
       tags:
         - CreditCard
       requestBody:
@@ -4444,7 +4444,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/buyers/{buyerID}/creditcards/{creditCardID}'
+      operationId: DeleteCreditCards
       tags:
         - CreditCard
       parameters:
@@ -4472,7 +4472,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CreditCard'
-      operationId: 'Patch|v1/buyers/{buyerID}/creditcards/{creditCardID}'
+      operationId: PatchCreditCards
       tags:
         - CreditCard
       requestBody:
@@ -4504,7 +4504,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteAssignment|v1/buyers/{buyerID}/creditcards/{creditCardID}/assignments'
+      operationId: DeleteAssignmentCreditCards
       tags:
         - CreditCard
       parameters:
@@ -4545,7 +4545,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListCreditCardAssignment'
-      operationId: 'ListAssignments|v1/buyers/{buyerID}/creditcards/assignments'
+      operationId: ListAssignmentsCreditCards
       tags:
         - CreditCard
       parameters:
@@ -4600,7 +4600,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'SaveAssignment|v1/buyers/{buyerID}/creditcards/assignments'
+      operationId: SaveAssignmentCreditCards
       tags:
         - CreditCard
       requestBody:
@@ -4630,7 +4630,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListSpendingAccount'
-      operationId: 'List|v1/buyers/{buyerID}/spendingaccounts'
+      operationId: ListSpendingAccounts
       tags:
         - SpendingAccount
       parameters:
@@ -4689,7 +4689,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SpendingAccount'
-      operationId: 'Create|v1/buyers/{buyerID}/spendingaccounts'
+      operationId: CreateSpendingAccounts
       tags:
         - SpendingAccount
       requestBody:
@@ -4719,7 +4719,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SpendingAccount'
-      operationId: 'Get|v1/buyers/{buyerID}/spendingaccounts/{spendingAccountID}'
+      operationId: GetSpendingAccounts
       tags:
         - SpendingAccount
       parameters:
@@ -4748,7 +4748,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SpendingAccount'
-      operationId: 'Save|v1/buyers/{buyerID}/spendingaccounts/{spendingAccountID}'
+      operationId: SaveSpendingAccounts
       tags:
         - SpendingAccount
       requestBody:
@@ -4779,7 +4779,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/buyers/{buyerID}/spendingaccounts/{spendingAccountID}'
+      operationId: DeleteSpendingAccounts
       tags:
         - SpendingAccount
       parameters:
@@ -4807,7 +4807,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SpendingAccount'
-      operationId: 'Patch|v1/buyers/{buyerID}/spendingaccounts/{spendingAccountID}'
+      operationId: PatchSpendingAccounts
       tags:
         - SpendingAccount
       requestBody:
@@ -4839,7 +4839,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteAssignment|v1/buyers/{buyerID}/spendingaccounts/{spendingAccountID}/assignments'
+      operationId: DeleteAssignmentSpendingAccounts
       tags:
         - SpendingAccount
       parameters:
@@ -4880,7 +4880,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListSpendingAccountAssignment'
-      operationId: 'ListAssignments|v1/buyers/{buyerID}/spendingaccounts/assignments'
+      operationId: ListAssignmentsSpendingAccounts
       tags:
         - SpendingAccount
       parameters:
@@ -4935,7 +4935,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'SaveAssignment|v1/buyers/{buyerID}/spendingaccounts/assignments'
+      operationId: SaveAssignmentSpendingAccounts
       tags:
         - SpendingAccount
       requestBody:
@@ -4965,7 +4965,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListUserGroup'
-      operationId: 'List|v1/buyers/{buyerID}/usergroups'
+      operationId: ListUserGroups
       tags:
         - UserGroup
       parameters:
@@ -5024,7 +5024,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/UserGroup'
-      operationId: 'Create|v1/buyers/{buyerID}/usergroups'
+      operationId: CreateUserGroups
       tags:
         - UserGroup
       requestBody:
@@ -5054,7 +5054,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/UserGroup'
-      operationId: 'Get|v1/buyers/{buyerID}/usergroups/{userGroupID}'
+      operationId: GetUserGroups
       tags:
         - UserGroup
       parameters:
@@ -5083,7 +5083,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/UserGroup'
-      operationId: 'Save|v1/buyers/{buyerID}/usergroups/{userGroupID}'
+      operationId: SaveUserGroups
       tags:
         - UserGroup
       requestBody:
@@ -5114,7 +5114,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/buyers/{buyerID}/usergroups/{userGroupID}'
+      operationId: DeleteUserGroups
       tags:
         - UserGroup
       parameters:
@@ -5142,7 +5142,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/UserGroup'
-      operationId: 'Patch|v1/buyers/{buyerID}/usergroups/{userGroupID}'
+      operationId: PatchUserGroups
       tags:
         - UserGroup
       requestBody:
@@ -5174,7 +5174,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteUserAssignment|v1/buyers/{buyerID}/usergroups/{userGroupID}/assignments/{userID}'
+      operationId: DeleteUserAssignmentUserGroups
       tags:
         - UserGroup
       parameters:
@@ -5209,7 +5209,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListUserGroupAssignment'
-      operationId: 'ListUserAssignments|v1/buyers/{buyerID}/usergroups/assignments'
+      operationId: ListUserAssignmentsUserGroups
       tags:
         - UserGroup
       parameters:
@@ -5252,7 +5252,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'SaveUserAssignment|v1/buyers/{buyerID}/usergroups/assignments'
+      operationId: SaveUserAssignmentUserGroups
       tags:
         - UserGroup
       requestBody:
@@ -5282,7 +5282,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListUser'
-      operationId: 'List|v1/buyers/{buyerID}/users'
+      operationId: ListUsers
       tags:
         - User
       parameters:
@@ -5347,7 +5347,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
-      operationId: 'Create|v1/buyers/{buyerID}/users'
+      operationId: CreateUsers
       tags:
         - User
       requestBody:
@@ -5377,7 +5377,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
-      operationId: 'Get|v1/buyers/{buyerID}/users/{userID}'
+      operationId: GetUsers
       tags:
         - User
       parameters:
@@ -5406,7 +5406,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
-      operationId: 'Save|v1/buyers/{buyerID}/users/{userID}'
+      operationId: SaveUsers
       tags:
         - User
       requestBody:
@@ -5437,7 +5437,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/buyers/{buyerID}/users/{userID}'
+      operationId: DeleteUsers
       tags:
         - User
       parameters:
@@ -5465,7 +5465,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
-      operationId: 'Patch|v1/buyers/{buyerID}/users/{userID}'
+      operationId: PatchUsers
       tags:
         - User
       requestBody:
@@ -5501,7 +5501,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/AccessToken'
-      operationId: 'GetAccessToken|v1/buyers/{buyerID}/users/{userID}/accesstoken'
+      operationId: GetAccessTokenUsers
       tags:
         - User
       requestBody:
@@ -5537,7 +5537,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
-      operationId: 'Move|v1/buyers/{buyerID}/users/{userID}/moveto/{newBuyerID}'
+      operationId: MoveUsers
       tags:
         - User
       parameters:
@@ -5578,7 +5578,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListCatalog'
-      operationId: List|v1/catalogs
+      operationId: ListCatalogs
       tags:
         - Catalog
       parameters:
@@ -5631,7 +5631,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Catalog'
-      operationId: Create|v1/catalogs
+      operationId: CreateCatalogs
       tags:
         - Catalog
       requestBody:
@@ -5655,7 +5655,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Catalog'
-      operationId: 'Get|v1/catalogs/{catalogID}'
+      operationId: GetCatalogs
       tags:
         - Catalog
       parameters:
@@ -5678,7 +5678,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Catalog'
-      operationId: 'Save|v1/catalogs/{catalogID}'
+      operationId: SaveCatalogs
       tags:
         - Catalog
       requestBody:
@@ -5703,7 +5703,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/catalogs/{catalogID}'
+      operationId: DeleteCatalogs
       tags:
         - Catalog
       parameters:
@@ -5725,7 +5725,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Catalog'
-      operationId: 'Patch|v1/catalogs/{catalogID}'
+      operationId: PatchCatalogs
       tags:
         - Catalog
       requestBody:
@@ -5751,7 +5751,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteAssignment|v1/catalogs/{catalogID}/assignments'
+      operationId: DeleteAssignmentCatalogs
       tags:
         - Catalog
       parameters:
@@ -5780,7 +5780,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListCategory'
-      operationId: 'List|v1/catalogs/{catalogID}/categories'
+      operationId: ListCategories
       tags:
         - Category
       parameters:
@@ -5845,7 +5845,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Category'
-      operationId: 'Create|v1/catalogs/{catalogID}/categories'
+      operationId: CreateCategories
       tags:
         - Category
       requestBody:
@@ -5875,7 +5875,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Category'
-      operationId: 'Get|v1/catalogs/{catalogID}/categories/{categoryID}'
+      operationId: GetCategories
       tags:
         - Category
       parameters:
@@ -5904,7 +5904,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Category'
-      operationId: 'Save|v1/catalogs/{catalogID}/categories/{categoryID}'
+      operationId: SaveCategories
       tags:
         - Category
       requestBody:
@@ -5935,7 +5935,7 @@ paths:
       responses:
         '204':
           description: Deleting a parent category will also delete all of that category's children.
-      operationId: 'Delete|v1/catalogs/{catalogID}/categories/{categoryID}'
+      operationId: DeleteCategories
       tags:
         - Category
       parameters:
@@ -5963,7 +5963,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Category'
-      operationId: 'Patch|v1/catalogs/{catalogID}/categories/{categoryID}'
+      operationId: PatchCategories
       tags:
         - Category
       requestBody:
@@ -5995,7 +5995,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteAssignment|v1/catalogs/{catalogID}/categories/{categoryID}/assignments'
+      operationId: DeleteAssignmentCategories
       tags:
         - Category
       parameters:
@@ -6038,7 +6038,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteProductAssignment|v1/catalogs/{catalogID}/categories/{categoryID}/productassignments/{productID}'
+      operationId: DeleteProductAssignmentCategories
       tags:
         - Category
       parameters:
@@ -6073,7 +6073,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListCategoryAssignment'
-      operationId: 'ListAssignments|v1/catalogs/{catalogID}/categories/assignments'
+      operationId: ListAssignmentsCategories
       tags:
         - Category
       parameters:
@@ -6134,7 +6134,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'SaveAssignment|v1/catalogs/{catalogID}/categories/assignments'
+      operationId: SaveAssignmentCategories
       tags:
         - Category
       requestBody:
@@ -6164,7 +6164,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListCategoryProductAssignment'
-      operationId: 'ListProductAssignments|v1/catalogs/{catalogID}/categories/productassignments'
+      operationId: ListProductAssignmentsCategories
       tags:
         - Category
       parameters:
@@ -6207,7 +6207,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'SaveProductAssignment|v1/catalogs/{catalogID}/categories/productassignments'
+      operationId: SaveProductAssignmentCategories
       tags:
         - Category
       requestBody:
@@ -6233,7 +6233,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteProductAssignment|v1/catalogs/{catalogID}/productassignments/{productID}'
+      operationId: DeleteProductAssignmentCatalogs
       tags:
         - Catalog
       parameters:
@@ -6262,7 +6262,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListCatalogAssignment'
-      operationId: ListAssignments|v1/catalogs/assignments
+      operationId: ListAssignmentsCatalogs
       tags:
         - Catalog
       parameters:
@@ -6299,7 +6299,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: SaveAssignment|v1/catalogs/assignments
+      operationId: SaveAssignmentCatalogs
       tags:
         - Catalog
       requestBody:
@@ -6323,7 +6323,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListProductCatalogAssignment'
-      operationId: ListProductAssignments|v1/catalogs/productassignments
+      operationId: ListProductAssignmentsCatalogs
       tags:
         - Catalog
       parameters:
@@ -6360,7 +6360,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: SaveProductAssignment|v1/catalogs/productassignments
+      operationId: SaveProductAssignmentCatalogs
       tags:
         - Catalog
       requestBody:
@@ -6384,7 +6384,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListImpersonationConfig'
-      operationId: List|v1/impersonationconfig
+      operationId: ListImpersonationConfigs
       tags:
         - ImpersonationConfig
       parameters:
@@ -6436,7 +6436,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ImpersonationConfig'
-      operationId: Create|v1/impersonationconfig
+      operationId: CreateImpersonationConfigs
       tags:
         - ImpersonationConfig
       requestBody:
@@ -6460,7 +6460,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ImpersonationConfig'
-      operationId: 'Get|v1/impersonationconfig/{impersonationConfigID}'
+      operationId: GetImpersonationConfigs
       tags:
         - ImpersonationConfig
       parameters:
@@ -6482,7 +6482,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ImpersonationConfig'
-      operationId: 'Save|v1/impersonationconfig/{impersonationConfigID}'
+      operationId: SaveImpersonationConfigs
       tags:
         - ImpersonationConfig
       requestBody:
@@ -6507,7 +6507,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/impersonationconfig/{impersonationConfigID}'
+      operationId: DeleteImpersonationConfigs
       tags:
         - ImpersonationConfig
       parameters:
@@ -6529,7 +6529,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ImpersonationConfig'
-      operationId: 'Patch|v1/impersonationconfig/{impersonationConfigID}'
+      operationId: PatchImpersonationConfigs
       tags:
         - ImpersonationConfig
       requestBody:
@@ -6559,7 +6559,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListIncrementor'
-      operationId: List|v1/incrementors
+      operationId: ListIncrementors
       tags:
         - Incrementor
       parameters:
@@ -6612,7 +6612,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Incrementor'
-      operationId: Create|v1/incrementors
+      operationId: CreateIncrementors
       tags:
         - Incrementor
       requestBody:
@@ -6636,7 +6636,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Incrementor'
-      operationId: 'Get|v1/incrementors/{incrementorID}'
+      operationId: GetIncrementors
       tags:
         - Incrementor
       parameters:
@@ -6659,7 +6659,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Incrementor'
-      operationId: 'Save|v1/incrementors/{incrementorID}'
+      operationId: SaveIncrementors
       tags:
         - Incrementor
       requestBody:
@@ -6684,7 +6684,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/incrementors/{incrementorID}'
+      operationId: DeleteIncrementors
       tags:
         - Incrementor
       parameters:
@@ -6706,7 +6706,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Incrementor'
-      operationId: 'Patch|v1/incrementors/{incrementorID}'
+      operationId: PatchIncrementors
       tags:
         - Incrementor
       requestBody:
@@ -6736,7 +6736,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/MeUser'
-      operationId: Get|v1/me
+      operationId: GetMe
       tags:
         - Me
       parameters: []
@@ -6750,7 +6750,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/MeUser'
-      operationId: Save|v1/me
+      operationId: SaveMe
       tags:
         - Me
       requestBody:
@@ -6773,7 +6773,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/MeUser'
-      operationId: Patch|v1/me
+      operationId: PatchMe
       tags:
         - Me
       requestBody:
@@ -6797,7 +6797,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListBuyerAddress'
-      operationId: ListAddresses|v1/me/addresses
+      operationId: ListAddressesMe
       tags:
         - Me
       parameters:
@@ -6850,7 +6850,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/BuyerAddress'
-      operationId: CreateAddress|v1/me/addresses
+      operationId: CreateAddressMe
       tags:
         - Me
       requestBody:
@@ -6874,7 +6874,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/BuyerAddress'
-      operationId: 'GetAddress|v1/me/addresses/{addressID}'
+      operationId: GetAddressMe
       tags:
         - Me
       parameters:
@@ -6897,7 +6897,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/BuyerAddress'
-      operationId: 'SaveAddress|v1/me/addresses/{addressID}'
+      operationId: SaveAddressMe
       tags:
         - Me
       requestBody:
@@ -6922,7 +6922,7 @@ paths:
       responses:
         '204':
           description: Only available to Buyer Users.
-      operationId: 'DeleteAddress|v1/me/addresses/{addressID}'
+      operationId: DeleteAddressMe
       tags:
         - Me
       parameters:
@@ -6940,7 +6940,7 @@ paths:
       responses:
         '204':
           description: Only available to Buyer Users.
-      operationId: 'PatchAddress|v1/me/addresses/{addressID}'
+      operationId: PatchAddressMe
       tags:
         - Me
       requestBody:
@@ -6970,7 +6970,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListCatalog'
-      operationId: ListCatalogs|v1/me/catalogs
+      operationId: ListCatalogsMe
       tags:
         - Me
       parameters:
@@ -7023,7 +7023,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Catalog'
-      operationId: 'GetCatalog|v1/me/catalogs/{catalogID}'
+      operationId: GetCatalogMe
       tags:
         - Me
       parameters:
@@ -7046,7 +7046,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListCategory'
-      operationId: ListCategories|v1/me/categories
+      operationId: ListCategoriesMe
       tags:
         - Me
       parameters:
@@ -7117,7 +7117,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Category'
-      operationId: 'GetCategory|v1/me/categories/{categoryID}'
+      operationId: GetCategoryMe
       tags:
         - Me
       parameters:
@@ -7146,7 +7146,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListCostCenter'
-      operationId: ListCostCenters|v1/me/costcenters
+      operationId: ListCostCentersMe
       tags:
         - Me
       parameters:
@@ -7199,7 +7199,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListBuyerCreditCard'
-      operationId: ListCreditCards|v1/me/creditcards
+      operationId: ListCreditCardsMe
       tags:
         - Me
       parameters:
@@ -7252,7 +7252,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/BuyerCreditCard'
-      operationId: CreateCreditCard|v1/me/creditcards
+      operationId: CreateCreditCardMe
       tags:
         - Me
       requestBody:
@@ -7276,7 +7276,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/BuyerCreditCard'
-      operationId: 'GetCreditCard|v1/me/creditcards/{creditcardID}'
+      operationId: GetCreditCardMe
       tags:
         - Me
       parameters:
@@ -7299,7 +7299,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/BuyerCreditCard'
-      operationId: 'SaveCreditCard|v1/me/creditcards/{creditcardID}'
+      operationId: SaveCreditCardMe
       tags:
         - Me
       requestBody:
@@ -7324,7 +7324,7 @@ paths:
       responses:
         '204':
           description: Only available to Buyer Users.
-      operationId: 'DeleteCreditCard|v1/me/creditcards/{creditcardID}'
+      operationId: DeleteCreditCardMe
       tags:
         - Me
       parameters:
@@ -7342,7 +7342,7 @@ paths:
       responses:
         '204':
           description: Only available to Buyer Users.
-      operationId: 'PatchCreditCard|v1/me/creditcards/{creditcardID}'
+      operationId: PatchCreditCardMe
       tags:
         - Me
       requestBody:
@@ -7372,7 +7372,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListOrder'
-      operationId: ListOrders|v1/me/orders
+      operationId: ListOrdersMe
       tags:
         - Me
       parameters:
@@ -7432,7 +7432,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: TransferAnonUserOrder|v1/me/orders
+      operationId: TransferAnonUserOrderMe
       tags:
         - Me
       parameters:
@@ -7455,7 +7455,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListOrder'
-      operationId: ListApprovableOrders|v1/me/orders/approvable
+      operationId: ListApprovableOrdersMe
       tags:
         - Me
       parameters:
@@ -7516,7 +7516,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: ResetPasswordByToken|v1/me/password
+      operationId: ResetPasswordByTokenMe
       tags:
         - Me
       requestBody:
@@ -7540,7 +7540,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListBuyerProduct'
-      operationId: ListProducts|v1/me/products
+      operationId: ListProductsMe
       tags:
         - Me
       parameters:
@@ -7611,7 +7611,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/BuyerProduct'
-      operationId: 'GetProduct|v1/me/products/{productID}'
+      operationId: GetProductMe
       tags:
         - Me
       parameters:
@@ -7634,7 +7634,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListBuyerSpec'
-      operationId: 'ListSpecs|v1/me/products/{productID}/specs'
+      operationId: ListSpecsMe
       tags:
         - Me
       parameters:
@@ -7699,7 +7699,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/BuyerSpec'
-      operationId: 'GetSpec|v1/me/products/{productID}/specs/{specID}'
+      operationId: GetSpecMe
       tags:
         - Me
       parameters:
@@ -7734,7 +7734,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListPromotion'
-      operationId: ListPromotions|v1/me/promotions
+      operationId: ListPromotionsMe
       tags:
         - Me
       parameters:
@@ -7787,7 +7787,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Promotion'
-      operationId: 'GetPromotion|v1/me/promotions/{promotionID}'
+      operationId: GetPromotionMe
       tags:
         - Me
       parameters:
@@ -7810,7 +7810,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Authentication'
-      operationId: Register|v1/me/register
+      operationId: RegisterMe
       tags:
         - Me
       requestBody:
@@ -7840,7 +7840,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListShipment'
-      operationId: ListShipments|v1/me/shipments
+      operationId: ListShipmentsMe
       tags:
         - Me
       parameters:
@@ -7899,7 +7899,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Shipment'
-      operationId: 'GetShipment|v1/me/shipments/{shipmentID}'
+      operationId: GetShipmentMe
       tags:
         - Me
       parameters:
@@ -7922,7 +7922,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListShipmentItem'
-      operationId: 'ListShipmentItems|v1/me/shipments/{shipmentID}/items'
+      operationId: ListShipmentItemsMe
       tags:
         - Me
       parameters:
@@ -7987,7 +7987,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListSpendingAccount'
-      operationId: ListSpendingAccounts|v1/me/spendingAccounts
+      operationId: ListSpendingAccountsMe
       tags:
         - Me
       parameters:
@@ -8040,7 +8040,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SpendingAccount'
-      operationId: 'GetSpendingAccount|v1/me/spendingaccounts/{spendingAccountID}'
+      operationId: GetSpendingAccountMe
       tags:
         - Me
       parameters:
@@ -8063,7 +8063,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListUserGroup'
-      operationId: ListUserGroups|v1/me/usergroups
+      operationId: ListUserGroupsMe
       tags:
         - Me
       parameters:
@@ -8114,7 +8114,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListMessageSender'
-      operationId: List|v1/messagesenders
+      operationId: ListMessageSenders
       tags:
         - MessageSender
       parameters:
@@ -8167,7 +8167,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/MessageSender'
-      operationId: 'Get|v1/messagesenders/{messageSenderID}'
+      operationId: GetMessageSenders
       tags:
         - MessageSender
       parameters:
@@ -8186,7 +8186,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteAssignment|v1/messagesenders/{messageSenderID}/assignments'
+      operationId: DeleteAssignmentMessageSenders
       tags:
         - MessageSender
       parameters:
@@ -8233,7 +8233,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListMessageSenderAssignment'
-      operationId: ListAssignments|v1/messagesenders/assignments
+      operationId: ListAssignmentsMessageSenders
       tags:
         - MessageSender
       parameters:
@@ -8293,7 +8293,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: SaveAssignment|v1/messagesenders/assignments
+      operationId: SaveAssignmentMessageSenders
       tags:
         - MessageSender
       requestBody:
@@ -8317,7 +8317,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListMessageCCListenerAssignment'
-      operationId: ListCCListenerAssignments|v1/messagesenders/CCListenerAssignments
+      operationId: ListCCListenerAssignmentsMessageSenders
       tags:
         - MessageSender
       parameters:
@@ -8365,7 +8365,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: SaveCCListenerAssignment|v1/messagesenders/CCListenerAssignments
+      operationId: SaveCCListenerAssignmentMessageSenders
       tags:
         - MessageSender
       requestBody:
@@ -8389,7 +8389,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListOrder'
-      operationId: 'List|v1/orders/{direction}'
+      operationId: ListOrders
       tags:
         - Order
       parameters:
@@ -8472,7 +8472,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Order'
-      operationId: 'Create|v1/orders/{direction}'
+      operationId: CreateOrders
       tags:
         - Order
       requestBody:
@@ -8503,7 +8503,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Order'
-      operationId: 'Get|v1/orders/{direction}/{orderID}'
+      operationId: GetOrders
       tags:
         - Order
       parameters:
@@ -8533,7 +8533,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Order'
-      operationId: 'Save|v1/orders/{direction}/{orderID}'
+      operationId: SaveOrders
       tags:
         - Order
       requestBody:
@@ -8565,7 +8565,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/orders/{direction}/{orderID}'
+      operationId: DeleteOrders
       tags:
         - Order
       parameters:
@@ -8594,7 +8594,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Order'
-      operationId: 'Patch|v1/orders/{direction}/{orderID}'
+      operationId: PatchOrders
       tags:
         - Order
       requestBody:
@@ -8631,7 +8631,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListOrderApproval'
-      operationId: 'ListApprovals|v1/orders/{direction}/{orderID}/approvals'
+      operationId: ListApprovalsOrders
       tags:
         - Order
       parameters:
@@ -8698,7 +8698,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Order'
-      operationId: 'Approve|v1/orders/{direction}/{orderID}/approve'
+      operationId: ApproveOrders
       tags:
         - Order
       requestBody:
@@ -8735,7 +8735,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Order'
-      operationId: 'SetBillingAddress|v1/orders/{direction}/{orderID}/billto'
+      operationId: SetBillingAddressOrders
       tags:
         - Order
       requestBody:
@@ -8771,7 +8771,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Order'
-      operationId: 'PatchBillingAddress|v1/orders/{direction}/{orderID}/billto'
+      operationId: PatchBillingAddressOrders
       tags:
         - Order
       requestBody:
@@ -8808,7 +8808,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Order'
-      operationId: 'Cancel|v1/orders/{direction}/{orderID}/cancel'
+      operationId: CancelOrders
       tags:
         - Order
       parameters:
@@ -8838,7 +8838,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Order'
-      operationId: 'Decline|v1/orders/{direction}/{orderID}/decline'
+      operationId: DeclineOrders
       tags:
         - Order
       requestBody:
@@ -8875,7 +8875,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListUser'
-      operationId: 'ListEligibleApprovers|v1/orders/{direction}/{orderID}/eligibleapprovers'
+      operationId: ListEligibleApproversOrders
       tags:
         - Order
       parameters:
@@ -8942,7 +8942,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Order'
-      operationId: 'PatchFromUser|v1/orders/{direction}/{orderID}/fromuser'
+      operationId: PatchFromUserOrders
       tags:
         - Order
       requestBody:
@@ -8979,7 +8979,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListLineItem'
-      operationId: 'List|v1/orders/{direction}/{orderID}/lineitems'
+      operationId: ListLineItems
       tags:
         - LineItem
       parameters:
@@ -9045,7 +9045,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/LineItem'
-      operationId: 'Create|v1/orders/{direction}/{orderID}/lineitems'
+      operationId: CreateLineItems
       tags:
         - LineItem
       requestBody:
@@ -9082,7 +9082,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/LineItem'
-      operationId: 'Get|v1/orders/{direction}/{orderID}/lineitems/{lineItemID}'
+      operationId: GetLineItems
       tags:
         - LineItem
       parameters:
@@ -9118,7 +9118,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/LineItem'
-      operationId: 'Save|v1/orders/{direction}/{orderID}/lineitems/{lineItemID}'
+      operationId: SaveLineItems
       tags:
         - LineItem
       requestBody:
@@ -9156,7 +9156,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/orders/{direction}/{orderID}/lineitems/{lineItemID}'
+      operationId: DeleteLineItems
       tags:
         - LineItem
       parameters:
@@ -9191,7 +9191,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/LineItem'
-      operationId: 'Patch|v1/orders/{direction}/{orderID}/lineitems/{lineItemID}'
+      operationId: PatchLineItems
       tags:
         - LineItem
       requestBody:
@@ -9234,7 +9234,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/LineItem'
-      operationId: 'SetShippingAddress|v1/orders/{direction}/{orderID}/lineitems/{lineItemID}/shipto'
+      operationId: SetShippingAddressLineItems
       tags:
         - LineItem
       requestBody:
@@ -9276,7 +9276,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/LineItem'
-      operationId: 'PatchShippingAddress|v1/orders/{direction}/{orderID}/lineitems/{lineItemID}/shipto'
+      operationId: PatchShippingAddressLineItems
       tags:
         - LineItem
       requestBody:
@@ -9319,7 +9319,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListPayment'
-      operationId: 'List|v1/orders/{direction}/{orderID}/payments'
+      operationId: ListPayments
       tags:
         - Payment
       parameters:
@@ -9385,7 +9385,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Payment'
-      operationId: 'Create|v1/orders/{direction}/{orderID}/payments'
+      operationId: CreatePayments
       tags:
         - Payment
       requestBody:
@@ -9422,7 +9422,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Payment'
-      operationId: 'Get|v1/orders/{direction}/{orderID}/payments/{paymentID}'
+      operationId: GetPayments
       tags:
         - Payment
       parameters:
@@ -9454,7 +9454,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/orders/{direction}/{orderID}/payments/{paymentID}'
+      operationId: DeletePayments
       tags:
         - Payment
       parameters:
@@ -9489,7 +9489,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Payment'
-      operationId: 'Patch|v1/orders/{direction}/{orderID}/payments/{paymentID}'
+      operationId: PatchPayments
       tags:
         - Payment
       requestBody:
@@ -9532,7 +9532,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Payment'
-      operationId: 'CreateTransaction|v1/orders/{direction}/{orderID}/payments/{paymentID}/transactions'
+      operationId: CreateTransactionPayments
       tags:
         - Payment
       requestBody:
@@ -9570,7 +9570,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteTransaction|v1/orders/{direction}/{orderID}/payments/{paymentID}/transactions/{transactionID}'
+      operationId: DeleteTransactionPayments
       tags:
         - Payment
       parameters:
@@ -9611,7 +9611,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListOrderPromotion'
-      operationId: 'ListPromotions|v1/orders/{direction}/{orderID}/promotions'
+      operationId: ListPromotionsOrders
       tags:
         - Order
       parameters:
@@ -9678,7 +9678,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/OrderPromotion'
-      operationId: 'AddPromotion|v1/orders/{direction}/{orderID}/promotions/{promoCode}'
+      operationId: AddPromotionOrders
       tags:
         - Order
       parameters:
@@ -9713,7 +9713,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Order'
-      operationId: 'RemovePromotion|v1/orders/{direction}/{orderID}/promotions/{promoCode}'
+      operationId: RemovePromotionOrders
       tags:
         - Order
       parameters:
@@ -9749,7 +9749,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Order'
-      operationId: 'Ship|v1/orders/{direction}/{orderID}/ship'
+      operationId: ShipOrders
       tags:
         - Order
       requestBody:
@@ -9786,7 +9786,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Order'
-      operationId: 'SetShippingAddress|v1/orders/{direction}/{orderID}/shipto'
+      operationId: SetShippingAddressOrders
       tags:
         - Order
       requestBody:
@@ -9822,7 +9822,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Order'
-      operationId: 'PatchShippingAddress|v1/orders/{direction}/{orderID}/shipto'
+      operationId: PatchShippingAddressOrders
       tags:
         - Order
       requestBody:
@@ -9859,7 +9859,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Order'
-      operationId: 'Submit|v1/orders/{direction}/{orderID}/submit'
+      operationId: SubmitOrders
       tags:
         - Order
       parameters:
@@ -9885,7 +9885,7 @@ paths:
       responses:
         '204':
           description: 'Sends a temporary verification code via email, which must subsequently be passed in a Reset Password call.'
-      operationId: SendVerificationCode|v1/password/reset
+      operationId: SendVerificationCodePasswordResets
       tags:
         - PasswordReset
       requestBody:
@@ -9903,7 +9903,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'ResetPasswordByVerificationCode|v1/password/reset/{verificationCode}'
+      operationId: ResetPasswordByVerificationCodePasswordResets
       tags:
         - PasswordReset
       requestBody:
@@ -9931,7 +9931,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListPriceSchedule'
-      operationId: List|v1/priceschedules
+      operationId: ListPriceSchedules
       tags:
         - PriceSchedule
       parameters:
@@ -9984,7 +9984,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PriceSchedule'
-      operationId: Create|v1/priceschedules
+      operationId: CreatePriceSchedules
       tags:
         - PriceSchedule
       requestBody:
@@ -10008,7 +10008,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PriceSchedule'
-      operationId: 'Get|v1/priceschedules/{priceScheduleID}'
+      operationId: GetPriceSchedules
       tags:
         - PriceSchedule
       parameters:
@@ -10031,7 +10031,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PriceSchedule'
-      operationId: 'Save|v1/priceschedules/{priceScheduleID}'
+      operationId: SavePriceSchedules
       tags:
         - PriceSchedule
       requestBody:
@@ -10056,7 +10056,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/priceschedules/{priceScheduleID}'
+      operationId: DeletePriceSchedules
       tags:
         - PriceSchedule
       parameters:
@@ -10078,7 +10078,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PriceSchedule'
-      operationId: 'Patch|v1/priceschedules/{priceScheduleID}'
+      operationId: PatchPriceSchedules
       tags:
         - PriceSchedule
       requestBody:
@@ -10108,7 +10108,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PriceSchedule'
-      operationId: 'SavePriceBreak|v1/priceschedules/{priceScheduleID}/PriceBreaks'
+      operationId: SavePriceBreakPriceSchedules
       tags:
         - PriceSchedule
       requestBody:
@@ -10133,7 +10133,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeletePriceBreak|v1/priceschedules/{priceScheduleID}/PriceBreaks'
+      operationId: DeletePriceBreakPriceSchedules
       tags:
         - PriceSchedule
       parameters:
@@ -10162,7 +10162,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListProductFacet'
-      operationId: List|v1/productfacets
+      operationId: ListProductFacets
       tags:
         - ProductFacet
       parameters:
@@ -10215,7 +10215,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ProductFacet'
-      operationId: Create|v1/productfacets
+      operationId: CreateProductFacets
       tags:
         - ProductFacet
       requestBody:
@@ -10239,7 +10239,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ProductFacet'
-      operationId: 'Get|v1/productfacets/{productFacetID}'
+      operationId: GetProductFacets
       tags:
         - ProductFacet
       parameters:
@@ -10262,7 +10262,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ProductFacet'
-      operationId: 'Save|v1/productfacets/{productFacetID}'
+      operationId: SaveProductFacets
       tags:
         - ProductFacet
       requestBody:
@@ -10287,7 +10287,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/productfacets/{productFacetID}'
+      operationId: DeleteProductFacets
       tags:
         - ProductFacet
       parameters:
@@ -10309,7 +10309,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ProductFacet'
-      operationId: 'Patch|v1/productfacets/{productFacetID}'
+      operationId: PatchProductFacets
       tags:
         - ProductFacet
       requestBody:
@@ -10339,7 +10339,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListProduct'
-      operationId: List|v1/products
+      operationId: ListProducts
       tags:
         - Product
       parameters:
@@ -10410,7 +10410,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Product'
-      operationId: Create|v1/products
+      operationId: CreateProducts
       tags:
         - Product
       requestBody:
@@ -10434,7 +10434,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Product'
-      operationId: 'Get|v1/products/{productID}'
+      operationId: GetProducts
       tags:
         - Product
       parameters:
@@ -10457,7 +10457,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Product'
-      operationId: 'Save|v1/products/{productID}'
+      operationId: SaveProducts
       tags:
         - Product
       requestBody:
@@ -10482,7 +10482,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/products/{productID}'
+      operationId: DeleteProducts
       tags:
         - Product
       parameters:
@@ -10504,7 +10504,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Product'
-      operationId: 'Patch|v1/products/{productID}'
+      operationId: PatchProducts
       tags:
         - Product
       requestBody:
@@ -10530,7 +10530,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteAssignment|v1/products/{productID}/assignments/{buyerID}'
+      operationId: DeleteAssignmentProducts
       tags:
         - Product
       parameters:
@@ -10572,7 +10572,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListSupplier'
-      operationId: 'ListSuppliers|v1/products/{productID}/suppliers'
+      operationId: ListSuppliersProducts
       tags:
         - Product
       parameters:
@@ -10628,7 +10628,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'SaveSupplier|v1/products/{productID}/suppliers/{supplierID}'
+      operationId: SaveSupplierProducts
       tags:
         - Product
       parameters:
@@ -10652,7 +10652,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'RemoveSupplier|v1/products/{productID}/suppliers/{supplierID}'
+      operationId: RemoveSupplierProducts
       tags:
         - Product
       parameters:
@@ -10681,7 +10681,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListVariant'
-      operationId: 'ListVariants|v1/products/{productID}/variants'
+      operationId: ListVariantsProducts
       tags:
         - Product
       parameters:
@@ -10741,7 +10741,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Variant'
-      operationId: 'GetVariant|v1/products/{productID}/variants/{variantID}'
+      operationId: GetVariantProducts
       tags:
         - Product
       parameters:
@@ -10770,7 +10770,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Variant'
-      operationId: 'SaveVariant|v1/products/{productID}/variants/{variantID}'
+      operationId: SaveVariantProducts
       tags:
         - Product
       requestBody:
@@ -10805,7 +10805,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Variant'
-      operationId: 'PatchVariant|v1/products/{productID}/variants/{variantID}'
+      operationId: PatchVariantProducts
       tags:
         - Product
       requestBody:
@@ -10841,7 +10841,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Product'
-      operationId: 'GenerateVariants|v1/products/{productID}/variants/generate'
+      operationId: GenerateVariantsProducts
       tags:
         - Product
       parameters:
@@ -10870,7 +10870,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListProductAssignment'
-      operationId: ListAssignments|v1/products/assignments
+      operationId: ListAssignmentsProducts
       tags:
         - Product
       parameters:
@@ -10932,7 +10932,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: SaveAssignment|v1/products/assignments
+      operationId: SaveAssignmentProducts
       tags:
         - Product
       requestBody:
@@ -10957,7 +10957,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListPromotion'
-      operationId: List|v1/promotions
+      operationId: ListPromotions
       tags:
         - Promotion
       parameters:
@@ -11010,7 +11010,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Promotion'
-      operationId: Create|v1/promotions
+      operationId: CreatePromotions
       tags:
         - Promotion
       requestBody:
@@ -11034,7 +11034,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Promotion'
-      operationId: 'Get|v1/promotions/{promotionID}'
+      operationId: GetPromotions
       tags:
         - Promotion
       parameters:
@@ -11057,7 +11057,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Promotion'
-      operationId: 'Save|v1/promotions/{promotionID}'
+      operationId: SavePromotions
       tags:
         - Promotion
       requestBody:
@@ -11082,7 +11082,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/promotions/{promotionID}'
+      operationId: DeletePromotions
       tags:
         - Promotion
       parameters:
@@ -11104,7 +11104,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Promotion'
-      operationId: 'Patch|v1/promotions/{promotionID}'
+      operationId: PatchPromotions
       tags:
         - Promotion
       requestBody:
@@ -11130,7 +11130,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteAssignment|v1/promotions/{promotionID}/assignments'
+      operationId: DeleteAssignmentPromotions
       tags:
         - Promotion
       parameters:
@@ -11171,7 +11171,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListPromotionAssignment'
-      operationId: ListAssignments|v1/promotions/assignments
+      operationId: ListAssignmentsPromotions
       tags:
         - Promotion
       parameters:
@@ -11226,7 +11226,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: SaveAssignment|v1/promotions/assignments
+      operationId: SaveAssignmentPromotions
       tags:
         - Promotion
       requestBody:
@@ -11250,7 +11250,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListSecurityProfile'
-      operationId: List|v1/securityprofiles
+      operationId: ListSecurityProfiles
       tags:
         - SecurityProfile
       parameters:
@@ -11303,7 +11303,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SecurityProfile'
-      operationId: 'Get|v1/securityprofiles/{securityProfileID}'
+      operationId: GetSecurityProfiles
       tags:
         - SecurityProfile
       parameters:
@@ -11322,7 +11322,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteAssignment|v1/securityprofiles/{securityProfileID}/assignments'
+      operationId: DeleteAssignmentSecurityProfiles
       tags:
         - SecurityProfile
       parameters:
@@ -11369,7 +11369,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListSecurityProfileAssignment'
-      operationId: ListAssignments|v1/securityprofiles/assignments
+      operationId: ListAssignmentsSecurityProfiles
       tags:
         - SecurityProfile
       parameters:
@@ -11435,7 +11435,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: SaveAssignment|v1/securityprofiles/assignments
+      operationId: SaveAssignmentSecurityProfiles
       tags:
         - SecurityProfile
       requestBody:
@@ -11459,7 +11459,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListShipment'
-      operationId: List|v1/shipments
+      operationId: ListShipments
       tags:
         - Shipment
       parameters:
@@ -11518,7 +11518,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Shipment'
-      operationId: Create|v1/shipments
+      operationId: CreateShipments
       tags:
         - Shipment
       requestBody:
@@ -11542,7 +11542,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Shipment'
-      operationId: 'Get|v1/shipments/{shipmentID}'
+      operationId: GetShipments
       tags:
         - Shipment
       parameters:
@@ -11565,7 +11565,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Shipment'
-      operationId: 'Save|v1/shipments/{shipmentID}'
+      operationId: SaveShipments
       tags:
         - Shipment
       requestBody:
@@ -11590,7 +11590,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/shipments/{shipmentID}'
+      operationId: DeleteShipments
       tags:
         - Shipment
       parameters:
@@ -11612,7 +11612,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Shipment'
-      operationId: 'Patch|v1/shipments/{shipmentID}'
+      operationId: PatchShipments
       tags:
         - Shipment
       requestBody:
@@ -11642,7 +11642,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListShipmentItem'
-      operationId: 'ListItems|v1/shipments/{shipmentID}/items'
+      operationId: ListItemsShipments
       tags:
         - Shipment
       parameters:
@@ -11701,7 +11701,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ShipmentItem'
-      operationId: 'SaveItem|v1/shipments/{shipmentID}/items'
+      operationId: SaveItemShipments
       tags:
         - Shipment
       requestBody:
@@ -11731,7 +11731,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ShipmentItem'
-      operationId: 'GetItem|v1/shipments/{shipmentID}/items/{orderID}/{lineItemID}'
+      operationId: GetItemShipments
       tags:
         - Shipment
       parameters:
@@ -11762,7 +11762,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteItem|v1/shipments/{shipmentID}/items/{orderID}/{lineItemID}'
+      operationId: DeleteItemShipments
       tags:
         - Shipment
       parameters:
@@ -11797,7 +11797,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListSpec'
-      operationId: List|v1/specs
+      operationId: ListSpecs
       tags:
         - Spec
       parameters:
@@ -11850,7 +11850,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Spec'
-      operationId: Create|v1/specs
+      operationId: CreateSpecs
       tags:
         - Spec
       requestBody:
@@ -11874,7 +11874,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Spec'
-      operationId: 'Get|v1/specs/{specID}'
+      operationId: GetSpecs
       tags:
         - Spec
       parameters:
@@ -11897,7 +11897,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Spec'
-      operationId: 'Save|v1/specs/{specID}'
+      operationId: SaveSpecs
       tags:
         - Spec
       requestBody:
@@ -11922,7 +11922,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/specs/{specID}'
+      operationId: DeleteSpecs
       tags:
         - Spec
       parameters:
@@ -11944,7 +11944,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Spec'
-      operationId: 'Patch|v1/specs/{specID}'
+      operationId: PatchSpecs
       tags:
         - Spec
       requestBody:
@@ -11974,7 +11974,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListSpecOption'
-      operationId: 'ListOptions|v1/specs/{specID}/options'
+      operationId: ListOptionsSpecs
       tags:
         - Spec
       parameters:
@@ -12033,7 +12033,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SpecOption'
-      operationId: 'CreateOption|v1/specs/{specID}/options'
+      operationId: CreateOptionSpecs
       tags:
         - Spec
       requestBody:
@@ -12063,7 +12063,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SpecOption'
-      operationId: 'GetOption|v1/specs/{specID}/options/{optionID}'
+      operationId: GetOptionSpecs
       tags:
         - Spec
       parameters:
@@ -12092,7 +12092,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SpecOption'
-      operationId: 'SaveOption|v1/specs/{specID}/options/{optionID}'
+      operationId: SaveOptionSpecs
       tags:
         - Spec
       requestBody:
@@ -12123,7 +12123,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteOption|v1/specs/{specID}/options/{optionID}'
+      operationId: DeleteOptionSpecs
       tags:
         - Spec
       parameters:
@@ -12151,7 +12151,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SpecOption'
-      operationId: 'PatchOption|v1/specs/{specID}/options/{optionID}'
+      operationId: PatchOptionSpecs
       tags:
         - Spec
       requestBody:
@@ -12183,7 +12183,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteProductAssignment|v1/specs/{specID}/productassignments/{productID}'
+      operationId: DeleteProductAssignmentSpecs
       tags:
         - Spec
       parameters:
@@ -12212,7 +12212,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListSpecProductAssignment'
-      operationId: ListProductAssignments|v1/specs/productassignments
+      operationId: ListProductAssignmentsSpecs
       tags:
         - Spec
       parameters:
@@ -12261,7 +12261,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: SaveProductAssignment|v1/specs/productassignments
+      operationId: SaveProductAssignmentSpecs
       tags:
         - Spec
       requestBody:
@@ -12285,7 +12285,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListSupplier'
-      operationId: List|v1/suppliers
+      operationId: ListSuppliers
       tags:
         - Supplier
       parameters:
@@ -12338,7 +12338,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Supplier'
-      operationId: Create|v1/suppliers
+      operationId: CreateSuppliers
       tags:
         - Supplier
       requestBody:
@@ -12362,7 +12362,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Supplier'
-      operationId: 'Get|v1/suppliers/{supplierID}'
+      operationId: GetSuppliers
       tags:
         - Supplier
       parameters:
@@ -12385,7 +12385,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Supplier'
-      operationId: 'Save|v1/suppliers/{supplierID}'
+      operationId: SaveSuppliers
       tags:
         - Supplier
       requestBody:
@@ -12410,7 +12410,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/suppliers/{supplierID}'
+      operationId: DeleteSuppliers
       tags:
         - Supplier
       parameters:
@@ -12432,7 +12432,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Supplier'
-      operationId: 'Patch|v1/suppliers/{supplierID}'
+      operationId: PatchSuppliers
       tags:
         - Supplier
       requestBody:
@@ -12462,7 +12462,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListAddress'
-      operationId: 'List|v1/suppliers/{supplierID}/addresses'
+      operationId: ListSupplierAddresses
       tags:
         - SupplierAddress
       parameters:
@@ -12521,7 +12521,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Address'
-      operationId: 'Create|v1/suppliers/{supplierID}/addresses'
+      operationId: CreateSupplierAddresses
       tags:
         - SupplierAddress
       requestBody:
@@ -12551,7 +12551,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Address'
-      operationId: 'Get|v1/suppliers/{supplierID}/addresses/{addressID}'
+      operationId: GetSupplierAddresses
       tags:
         - SupplierAddress
       parameters:
@@ -12580,7 +12580,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Address'
-      operationId: 'Save|v1/suppliers/{supplierID}/addresses/{addressID}'
+      operationId: SaveSupplierAddresses
       tags:
         - SupplierAddress
       requestBody:
@@ -12611,7 +12611,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/suppliers/{supplierID}/addresses/{addressID}'
+      operationId: DeleteSupplierAddresses
       tags:
         - SupplierAddress
       parameters:
@@ -12639,7 +12639,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Address'
-      operationId: 'Patch|v1/suppliers/{supplierID}/addresses/{addressID}'
+      operationId: PatchSupplierAddresses
       tags:
         - SupplierAddress
       requestBody:
@@ -12671,7 +12671,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteSupplierAssignment|v1/suppliers/{supplierID}/ApiClients/Assignments/{apiClientID}'
+      operationId: DeleteSupplierAssignmentApiClients
       tags:
         - ApiClient
       parameters:
@@ -12700,7 +12700,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListUserGroup'
-      operationId: 'List|v1/suppliers/{supplierID}/usergroups'
+      operationId: ListSupplierUserGroups
       tags:
         - SupplierUserGroup
       parameters:
@@ -12759,7 +12759,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/UserGroup'
-      operationId: 'Create|v1/suppliers/{supplierID}/usergroups'
+      operationId: CreateSupplierUserGroups
       tags:
         - SupplierUserGroup
       requestBody:
@@ -12789,7 +12789,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/UserGroup'
-      operationId: 'Get|v1/suppliers/{supplierID}/usergroups/{userGroupID}'
+      operationId: GetSupplierUserGroups
       tags:
         - SupplierUserGroup
       parameters:
@@ -12818,7 +12818,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/UserGroup'
-      operationId: 'Save|v1/suppliers/{supplierID}/usergroups/{userGroupID}'
+      operationId: SaveSupplierUserGroups
       tags:
         - SupplierUserGroup
       requestBody:
@@ -12849,7 +12849,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/suppliers/{supplierID}/usergroups/{userGroupID}'
+      operationId: DeleteSupplierUserGroups
       tags:
         - SupplierUserGroup
       parameters:
@@ -12877,7 +12877,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/UserGroup'
-      operationId: 'Patch|v1/suppliers/{supplierID}/usergroups/{userGroupID}'
+      operationId: PatchSupplierUserGroups
       tags:
         - SupplierUserGroup
       requestBody:
@@ -12909,7 +12909,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteUserAssignment|v1/suppliers/{supplierID}/usergroups/{userGroupID}/assignments/{userID}'
+      operationId: DeleteUserAssignmentSupplierUserGroups
       tags:
         - SupplierUserGroup
       parameters:
@@ -12944,7 +12944,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListUserGroupAssignment'
-      operationId: 'ListUserAssignments|v1/suppliers/{supplierID}/usergroups/assignments'
+      operationId: ListUserAssignmentsSupplierUserGroups
       tags:
         - SupplierUserGroup
       parameters:
@@ -12987,7 +12987,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'SaveUserAssignment|v1/suppliers/{supplierID}/usergroups/assignments'
+      operationId: SaveUserAssignmentSupplierUserGroups
       tags:
         - SupplierUserGroup
       requestBody:
@@ -13017,7 +13017,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListUser'
-      operationId: 'List|v1/suppliers/{supplierID}/users'
+      operationId: ListSupplierUsers
       tags:
         - SupplierUser
       parameters:
@@ -13082,7 +13082,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
-      operationId: 'Create|v1/suppliers/{supplierID}/users'
+      operationId: CreateSupplierUsers
       tags:
         - SupplierUser
       requestBody:
@@ -13112,7 +13112,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
-      operationId: 'Get|v1/suppliers/{supplierID}/users/{userID}'
+      operationId: GetSupplierUsers
       tags:
         - SupplierUser
       parameters:
@@ -13141,7 +13141,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
-      operationId: 'Save|v1/suppliers/{supplierID}/users/{userID}'
+      operationId: SaveSupplierUsers
       tags:
         - SupplierUser
       requestBody:
@@ -13172,7 +13172,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/suppliers/{supplierID}/users/{userID}'
+      operationId: DeleteSupplierUsers
       tags:
         - SupplierUser
       parameters:
@@ -13200,7 +13200,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
-      operationId: 'Patch|v1/suppliers/{supplierID}/users/{userID}'
+      operationId: PatchSupplierUsers
       tags:
         - SupplierUser
       requestBody:
@@ -13236,7 +13236,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/AccessToken'
-      operationId: 'GetAccessToken|v1/suppliers/{supplierID}/users/{userID}/accesstoken'
+      operationId: GetAccessTokenSupplierUsers
       tags:
         - SupplierUser
       requestBody:
@@ -13272,7 +13272,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListUserGroup'
-      operationId: List|v1/usergroups
+      operationId: ListAdminUserGroups
       tags:
         - AdminUserGroup
       parameters:
@@ -13325,7 +13325,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/UserGroup'
-      operationId: Create|v1/usergroups
+      operationId: CreateAdminUserGroups
       tags:
         - AdminUserGroup
       requestBody:
@@ -13349,7 +13349,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/UserGroup'
-      operationId: 'Get|v1/usergroups/{userGroupID}'
+      operationId: GetAdminUserGroups
       tags:
         - AdminUserGroup
       parameters:
@@ -13372,7 +13372,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/UserGroup'
-      operationId: 'Save|v1/usergroups/{userGroupID}'
+      operationId: SaveAdminUserGroups
       tags:
         - AdminUserGroup
       requestBody:
@@ -13397,7 +13397,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'Delete|v1/usergroups/{userGroupID}'
+      operationId: DeleteAdminUserGroups
       tags:
         - AdminUserGroup
       parameters:
@@ -13419,7 +13419,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/UserGroup'
-      operationId: 'Patch|v1/usergroups/{userGroupID}'
+      operationId: PatchAdminUserGroups
       tags:
         - AdminUserGroup
       requestBody:
@@ -13445,7 +13445,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: 'DeleteUserAssignment|v1/usergroups/{userGroupID}/assignments/{userID}'
+      operationId: DeleteUserAssignmentAdminUserGroups
       tags:
         - AdminUserGroup
       parameters:
@@ -13474,7 +13474,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ListUserGroupAssignment'
-      operationId: ListUserAssignments|v1/usergroups/assignments
+      operationId: ListUserAssignmentsAdminUserGroups
       tags:
         - AdminUserGroup
       parameters:
@@ -13511,7 +13511,7 @@ paths:
       responses:
         '204':
           description: ''
-      operationId: SaveUserAssignment|v1/usergroups/assignments
+      operationId: SaveUserAssignmentAdminUserGroups
       tags:
         - AdminUserGroup
       requestBody:

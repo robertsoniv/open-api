@@ -4,17 +4,17 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1impersonationconfig**](ImpersonationConfigApi.md#createV1impersonationconfig) | **POST** /impersonationconfig | 
-[**deleteV1impersonationconfigimpersonationConfigID**](ImpersonationConfigApi.md#deleteV1impersonationconfigimpersonationConfigID) | **DELETE** /impersonationconfig/{impersonationConfigID} | 
-[**getV1impersonationconfigimpersonationConfigID**](ImpersonationConfigApi.md#getV1impersonationconfigimpersonationConfigID) | **GET** /impersonationconfig/{impersonationConfigID} | 
-[**listV1impersonationconfig**](ImpersonationConfigApi.md#listV1impersonationconfig) | **GET** /impersonationconfig | 
-[**patchV1impersonationconfigimpersonationConfigID**](ImpersonationConfigApi.md#patchV1impersonationconfigimpersonationConfigID) | **PATCH** /impersonationconfig/{impersonationConfigID} | 
-[**saveV1impersonationconfigimpersonationConfigID**](ImpersonationConfigApi.md#saveV1impersonationconfigimpersonationConfigID) | **PUT** /impersonationconfig/{impersonationConfigID} | 
+[**createImpersonationConfigs**](ImpersonationConfigApi.md#createImpersonationConfigs) | **POST** /impersonationconfig | 
+[**deleteImpersonationConfigs**](ImpersonationConfigApi.md#deleteImpersonationConfigs) | **DELETE** /impersonationconfig/{impersonationConfigID} | 
+[**getImpersonationConfigs**](ImpersonationConfigApi.md#getImpersonationConfigs) | **GET** /impersonationconfig/{impersonationConfigID} | 
+[**listImpersonationConfigs**](ImpersonationConfigApi.md#listImpersonationConfigs) | **GET** /impersonationconfig | 
+[**patchImpersonationConfigs**](ImpersonationConfigApi.md#patchImpersonationConfigs) | **PATCH** /impersonationconfig/{impersonationConfigID} | 
+[**saveImpersonationConfigs**](ImpersonationConfigApi.md#saveImpersonationConfigs) | **PUT** /impersonationconfig/{impersonationConfigID} | 
 
 
-<a name="createV1impersonationconfig"></a>
-# **createV1impersonationconfig**
-> ImpersonationConfig createV1impersonationconfig(impersonationConfig)
+<a name="createImpersonationConfigs"></a>
+# **createImpersonationConfigs**
+> ImpersonationConfig createImpersonationConfigs(impersonationConfig)
 
 
 
@@ -35,7 +35,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1impersonationconfig(impersonationConfig, callback);
+apiInstance.createImpersonationConfigs(impersonationConfig, callback);
 ```
 
 ### Parameters
@@ -57,9 +57,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteV1impersonationconfigimpersonationConfigID"></a>
-# **deleteV1impersonationconfigimpersonationConfigID**
-> deleteV1impersonationconfigimpersonationConfigID(impersonationConfigID)
+<a name="deleteImpersonationConfigs"></a>
+# **deleteImpersonationConfigs**
+> deleteImpersonationConfigs(impersonationConfigID)
 
 
 
@@ -80,7 +80,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1impersonationconfigimpersonationConfigID(impersonationConfigID, callback);
+apiInstance.deleteImpersonationConfigs(impersonationConfigID, callback);
 ```
 
 ### Parameters
@@ -102,9 +102,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1impersonationconfigimpersonationConfigID"></a>
-# **getV1impersonationconfigimpersonationConfigID**
-> ImpersonationConfig getV1impersonationconfigimpersonationConfigID(impersonationConfigID)
+<a name="getImpersonationConfigs"></a>
+# **getImpersonationConfigs**
+> ImpersonationConfig getImpersonationConfigs(impersonationConfigID)
 
 
 
@@ -125,7 +125,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1impersonationconfigimpersonationConfigID(impersonationConfigID, callback);
+apiInstance.getImpersonationConfigs(impersonationConfigID, callback);
 ```
 
 ### Parameters
@@ -147,9 +147,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1impersonationconfig"></a>
-# **listV1impersonationconfig**
-> ListImpersonationConfig listV1impersonationconfig(opts)
+<a name="listImpersonationConfigs"></a>
+# **listImpersonationConfigs**
+> ListImpersonationConfig listImpersonationConfigs(opts)
 
 
 
@@ -177,7 +177,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1impersonationconfig(opts, callback);
+apiInstance.listImpersonationConfigs(opts, callback);
 ```
 
 ### Parameters
@@ -204,9 +204,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1impersonationconfigimpersonationConfigID"></a>
-# **patchV1impersonationconfigimpersonationConfigID**
-> ImpersonationConfig patchV1impersonationconfigimpersonationConfigID(impersonationConfigID, impersonationConfig)
+<a name="patchImpersonationConfigs"></a>
+# **patchImpersonationConfigs**
+> ImpersonationConfig patchImpersonationConfigs(impersonationConfigID, impersonationConfig)
 
 
 
@@ -228,7 +228,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1impersonationconfigimpersonationConfigID(impersonationConfigID, impersonationConfig, callback);
+apiInstance.patchImpersonationConfigs(impersonationConfigID, impersonationConfig, callback);
 ```
 
 ### Parameters
@@ -251,9 +251,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveV1impersonationconfigimpersonationConfigID"></a>
-# **saveV1impersonationconfigimpersonationConfigID**
-> ImpersonationConfig saveV1impersonationconfigimpersonationConfigID(impersonationConfigID, impersonationConfig)
+<a name="saveImpersonationConfigs"></a>
+# **saveImpersonationConfigs**
+> ImpersonationConfig saveImpersonationConfigs(impersonationConfigID, impersonationConfig)
 
 
 
@@ -275,7 +275,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1impersonationconfigimpersonationConfigID(impersonationConfigID, impersonationConfig, callback);
+apiInstance.saveImpersonationConfigs(impersonationConfigID, impersonationConfig, callback);
 ```
 
 ### Parameters

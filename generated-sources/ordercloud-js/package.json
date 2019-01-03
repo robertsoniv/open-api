@@ -1,6 +1,6 @@
 {
   "name": "order_cloud",
-  "version": "1.0.89",
+  "version": "1.0.0",
   "description": "OrderCloud_is_an_awesome_C_platform_API_for_making_eCommerce_applications__It_is_NOT_a_complete_solution__Its_designed_to_be_used_as_the_backend_component_with_various_other_integrations_and_services_",
   "license": "Unlicense",
   "main": "src/index.js",

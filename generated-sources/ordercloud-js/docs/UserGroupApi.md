@@ -4,20 +4,20 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1buyersbuyerIDusergroups**](UserGroupApi.md#createV1buyersbuyerIDusergroups) | **POST** /buyers/{buyerID}/usergroups | 
-[**deleteUserAssignmentV1buyersbuyerIDusergroupsuserGroupIDassignmentsuserID**](UserGroupApi.md#deleteUserAssignmentV1buyersbuyerIDusergroupsuserGroupIDassignmentsuserID) | **DELETE** /buyers/{buyerID}/usergroups/{userGroupID}/assignments/{userID} | 
-[**deleteV1buyersbuyerIDusergroupsuserGroupID**](UserGroupApi.md#deleteV1buyersbuyerIDusergroupsuserGroupID) | **DELETE** /buyers/{buyerID}/usergroups/{userGroupID} | 
-[**getV1buyersbuyerIDusergroupsuserGroupID**](UserGroupApi.md#getV1buyersbuyerIDusergroupsuserGroupID) | **GET** /buyers/{buyerID}/usergroups/{userGroupID} | 
-[**listUserAssignmentsV1buyersbuyerIDusergroupsassignments**](UserGroupApi.md#listUserAssignmentsV1buyersbuyerIDusergroupsassignments) | **GET** /buyers/{buyerID}/usergroups/assignments | 
-[**listV1buyersbuyerIDusergroups**](UserGroupApi.md#listV1buyersbuyerIDusergroups) | **GET** /buyers/{buyerID}/usergroups | 
-[**patchV1buyersbuyerIDusergroupsuserGroupID**](UserGroupApi.md#patchV1buyersbuyerIDusergroupsuserGroupID) | **PATCH** /buyers/{buyerID}/usergroups/{userGroupID} | 
-[**saveUserAssignmentV1buyersbuyerIDusergroupsassignments**](UserGroupApi.md#saveUserAssignmentV1buyersbuyerIDusergroupsassignments) | **POST** /buyers/{buyerID}/usergroups/assignments | 
-[**saveV1buyersbuyerIDusergroupsuserGroupID**](UserGroupApi.md#saveV1buyersbuyerIDusergroupsuserGroupID) | **PUT** /buyers/{buyerID}/usergroups/{userGroupID} | 
+[**createUserGroups**](UserGroupApi.md#createUserGroups) | **POST** /buyers/{buyerID}/usergroups | 
+[**deleteUserAssignmentUserGroups**](UserGroupApi.md#deleteUserAssignmentUserGroups) | **DELETE** /buyers/{buyerID}/usergroups/{userGroupID}/assignments/{userID} | 
+[**deleteUserGroups**](UserGroupApi.md#deleteUserGroups) | **DELETE** /buyers/{buyerID}/usergroups/{userGroupID} | 
+[**getUserGroups**](UserGroupApi.md#getUserGroups) | **GET** /buyers/{buyerID}/usergroups/{userGroupID} | 
+[**listUserAssignmentsUserGroups**](UserGroupApi.md#listUserAssignmentsUserGroups) | **GET** /buyers/{buyerID}/usergroups/assignments | 
+[**listUserGroups**](UserGroupApi.md#listUserGroups) | **GET** /buyers/{buyerID}/usergroups | 
+[**patchUserGroups**](UserGroupApi.md#patchUserGroups) | **PATCH** /buyers/{buyerID}/usergroups/{userGroupID} | 
+[**saveUserAssignmentUserGroups**](UserGroupApi.md#saveUserAssignmentUserGroups) | **POST** /buyers/{buyerID}/usergroups/assignments | 
+[**saveUserGroups**](UserGroupApi.md#saveUserGroups) | **PUT** /buyers/{buyerID}/usergroups/{userGroupID} | 
 
 
-<a name="createV1buyersbuyerIDusergroups"></a>
-# **createV1buyersbuyerIDusergroups**
-> UserGroup createV1buyersbuyerIDusergroups(buyerID, userGroup)
+<a name="createUserGroups"></a>
+# **createUserGroups**
+> UserGroup createUserGroups(buyerID, userGroup)
 
 
 
@@ -39,7 +39,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1buyersbuyerIDusergroups(buyerID, userGroup, callback);
+apiInstance.createUserGroups(buyerID, userGroup, callback);
 ```
 
 ### Parameters
@@ -62,9 +62,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteUserAssignmentV1buyersbuyerIDusergroupsuserGroupIDassignmentsuserID"></a>
-# **deleteUserAssignmentV1buyersbuyerIDusergroupsuserGroupIDassignmentsuserID**
-> deleteUserAssignmentV1buyersbuyerIDusergroupsuserGroupIDassignmentsuserID(buyerID, userGroupID, userID)
+<a name="deleteUserAssignmentUserGroups"></a>
+# **deleteUserAssignmentUserGroups**
+> deleteUserAssignmentUserGroups(buyerID, userGroupID, userID)
 
 
 
@@ -87,7 +87,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteUserAssignmentV1buyersbuyerIDusergroupsuserGroupIDassignmentsuserID(buyerID, userGroupID, userID, callback);
+apiInstance.deleteUserAssignmentUserGroups(buyerID, userGroupID, userID, callback);
 ```
 
 ### Parameters
@@ -111,9 +111,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="deleteV1buyersbuyerIDusergroupsuserGroupID"></a>
-# **deleteV1buyersbuyerIDusergroupsuserGroupID**
-> deleteV1buyersbuyerIDusergroupsuserGroupID(buyerID, userGroupID)
+<a name="deleteUserGroups"></a>
+# **deleteUserGroups**
+> deleteUserGroups(buyerID, userGroupID)
 
 
 
@@ -135,7 +135,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1buyersbuyerIDusergroupsuserGroupID(buyerID, userGroupID, callback);
+apiInstance.deleteUserGroups(buyerID, userGroupID, callback);
 ```
 
 ### Parameters
@@ -158,9 +158,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1buyersbuyerIDusergroupsuserGroupID"></a>
-# **getV1buyersbuyerIDusergroupsuserGroupID**
-> UserGroup getV1buyersbuyerIDusergroupsuserGroupID(buyerID, userGroupID)
+<a name="getUserGroups"></a>
+# **getUserGroups**
+> UserGroup getUserGroups(buyerID, userGroupID)
 
 
 
@@ -182,7 +182,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1buyersbuyerIDusergroupsuserGroupID(buyerID, userGroupID, callback);
+apiInstance.getUserGroups(buyerID, userGroupID, callback);
 ```
 
 ### Parameters
@@ -205,9 +205,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listUserAssignmentsV1buyersbuyerIDusergroupsassignments"></a>
-# **listUserAssignmentsV1buyersbuyerIDusergroupsassignments**
-> ListUserGroupAssignment listUserAssignmentsV1buyersbuyerIDusergroupsassignments(buyerID, opts)
+<a name="listUserAssignmentsUserGroups"></a>
+# **listUserAssignmentsUserGroups**
+> ListUserGroupAssignment listUserAssignmentsUserGroups(buyerID, opts)
 
 
 
@@ -234,7 +234,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listUserAssignmentsV1buyersbuyerIDusergroupsassignments(buyerID, opts, callback);
+apiInstance.listUserAssignmentsUserGroups(buyerID, opts, callback);
 ```
 
 ### Parameters
@@ -260,9 +260,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1buyersbuyerIDusergroups"></a>
-# **listV1buyersbuyerIDusergroups**
-> ListUserGroup listV1buyersbuyerIDusergroups(buyerID, opts)
+<a name="listUserGroups"></a>
+# **listUserGroups**
+> ListUserGroup listUserGroups(buyerID, opts)
 
 
 
@@ -291,7 +291,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1buyersbuyerIDusergroups(buyerID, opts, callback);
+apiInstance.listUserGroups(buyerID, opts, callback);
 ```
 
 ### Parameters
@@ -319,9 +319,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1buyersbuyerIDusergroupsuserGroupID"></a>
-# **patchV1buyersbuyerIDusergroupsuserGroupID**
-> UserGroup patchV1buyersbuyerIDusergroupsuserGroupID(buyerID, userGroupID, userGroup)
+<a name="patchUserGroups"></a>
+# **patchUserGroups**
+> UserGroup patchUserGroups(buyerID, userGroupID, userGroup)
 
 
 
@@ -344,7 +344,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1buyersbuyerIDusergroupsuserGroupID(buyerID, userGroupID, userGroup, callback);
+apiInstance.patchUserGroups(buyerID, userGroupID, userGroup, callback);
 ```
 
 ### Parameters
@@ -368,9 +368,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveUserAssignmentV1buyersbuyerIDusergroupsassignments"></a>
-# **saveUserAssignmentV1buyersbuyerIDusergroupsassignments**
-> saveUserAssignmentV1buyersbuyerIDusergroupsassignments(buyerID, userGroupAssignment)
+<a name="saveUserAssignmentUserGroups"></a>
+# **saveUserAssignmentUserGroups**
+> saveUserAssignmentUserGroups(buyerID, userGroupAssignment)
 
 
 
@@ -392,7 +392,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.saveUserAssignmentV1buyersbuyerIDusergroupsassignments(buyerID, userGroupAssignment, callback);
+apiInstance.saveUserAssignmentUserGroups(buyerID, userGroupAssignment, callback);
 ```
 
 ### Parameters
@@ -415,9 +415,9 @@ null (empty response body)
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-<a name="saveV1buyersbuyerIDusergroupsuserGroupID"></a>
-# **saveV1buyersbuyerIDusergroupsuserGroupID**
-> UserGroup saveV1buyersbuyerIDusergroupsuserGroupID(buyerID, userGroupID, userGroup)
+<a name="saveUserGroups"></a>
+# **saveUserGroups**
+> UserGroup saveUserGroups(buyerID, userGroupID, userGroup)
 
 
 
@@ -440,7 +440,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1buyersbuyerIDusergroupsuserGroupID(buyerID, userGroupID, userGroup, callback);
+apiInstance.saveUserGroups(buyerID, userGroupID, userGroup, callback);
 ```
 
 ### Parameters

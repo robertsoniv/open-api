@@ -4,21 +4,21 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1shipments**](ShipmentApi.md#createV1shipments) | **POST** /shipments | 
-[**deleteItemV1shipmentsshipmentIDitemsorderIDlineItemID**](ShipmentApi.md#deleteItemV1shipmentsshipmentIDitemsorderIDlineItemID) | **DELETE** /shipments/{shipmentID}/items/{orderID}/{lineItemID} | 
-[**deleteV1shipmentsshipmentID**](ShipmentApi.md#deleteV1shipmentsshipmentID) | **DELETE** /shipments/{shipmentID} | 
-[**getItemV1shipmentsshipmentIDitemsorderIDlineItemID**](ShipmentApi.md#getItemV1shipmentsshipmentIDitemsorderIDlineItemID) | **GET** /shipments/{shipmentID}/items/{orderID}/{lineItemID} | 
-[**getV1shipmentsshipmentID**](ShipmentApi.md#getV1shipmentsshipmentID) | **GET** /shipments/{shipmentID} | 
-[**listItemsV1shipmentsshipmentIDitems**](ShipmentApi.md#listItemsV1shipmentsshipmentIDitems) | **GET** /shipments/{shipmentID}/items | 
-[**listV1shipments**](ShipmentApi.md#listV1shipments) | **GET** /shipments | 
-[**patchV1shipmentsshipmentID**](ShipmentApi.md#patchV1shipmentsshipmentID) | **PATCH** /shipments/{shipmentID} | 
-[**saveItemV1shipmentsshipmentIDitems**](ShipmentApi.md#saveItemV1shipmentsshipmentIDitems) | **POST** /shipments/{shipmentID}/items | 
-[**saveV1shipmentsshipmentID**](ShipmentApi.md#saveV1shipmentsshipmentID) | **PUT** /shipments/{shipmentID} | 
+[**createShipments**](ShipmentApi.md#createShipments) | **POST** /shipments | 
+[**deleteItemShipments**](ShipmentApi.md#deleteItemShipments) | **DELETE** /shipments/{shipmentID}/items/{orderID}/{lineItemID} | 
+[**deleteShipments**](ShipmentApi.md#deleteShipments) | **DELETE** /shipments/{shipmentID} | 
+[**getItemShipments**](ShipmentApi.md#getItemShipments) | **GET** /shipments/{shipmentID}/items/{orderID}/{lineItemID} | 
+[**getShipments**](ShipmentApi.md#getShipments) | **GET** /shipments/{shipmentID} | 
+[**listItemsShipments**](ShipmentApi.md#listItemsShipments) | **GET** /shipments/{shipmentID}/items | 
+[**listShipments**](ShipmentApi.md#listShipments) | **GET** /shipments | 
+[**patchShipments**](ShipmentApi.md#patchShipments) | **PATCH** /shipments/{shipmentID} | 
+[**saveItemShipments**](ShipmentApi.md#saveItemShipments) | **POST** /shipments/{shipmentID}/items | 
+[**saveShipments**](ShipmentApi.md#saveShipments) | **PUT** /shipments/{shipmentID} | 
 
 
-<a name="createV1shipments"></a>
-# **createV1shipments**
-> Shipment createV1shipments(shipment)
+<a name="createShipments"></a>
+# **createShipments**
+> Shipment createShipments(shipment)
 
 
 
@@ -39,7 +39,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1shipments(shipment, callback);
+apiInstance.createShipments(shipment, callback);
 ```
 
 ### Parameters
@@ -61,9 +61,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteItemV1shipmentsshipmentIDitemsorderIDlineItemID"></a>
-# **deleteItemV1shipmentsshipmentIDitemsorderIDlineItemID**
-> deleteItemV1shipmentsshipmentIDitemsorderIDlineItemID(shipmentID, orderID, lineItemID)
+<a name="deleteItemShipments"></a>
+# **deleteItemShipments**
+> deleteItemShipments(shipmentID, orderID, lineItemID)
 
 
 
@@ -86,7 +86,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteItemV1shipmentsshipmentIDitemsorderIDlineItemID(shipmentID, orderID, lineItemID, callback);
+apiInstance.deleteItemShipments(shipmentID, orderID, lineItemID, callback);
 ```
 
 ### Parameters
@@ -110,9 +110,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="deleteV1shipmentsshipmentID"></a>
-# **deleteV1shipmentsshipmentID**
-> deleteV1shipmentsshipmentID(shipmentID)
+<a name="deleteShipments"></a>
+# **deleteShipments**
+> deleteShipments(shipmentID)
 
 
 
@@ -133,7 +133,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1shipmentsshipmentID(shipmentID, callback);
+apiInstance.deleteShipments(shipmentID, callback);
 ```
 
 ### Parameters
@@ -155,9 +155,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getItemV1shipmentsshipmentIDitemsorderIDlineItemID"></a>
-# **getItemV1shipmentsshipmentIDitemsorderIDlineItemID**
-> ShipmentItem getItemV1shipmentsshipmentIDitemsorderIDlineItemID(shipmentID, orderID, lineItemID)
+<a name="getItemShipments"></a>
+# **getItemShipments**
+> ShipmentItem getItemShipments(shipmentID, orderID, lineItemID)
 
 
 
@@ -180,7 +180,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getItemV1shipmentsshipmentIDitemsorderIDlineItemID(shipmentID, orderID, lineItemID, callback);
+apiInstance.getItemShipments(shipmentID, orderID, lineItemID, callback);
 ```
 
 ### Parameters
@@ -204,9 +204,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getV1shipmentsshipmentID"></a>
-# **getV1shipmentsshipmentID**
-> Shipment getV1shipmentsshipmentID(shipmentID)
+<a name="getShipments"></a>
+# **getShipments**
+> Shipment getShipments(shipmentID)
 
 
 
@@ -227,7 +227,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1shipmentsshipmentID(shipmentID, callback);
+apiInstance.getShipments(shipmentID, callback);
 ```
 
 ### Parameters
@@ -249,9 +249,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listItemsV1shipmentsshipmentIDitems"></a>
-# **listItemsV1shipmentsshipmentIDitems**
-> ListShipmentItem listItemsV1shipmentsshipmentIDitems(shipmentID, opts)
+<a name="listItemsShipments"></a>
+# **listItemsShipments**
+> ListShipmentItem listItemsShipments(shipmentID, opts)
 
 
 
@@ -280,7 +280,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listItemsV1shipmentsshipmentIDitems(shipmentID, opts, callback);
+apiInstance.listItemsShipments(shipmentID, opts, callback);
 ```
 
 ### Parameters
@@ -308,9 +308,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1shipments"></a>
-# **listV1shipments**
-> ListShipment listV1shipments(opts)
+<a name="listShipments"></a>
+# **listShipments**
+> ListShipment listShipments(opts)
 
 
 
@@ -339,7 +339,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1shipments(opts, callback);
+apiInstance.listShipments(opts, callback);
 ```
 
 ### Parameters
@@ -367,9 +367,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1shipmentsshipmentID"></a>
-# **patchV1shipmentsshipmentID**
-> Shipment patchV1shipmentsshipmentID(shipmentID, shipment)
+<a name="patchShipments"></a>
+# **patchShipments**
+> Shipment patchShipments(shipmentID, shipment)
 
 
 
@@ -391,7 +391,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1shipmentsshipmentID(shipmentID, shipment, callback);
+apiInstance.patchShipments(shipmentID, shipment, callback);
 ```
 
 ### Parameters
@@ -414,9 +414,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveItemV1shipmentsshipmentIDitems"></a>
-# **saveItemV1shipmentsshipmentIDitems**
-> ShipmentItem saveItemV1shipmentsshipmentIDitems(shipmentID, shipmentItem)
+<a name="saveItemShipments"></a>
+# **saveItemShipments**
+> ShipmentItem saveItemShipments(shipmentID, shipmentItem)
 
 
 
@@ -438,7 +438,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveItemV1shipmentsshipmentIDitems(shipmentID, shipmentItem, callback);
+apiInstance.saveItemShipments(shipmentID, shipmentItem, callback);
 ```
 
 ### Parameters
@@ -461,9 +461,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveV1shipmentsshipmentID"></a>
-# **saveV1shipmentsshipmentID**
-> Shipment saveV1shipmentsshipmentID(shipmentID, shipment)
+<a name="saveShipments"></a>
+# **saveShipments**
+> Shipment saveShipments(shipmentID, shipment)
 
 
 
@@ -485,7 +485,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1shipmentsshipmentID(shipmentID, shipment, callback);
+apiInstance.saveShipments(shipmentID, shipment, callback);
 ```
 
 ### Parameters

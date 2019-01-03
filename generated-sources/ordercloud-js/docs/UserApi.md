@@ -4,19 +4,19 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1buyersbuyerIDusers**](UserApi.md#createV1buyersbuyerIDusers) | **POST** /buyers/{buyerID}/users | 
-[**deleteV1buyersbuyerIDusersuserID**](UserApi.md#deleteV1buyersbuyerIDusersuserID) | **DELETE** /buyers/{buyerID}/users/{userID} | 
-[**getAccessTokenV1buyersbuyerIDusersuserIDaccesstoken**](UserApi.md#getAccessTokenV1buyersbuyerIDusersuserIDaccesstoken) | **POST** /buyers/{buyerID}/users/{userID}/accesstoken | 
-[**getV1buyersbuyerIDusersuserID**](UserApi.md#getV1buyersbuyerIDusersuserID) | **GET** /buyers/{buyerID}/users/{userID} | 
-[**listV1buyersbuyerIDusers**](UserApi.md#listV1buyersbuyerIDusers) | **GET** /buyers/{buyerID}/users | 
-[**moveV1buyersbuyerIDusersuserIDmovetonewBuyerID**](UserApi.md#moveV1buyersbuyerIDusersuserIDmovetonewBuyerID) | **POST** /buyers/{buyerID}/users/{userID}/moveto/{newBuyerID} | 
-[**patchV1buyersbuyerIDusersuserID**](UserApi.md#patchV1buyersbuyerIDusersuserID) | **PATCH** /buyers/{buyerID}/users/{userID} | 
-[**saveV1buyersbuyerIDusersuserID**](UserApi.md#saveV1buyersbuyerIDusersuserID) | **PUT** /buyers/{buyerID}/users/{userID} | 
+[**createUsers**](UserApi.md#createUsers) | **POST** /buyers/{buyerID}/users | 
+[**deleteUsers**](UserApi.md#deleteUsers) | **DELETE** /buyers/{buyerID}/users/{userID} | 
+[**getAccessTokenUsers**](UserApi.md#getAccessTokenUsers) | **POST** /buyers/{buyerID}/users/{userID}/accesstoken | 
+[**getUsers**](UserApi.md#getUsers) | **GET** /buyers/{buyerID}/users/{userID} | 
+[**listUsers**](UserApi.md#listUsers) | **GET** /buyers/{buyerID}/users | 
+[**moveUsers**](UserApi.md#moveUsers) | **POST** /buyers/{buyerID}/users/{userID}/moveto/{newBuyerID} | 
+[**patchUsers**](UserApi.md#patchUsers) | **PATCH** /buyers/{buyerID}/users/{userID} | 
+[**saveUsers**](UserApi.md#saveUsers) | **PUT** /buyers/{buyerID}/users/{userID} | 
 
 
-<a name="createV1buyersbuyerIDusers"></a>
-# **createV1buyersbuyerIDusers**
-> User createV1buyersbuyerIDusers(buyerID, user)
+<a name="createUsers"></a>
+# **createUsers**
+> User createUsers(buyerID, user)
 
 
 
@@ -38,7 +38,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1buyersbuyerIDusers(buyerID, user, callback);
+apiInstance.createUsers(buyerID, user, callback);
 ```
 
 ### Parameters
@@ -61,9 +61,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteV1buyersbuyerIDusersuserID"></a>
-# **deleteV1buyersbuyerIDusersuserID**
-> deleteV1buyersbuyerIDusersuserID(buyerID, userID)
+<a name="deleteUsers"></a>
+# **deleteUsers**
+> deleteUsers(buyerID, userID)
 
 
 
@@ -85,7 +85,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1buyersbuyerIDusersuserID(buyerID, userID, callback);
+apiInstance.deleteUsers(buyerID, userID, callback);
 ```
 
 ### Parameters
@@ -108,9 +108,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getAccessTokenV1buyersbuyerIDusersuserIDaccesstoken"></a>
-# **getAccessTokenV1buyersbuyerIDusersuserIDaccesstoken**
-> AccessToken getAccessTokenV1buyersbuyerIDusersuserIDaccesstoken(buyerID, userID, impersonateTokenRequest)
+<a name="getAccessTokenUsers"></a>
+# **getAccessTokenUsers**
+> AccessToken getAccessTokenUsers(buyerID, userID, impersonateTokenRequest)
 
 
 
@@ -133,7 +133,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getAccessTokenV1buyersbuyerIDusersuserIDaccesstoken(buyerID, userID, impersonateTokenRequest, callback);
+apiInstance.getAccessTokenUsers(buyerID, userID, impersonateTokenRequest, callback);
 ```
 
 ### Parameters
@@ -157,9 +157,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="getV1buyersbuyerIDusersuserID"></a>
-# **getV1buyersbuyerIDusersuserID**
-> User getV1buyersbuyerIDusersuserID(buyerID, userID)
+<a name="getUsers"></a>
+# **getUsers**
+> User getUsers(buyerID, userID)
 
 
 
@@ -181,7 +181,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1buyersbuyerIDusersuserID(buyerID, userID, callback);
+apiInstance.getUsers(buyerID, userID, callback);
 ```
 
 ### Parameters
@@ -204,9 +204,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1buyersbuyerIDusers"></a>
-# **listV1buyersbuyerIDusers**
-> ListUser listV1buyersbuyerIDusers(buyerID, opts)
+<a name="listUsers"></a>
+# **listUsers**
+> ListUser listUsers(buyerID, opts)
 
 
 
@@ -236,7 +236,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1buyersbuyerIDusers(buyerID, opts, callback);
+apiInstance.listUsers(buyerID, opts, callback);
 ```
 
 ### Parameters
@@ -265,9 +265,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="moveV1buyersbuyerIDusersuserIDmovetonewBuyerID"></a>
-# **moveV1buyersbuyerIDusersuserIDmovetonewBuyerID**
-> User moveV1buyersbuyerIDusersuserIDmovetonewBuyerID(buyerID, userID, newBuyerID, orders)
+<a name="moveUsers"></a>
+# **moveUsers**
+> User moveUsers(buyerID, userID, newBuyerID, orders)
 
 
 
@@ -291,7 +291,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.moveV1buyersbuyerIDusersuserIDmovetonewBuyerID(buyerID, userID, newBuyerID, orders, callback);
+apiInstance.moveUsers(buyerID, userID, newBuyerID, orders, callback);
 ```
 
 ### Parameters
@@ -316,9 +316,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1buyersbuyerIDusersuserID"></a>
-# **patchV1buyersbuyerIDusersuserID**
-> User patchV1buyersbuyerIDusersuserID(buyerID, userID, user)
+<a name="patchUsers"></a>
+# **patchUsers**
+> User patchUsers(buyerID, userID, user)
 
 
 
@@ -341,7 +341,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1buyersbuyerIDusersuserID(buyerID, userID, user, callback);
+apiInstance.patchUsers(buyerID, userID, user, callback);
 ```
 
 ### Parameters
@@ -365,9 +365,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveV1buyersbuyerIDusersuserID"></a>
-# **saveV1buyersbuyerIDusersuserID**
-> User saveV1buyersbuyerIDusersuserID(buyerID, userID, user)
+<a name="saveUsers"></a>
+# **saveUsers**
+> User saveUsers(buyerID, userID, user)
 
 
 
@@ -390,7 +390,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1buyersbuyerIDusersuserID(buyerID, userID, user, callback);
+apiInstance.saveUsers(buyerID, userID, user, callback);
 ```
 
 ### Parameters

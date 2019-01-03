@@ -4,32 +4,32 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addPromotionV1ordersdirectionorderIDpromotionspromoCode**](OrderApi.md#addPromotionV1ordersdirectionorderIDpromotionspromoCode) | **POST** /orders/{direction}/{orderID}/promotions/{promoCode} | 
-[**approveV1ordersdirectionorderIDapprove**](OrderApi.md#approveV1ordersdirectionorderIDapprove) | **POST** /orders/{direction}/{orderID}/approve | 
-[**cancelV1ordersdirectionorderIDcancel**](OrderApi.md#cancelV1ordersdirectionorderIDcancel) | **POST** /orders/{direction}/{orderID}/cancel | 
-[**createV1ordersdirection**](OrderApi.md#createV1ordersdirection) | **POST** /orders/{direction} | 
-[**declineV1ordersdirectionorderIDdecline**](OrderApi.md#declineV1ordersdirectionorderIDdecline) | **POST** /orders/{direction}/{orderID}/decline | 
-[**deleteV1ordersdirectionorderID**](OrderApi.md#deleteV1ordersdirectionorderID) | **DELETE** /orders/{direction}/{orderID} | 
-[**getV1ordersdirectionorderID**](OrderApi.md#getV1ordersdirectionorderID) | **GET** /orders/{direction}/{orderID} | 
-[**listApprovalsV1ordersdirectionorderIDapprovals**](OrderApi.md#listApprovalsV1ordersdirectionorderIDapprovals) | **GET** /orders/{direction}/{orderID}/approvals | 
-[**listEligibleApproversV1ordersdirectionorderIDeligibleapprovers**](OrderApi.md#listEligibleApproversV1ordersdirectionorderIDeligibleapprovers) | **GET** /orders/{direction}/{orderID}/eligibleapprovers | 
-[**listPromotionsV1ordersdirectionorderIDpromotions**](OrderApi.md#listPromotionsV1ordersdirectionorderIDpromotions) | **GET** /orders/{direction}/{orderID}/promotions | 
-[**listV1ordersdirection**](OrderApi.md#listV1ordersdirection) | **GET** /orders/{direction} | 
-[**patchBillingAddressV1ordersdirectionorderIDbillto**](OrderApi.md#patchBillingAddressV1ordersdirectionorderIDbillto) | **PATCH** /orders/{direction}/{orderID}/billto | 
-[**patchFromUserV1ordersdirectionorderIDfromuser**](OrderApi.md#patchFromUserV1ordersdirectionorderIDfromuser) | **PATCH** /orders/{direction}/{orderID}/fromuser | 
-[**patchShippingAddressV1ordersdirectionorderIDshipto**](OrderApi.md#patchShippingAddressV1ordersdirectionorderIDshipto) | **PATCH** /orders/{direction}/{orderID}/shipto | 
-[**patchV1ordersdirectionorderID**](OrderApi.md#patchV1ordersdirectionorderID) | **PATCH** /orders/{direction}/{orderID} | 
-[**removePromotionV1ordersdirectionorderIDpromotionspromoCode**](OrderApi.md#removePromotionV1ordersdirectionorderIDpromotionspromoCode) | **DELETE** /orders/{direction}/{orderID}/promotions/{promoCode} | 
-[**saveV1ordersdirectionorderID**](OrderApi.md#saveV1ordersdirectionorderID) | **PUT** /orders/{direction}/{orderID} | 
-[**setBillingAddressV1ordersdirectionorderIDbillto**](OrderApi.md#setBillingAddressV1ordersdirectionorderIDbillto) | **PUT** /orders/{direction}/{orderID}/billto | 
-[**setShippingAddressV1ordersdirectionorderIDshipto**](OrderApi.md#setShippingAddressV1ordersdirectionorderIDshipto) | **PUT** /orders/{direction}/{orderID}/shipto | 
-[**shipV1ordersdirectionorderIDship**](OrderApi.md#shipV1ordersdirectionorderIDship) | **POST** /orders/{direction}/{orderID}/ship | 
-[**submitV1ordersdirectionorderIDsubmit**](OrderApi.md#submitV1ordersdirectionorderIDsubmit) | **POST** /orders/{direction}/{orderID}/submit | 
+[**addPromotionOrders**](OrderApi.md#addPromotionOrders) | **POST** /orders/{direction}/{orderID}/promotions/{promoCode} | 
+[**approveOrders**](OrderApi.md#approveOrders) | **POST** /orders/{direction}/{orderID}/approve | 
+[**cancelOrders**](OrderApi.md#cancelOrders) | **POST** /orders/{direction}/{orderID}/cancel | 
+[**createOrders**](OrderApi.md#createOrders) | **POST** /orders/{direction} | 
+[**declineOrders**](OrderApi.md#declineOrders) | **POST** /orders/{direction}/{orderID}/decline | 
+[**deleteOrders**](OrderApi.md#deleteOrders) | **DELETE** /orders/{direction}/{orderID} | 
+[**getOrders**](OrderApi.md#getOrders) | **GET** /orders/{direction}/{orderID} | 
+[**listApprovalsOrders**](OrderApi.md#listApprovalsOrders) | **GET** /orders/{direction}/{orderID}/approvals | 
+[**listEligibleApproversOrders**](OrderApi.md#listEligibleApproversOrders) | **GET** /orders/{direction}/{orderID}/eligibleapprovers | 
+[**listOrders**](OrderApi.md#listOrders) | **GET** /orders/{direction} | 
+[**listPromotionsOrders**](OrderApi.md#listPromotionsOrders) | **GET** /orders/{direction}/{orderID}/promotions | 
+[**patchBillingAddressOrders**](OrderApi.md#patchBillingAddressOrders) | **PATCH** /orders/{direction}/{orderID}/billto | 
+[**patchFromUserOrders**](OrderApi.md#patchFromUserOrders) | **PATCH** /orders/{direction}/{orderID}/fromuser | 
+[**patchOrders**](OrderApi.md#patchOrders) | **PATCH** /orders/{direction}/{orderID} | 
+[**patchShippingAddressOrders**](OrderApi.md#patchShippingAddressOrders) | **PATCH** /orders/{direction}/{orderID}/shipto | 
+[**removePromotionOrders**](OrderApi.md#removePromotionOrders) | **DELETE** /orders/{direction}/{orderID}/promotions/{promoCode} | 
+[**saveOrders**](OrderApi.md#saveOrders) | **PUT** /orders/{direction}/{orderID} | 
+[**setBillingAddressOrders**](OrderApi.md#setBillingAddressOrders) | **PUT** /orders/{direction}/{orderID}/billto | 
+[**setShippingAddressOrders**](OrderApi.md#setShippingAddressOrders) | **PUT** /orders/{direction}/{orderID}/shipto | 
+[**shipOrders**](OrderApi.md#shipOrders) | **POST** /orders/{direction}/{orderID}/ship | 
+[**submitOrders**](OrderApi.md#submitOrders) | **POST** /orders/{direction}/{orderID}/submit | 
 
 
-<a name="addPromotionV1ordersdirectionorderIDpromotionspromoCode"></a>
-# **addPromotionV1ordersdirectionorderIDpromotionspromoCode**
-> OrderPromotion addPromotionV1ordersdirectionorderIDpromotionspromoCode(direction, orderID, promoCode)
+<a name="addPromotionOrders"></a>
+# **addPromotionOrders**
+> OrderPromotion addPromotionOrders(direction, orderID, promoCode)
 
 
 
@@ -52,7 +52,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.addPromotionV1ordersdirectionorderIDpromotionspromoCode(direction, orderID, promoCode, callback);
+apiInstance.addPromotionOrders(direction, orderID, promoCode, callback);
 ```
 
 ### Parameters
@@ -76,9 +76,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="approveV1ordersdirectionorderIDapprove"></a>
-# **approveV1ordersdirectionorderIDapprove**
-> Order approveV1ordersdirectionorderIDapprove(direction, orderID, orderApprovalInfo)
+<a name="approveOrders"></a>
+# **approveOrders**
+> Order approveOrders(direction, orderID, orderApprovalInfo)
 
 
 
@@ -101,7 +101,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.approveV1ordersdirectionorderIDapprove(direction, orderID, orderApprovalInfo, callback);
+apiInstance.approveOrders(direction, orderID, orderApprovalInfo, callback);
 ```
 
 ### Parameters
@@ -125,9 +125,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="cancelV1ordersdirectionorderIDcancel"></a>
-# **cancelV1ordersdirectionorderIDcancel**
-> Order cancelV1ordersdirectionorderIDcancel(direction, orderID)
+<a name="cancelOrders"></a>
+# **cancelOrders**
+> Order cancelOrders(direction, orderID)
 
 
 
@@ -149,7 +149,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.cancelV1ordersdirectionorderIDcancel(direction, orderID, callback);
+apiInstance.cancelOrders(direction, orderID, callback);
 ```
 
 ### Parameters
@@ -172,9 +172,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="createV1ordersdirection"></a>
-# **createV1ordersdirection**
-> Order createV1ordersdirection(direction, order)
+<a name="createOrders"></a>
+# **createOrders**
+> Order createOrders(direction, order)
 
 
 
@@ -196,7 +196,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1ordersdirection(direction, order, callback);
+apiInstance.createOrders(direction, order, callback);
 ```
 
 ### Parameters
@@ -219,9 +219,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="declineV1ordersdirectionorderIDdecline"></a>
-# **declineV1ordersdirectionorderIDdecline**
-> Order declineV1ordersdirectionorderIDdecline(direction, orderID, orderApprovalInfo)
+<a name="declineOrders"></a>
+# **declineOrders**
+> Order declineOrders(direction, orderID, orderApprovalInfo)
 
 
 
@@ -244,7 +244,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.declineV1ordersdirectionorderIDdecline(direction, orderID, orderApprovalInfo, callback);
+apiInstance.declineOrders(direction, orderID, orderApprovalInfo, callback);
 ```
 
 ### Parameters
@@ -268,9 +268,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteV1ordersdirectionorderID"></a>
-# **deleteV1ordersdirectionorderID**
-> deleteV1ordersdirectionorderID(direction, orderID)
+<a name="deleteOrders"></a>
+# **deleteOrders**
+> deleteOrders(direction, orderID)
 
 
 
@@ -292,7 +292,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1ordersdirectionorderID(direction, orderID, callback);
+apiInstance.deleteOrders(direction, orderID, callback);
 ```
 
 ### Parameters
@@ -315,9 +315,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1ordersdirectionorderID"></a>
-# **getV1ordersdirectionorderID**
-> Order getV1ordersdirectionorderID(direction, orderID)
+<a name="getOrders"></a>
+# **getOrders**
+> Order getOrders(direction, orderID)
 
 
 
@@ -339,7 +339,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1ordersdirectionorderID(direction, orderID, callback);
+apiInstance.getOrders(direction, orderID, callback);
 ```
 
 ### Parameters
@@ -362,9 +362,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listApprovalsV1ordersdirectionorderIDapprovals"></a>
-# **listApprovalsV1ordersdirectionorderIDapprovals**
-> ListOrderApproval listApprovalsV1ordersdirectionorderIDapprovals(direction, orderID, opts)
+<a name="listApprovalsOrders"></a>
+# **listApprovalsOrders**
+> ListOrderApproval listApprovalsOrders(direction, orderID, opts)
 
 
 
@@ -394,7 +394,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listApprovalsV1ordersdirectionorderIDapprovals(direction, orderID, opts, callback);
+apiInstance.listApprovalsOrders(direction, orderID, opts, callback);
 ```
 
 ### Parameters
@@ -423,9 +423,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listEligibleApproversV1ordersdirectionorderIDeligibleapprovers"></a>
-# **listEligibleApproversV1ordersdirectionorderIDeligibleapprovers**
-> ListUser listEligibleApproversV1ordersdirectionorderIDeligibleapprovers(direction, orderID, opts)
+<a name="listEligibleApproversOrders"></a>
+# **listEligibleApproversOrders**
+> ListUser listEligibleApproversOrders(direction, orderID, opts)
 
 
 
@@ -455,7 +455,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listEligibleApproversV1ordersdirectionorderIDeligibleapprovers(direction, orderID, opts, callback);
+apiInstance.listEligibleApproversOrders(direction, orderID, opts, callback);
 ```
 
 ### Parameters
@@ -484,70 +484,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listPromotionsV1ordersdirectionorderIDpromotions"></a>
-# **listPromotionsV1ordersdirectionorderIDpromotions**
-> ListOrderPromotion listPromotionsV1ordersdirectionorderIDpromotions(direction, orderID, opts)
-
-
-
-### Example
-```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.instance;
-// Configure OAuth2 access token for authorization: OAuth2
-var OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-
-var apiInstance = new OrderCloud.OrderApi();
-var direction = "direction_example"; // String | Direction of the order, from the current user's perspective. Possible values: incoming, outgoing.
-var orderID = "orderID_example"; // String | ID of the order.
-var opts = {
-  'search': "search_example", // String | Word or phrase to search for.
-  'searchOn': "searchOn_example", // String | Comma-delimited list of fields to search on.
-  'sortBy': "sortBy_example", // String | Comma-delimited list of fields to sort by.
-  'page': 56, // Number | Page of results to return. Default: 1
-  'pageSize': 56, // Number | Number of results to return per page. Default: 20, max: 100.
-  'filters': null // Object | Any additional key/value pairs passed in the query string are interpretted as filters. Valid keys are top-level properties of the returned model or 'xp.???'
-};
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.listPromotionsV1ordersdirectionorderIDpromotions(direction, orderID, opts, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **direction** | **String**| Direction of the order, from the current user&#39;s perspective. Possible values: incoming, outgoing. | 
- **orderID** | **String**| ID of the order. | 
- **search** | **String**| Word or phrase to search for. | [optional] 
- **searchOn** | **String**| Comma-delimited list of fields to search on. | [optional] 
- **sortBy** | **String**| Comma-delimited list of fields to sort by. | [optional] 
- **page** | **Number**| Page of results to return. Default: 1 | [optional] 
- **pageSize** | **Number**| Number of results to return per page. Default: 20, max: 100. | [optional] 
- **filters** | [**Object**](.md)| Any additional key/value pairs passed in the query string are interpretted as filters. Valid keys are top-level properties of the returned model or &#39;xp.???&#39; | [optional] 
-
-### Return type
-
-[**ListOrderPromotion**](ListOrderPromotion.md)
-
-### Authorization
-
-[OAuth2](../README.md#OAuth2)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-<a name="listV1ordersdirection"></a>
-# **listV1ordersdirection**
-> ListOrder listV1ordersdirection(direction, opts)
+<a name="listOrders"></a>
+# **listOrders**
+> ListOrder listOrders(direction, opts)
 
 
 
@@ -580,7 +519,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1ordersdirection(direction, opts, callback);
+apiInstance.listOrders(direction, opts, callback);
 ```
 
 ### Parameters
@@ -612,9 +551,70 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchBillingAddressV1ordersdirectionorderIDbillto"></a>
-# **patchBillingAddressV1ordersdirectionorderIDbillto**
-> Order patchBillingAddressV1ordersdirectionorderIDbillto(direction, orderID, address)
+<a name="listPromotionsOrders"></a>
+# **listPromotionsOrders**
+> ListOrderPromotion listPromotionsOrders(direction, orderID, opts)
+
+
+
+### Example
+```javascript
+var OrderCloud = require('order_cloud');
+var defaultClient = OrderCloud.ApiClient.instance;
+// Configure OAuth2 access token for authorization: OAuth2
+var OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new OrderCloud.OrderApi();
+var direction = "direction_example"; // String | Direction of the order, from the current user's perspective. Possible values: incoming, outgoing.
+var orderID = "orderID_example"; // String | ID of the order.
+var opts = {
+  'search': "search_example", // String | Word or phrase to search for.
+  'searchOn': "searchOn_example", // String | Comma-delimited list of fields to search on.
+  'sortBy': "sortBy_example", // String | Comma-delimited list of fields to sort by.
+  'page': 56, // Number | Page of results to return. Default: 1
+  'pageSize': 56, // Number | Number of results to return per page. Default: 20, max: 100.
+  'filters': null // Object | Any additional key/value pairs passed in the query string are interpretted as filters. Valid keys are top-level properties of the returned model or 'xp.???'
+};
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.listPromotionsOrders(direction, orderID, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **direction** | **String**| Direction of the order, from the current user&#39;s perspective. Possible values: incoming, outgoing. | 
+ **orderID** | **String**| ID of the order. | 
+ **search** | **String**| Word or phrase to search for. | [optional] 
+ **searchOn** | **String**| Comma-delimited list of fields to search on. | [optional] 
+ **sortBy** | **String**| Comma-delimited list of fields to sort by. | [optional] 
+ **page** | **Number**| Page of results to return. Default: 1 | [optional] 
+ **pageSize** | **Number**| Number of results to return per page. Default: 20, max: 100. | [optional] 
+ **filters** | [**Object**](.md)| Any additional key/value pairs passed in the query string are interpretted as filters. Valid keys are top-level properties of the returned model or &#39;xp.???&#39; | [optional] 
+
+### Return type
+
+[**ListOrderPromotion**](ListOrderPromotion.md)
+
+### Authorization
+
+[OAuth2](../README.md#OAuth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="patchBillingAddressOrders"></a>
+# **patchBillingAddressOrders**
+> Order patchBillingAddressOrders(direction, orderID, address)
 
 
 
@@ -637,7 +637,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchBillingAddressV1ordersdirectionorderIDbillto(direction, orderID, address, callback);
+apiInstance.patchBillingAddressOrders(direction, orderID, address, callback);
 ```
 
 ### Parameters
@@ -661,9 +661,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="patchFromUserV1ordersdirectionorderIDfromuser"></a>
-# **patchFromUserV1ordersdirectionorderIDfromuser**
-> Order patchFromUserV1ordersdirectionorderIDfromuser(direction, orderID, user)
+<a name="patchFromUserOrders"></a>
+# **patchFromUserOrders**
+> Order patchFromUserOrders(direction, orderID, user)
 
 
 
@@ -686,7 +686,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchFromUserV1ordersdirectionorderIDfromuser(direction, orderID, user, callback);
+apiInstance.patchFromUserOrders(direction, orderID, user, callback);
 ```
 
 ### Parameters
@@ -710,58 +710,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="patchShippingAddressV1ordersdirectionorderIDshipto"></a>
-# **patchShippingAddressV1ordersdirectionorderIDshipto**
-> Order patchShippingAddressV1ordersdirectionorderIDshipto(direction, orderID, address)
-
-
-
-### Example
-```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.instance;
-// Configure OAuth2 access token for authorization: OAuth2
-var OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-
-var apiInstance = new OrderCloud.OrderApi();
-var direction = "direction_example"; // String | Direction of the order, from the current user's perspective. Possible values: incoming, outgoing.
-var orderID = "orderID_example"; // String | ID of the order.
-var address = new OrderCloud.Address(); // Address | 
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.patchShippingAddressV1ordersdirectionorderIDshipto(direction, orderID, address, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **direction** | **String**| Direction of the order, from the current user&#39;s perspective. Possible values: incoming, outgoing. | 
- **orderID** | **String**| ID of the order. | 
- **address** | [**Address**](Address.md)|  | 
-
-### Return type
-
-[**Order**](Order.md)
-
-### Authorization
-
-[OAuth2](../README.md#OAuth2)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="patchV1ordersdirectionorderID"></a>
-# **patchV1ordersdirectionorderID**
-> Order patchV1ordersdirectionorderID(direction, orderID, order)
+<a name="patchOrders"></a>
+# **patchOrders**
+> Order patchOrders(direction, orderID, order)
 
 
 
@@ -784,7 +735,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1ordersdirectionorderID(direction, orderID, order, callback);
+apiInstance.patchOrders(direction, orderID, order, callback);
 ```
 
 ### Parameters
@@ -808,9 +759,58 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="removePromotionV1ordersdirectionorderIDpromotionspromoCode"></a>
-# **removePromotionV1ordersdirectionorderIDpromotionspromoCode**
-> Order removePromotionV1ordersdirectionorderIDpromotionspromoCode(direction, orderID, promoCode)
+<a name="patchShippingAddressOrders"></a>
+# **patchShippingAddressOrders**
+> Order patchShippingAddressOrders(direction, orderID, address)
+
+
+
+### Example
+```javascript
+var OrderCloud = require('order_cloud');
+var defaultClient = OrderCloud.ApiClient.instance;
+// Configure OAuth2 access token for authorization: OAuth2
+var OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new OrderCloud.OrderApi();
+var direction = "direction_example"; // String | Direction of the order, from the current user's perspective. Possible values: incoming, outgoing.
+var orderID = "orderID_example"; // String | ID of the order.
+var address = new OrderCloud.Address(); // Address | 
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.patchShippingAddressOrders(direction, orderID, address, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **direction** | **String**| Direction of the order, from the current user&#39;s perspective. Possible values: incoming, outgoing. | 
+ **orderID** | **String**| ID of the order. | 
+ **address** | [**Address**](Address.md)|  | 
+
+### Return type
+
+[**Order**](Order.md)
+
+### Authorization
+
+[OAuth2](../README.md#OAuth2)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="removePromotionOrders"></a>
+# **removePromotionOrders**
+> Order removePromotionOrders(direction, orderID, promoCode)
 
 
 
@@ -833,7 +833,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.removePromotionV1ordersdirectionorderIDpromotionspromoCode(direction, orderID, promoCode, callback);
+apiInstance.removePromotionOrders(direction, orderID, promoCode, callback);
 ```
 
 ### Parameters
@@ -857,9 +857,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="saveV1ordersdirectionorderID"></a>
-# **saveV1ordersdirectionorderID**
-> Order saveV1ordersdirectionorderID(direction, orderID, order)
+<a name="saveOrders"></a>
+# **saveOrders**
+> Order saveOrders(direction, orderID, order)
 
 
 
@@ -882,7 +882,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1ordersdirectionorderID(direction, orderID, order, callback);
+apiInstance.saveOrders(direction, orderID, order, callback);
 ```
 
 ### Parameters
@@ -906,9 +906,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="setBillingAddressV1ordersdirectionorderIDbillto"></a>
-# **setBillingAddressV1ordersdirectionorderIDbillto**
-> Order setBillingAddressV1ordersdirectionorderIDbillto(direction, orderID, address)
+<a name="setBillingAddressOrders"></a>
+# **setBillingAddressOrders**
+> Order setBillingAddressOrders(direction, orderID, address)
 
 
 
@@ -931,7 +931,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.setBillingAddressV1ordersdirectionorderIDbillto(direction, orderID, address, callback);
+apiInstance.setBillingAddressOrders(direction, orderID, address, callback);
 ```
 
 ### Parameters
@@ -955,9 +955,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="setShippingAddressV1ordersdirectionorderIDshipto"></a>
-# **setShippingAddressV1ordersdirectionorderIDshipto**
-> Order setShippingAddressV1ordersdirectionorderIDshipto(direction, orderID, address)
+<a name="setShippingAddressOrders"></a>
+# **setShippingAddressOrders**
+> Order setShippingAddressOrders(direction, orderID, address)
 
 
 
@@ -980,7 +980,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.setShippingAddressV1ordersdirectionorderIDshipto(direction, orderID, address, callback);
+apiInstance.setShippingAddressOrders(direction, orderID, address, callback);
 ```
 
 ### Parameters
@@ -1004,9 +1004,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="shipV1ordersdirectionorderIDship"></a>
-# **shipV1ordersdirectionorderIDship**
-> Order shipV1ordersdirectionorderIDship(direction, orderID, shipment)
+<a name="shipOrders"></a>
+# **shipOrders**
+> Order shipOrders(direction, orderID, shipment)
 
 
 
@@ -1029,7 +1029,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.shipV1ordersdirectionorderIDship(direction, orderID, shipment, callback);
+apiInstance.shipOrders(direction, orderID, shipment, callback);
 ```
 
 ### Parameters
@@ -1053,9 +1053,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="submitV1ordersdirectionorderIDsubmit"></a>
-# **submitV1ordersdirectionorderIDsubmit**
-> Order submitV1ordersdirectionorderIDsubmit(direction, orderID)
+<a name="submitOrders"></a>
+# **submitOrders**
+> Order submitOrders(direction, orderID)
 
 
 
@@ -1077,7 +1077,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.submitV1ordersdirectionorderIDsubmit(direction, orderID, callback);
+apiInstance.submitOrders(direction, orderID, callback);
 ```
 
 ### Parameters

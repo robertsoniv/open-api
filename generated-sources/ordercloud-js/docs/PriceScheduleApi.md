@@ -4,19 +4,19 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1priceschedules**](PriceScheduleApi.md#createV1priceschedules) | **POST** /priceschedules | 
-[**deletePriceBreakV1priceschedulespriceScheduleIDPriceBreaks**](PriceScheduleApi.md#deletePriceBreakV1priceschedulespriceScheduleIDPriceBreaks) | **DELETE** /priceschedules/{priceScheduleID}/PriceBreaks | 
-[**deleteV1priceschedulespriceScheduleID**](PriceScheduleApi.md#deleteV1priceschedulespriceScheduleID) | **DELETE** /priceschedules/{priceScheduleID} | 
-[**getV1priceschedulespriceScheduleID**](PriceScheduleApi.md#getV1priceschedulespriceScheduleID) | **GET** /priceschedules/{priceScheduleID} | 
-[**listV1priceschedules**](PriceScheduleApi.md#listV1priceschedules) | **GET** /priceschedules | 
-[**patchV1priceschedulespriceScheduleID**](PriceScheduleApi.md#patchV1priceschedulespriceScheduleID) | **PATCH** /priceschedules/{priceScheduleID} | 
-[**savePriceBreakV1priceschedulespriceScheduleIDPriceBreaks**](PriceScheduleApi.md#savePriceBreakV1priceschedulespriceScheduleIDPriceBreaks) | **POST** /priceschedules/{priceScheduleID}/PriceBreaks | 
-[**saveV1priceschedulespriceScheduleID**](PriceScheduleApi.md#saveV1priceschedulespriceScheduleID) | **PUT** /priceschedules/{priceScheduleID} | 
+[**createPriceSchedules**](PriceScheduleApi.md#createPriceSchedules) | **POST** /priceschedules | 
+[**deletePriceBreakPriceSchedules**](PriceScheduleApi.md#deletePriceBreakPriceSchedules) | **DELETE** /priceschedules/{priceScheduleID}/PriceBreaks | 
+[**deletePriceSchedules**](PriceScheduleApi.md#deletePriceSchedules) | **DELETE** /priceschedules/{priceScheduleID} | 
+[**getPriceSchedules**](PriceScheduleApi.md#getPriceSchedules) | **GET** /priceschedules/{priceScheduleID} | 
+[**listPriceSchedules**](PriceScheduleApi.md#listPriceSchedules) | **GET** /priceschedules | 
+[**patchPriceSchedules**](PriceScheduleApi.md#patchPriceSchedules) | **PATCH** /priceschedules/{priceScheduleID} | 
+[**savePriceBreakPriceSchedules**](PriceScheduleApi.md#savePriceBreakPriceSchedules) | **POST** /priceschedules/{priceScheduleID}/PriceBreaks | 
+[**savePriceSchedules**](PriceScheduleApi.md#savePriceSchedules) | **PUT** /priceschedules/{priceScheduleID} | 
 
 
-<a name="createV1priceschedules"></a>
-# **createV1priceschedules**
-> PriceSchedule createV1priceschedules(priceSchedule)
+<a name="createPriceSchedules"></a>
+# **createPriceSchedules**
+> PriceSchedule createPriceSchedules(priceSchedule)
 
 
 
@@ -37,7 +37,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1priceschedules(priceSchedule, callback);
+apiInstance.createPriceSchedules(priceSchedule, callback);
 ```
 
 ### Parameters
@@ -59,9 +59,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deletePriceBreakV1priceschedulespriceScheduleIDPriceBreaks"></a>
-# **deletePriceBreakV1priceschedulespriceScheduleIDPriceBreaks**
-> deletePriceBreakV1priceschedulespriceScheduleIDPriceBreaks(priceScheduleID, quantity)
+<a name="deletePriceBreakPriceSchedules"></a>
+# **deletePriceBreakPriceSchedules**
+> deletePriceBreakPriceSchedules(priceScheduleID, quantity)
 
 
 
@@ -83,7 +83,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deletePriceBreakV1priceschedulespriceScheduleIDPriceBreaks(priceScheduleID, quantity, callback);
+apiInstance.deletePriceBreakPriceSchedules(priceScheduleID, quantity, callback);
 ```
 
 ### Parameters
@@ -106,9 +106,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="deleteV1priceschedulespriceScheduleID"></a>
-# **deleteV1priceschedulespriceScheduleID**
-> deleteV1priceschedulespriceScheduleID(priceScheduleID)
+<a name="deletePriceSchedules"></a>
+# **deletePriceSchedules**
+> deletePriceSchedules(priceScheduleID)
 
 
 
@@ -129,7 +129,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1priceschedulespriceScheduleID(priceScheduleID, callback);
+apiInstance.deletePriceSchedules(priceScheduleID, callback);
 ```
 
 ### Parameters
@@ -151,9 +151,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1priceschedulespriceScheduleID"></a>
-# **getV1priceschedulespriceScheduleID**
-> PriceSchedule getV1priceschedulespriceScheduleID(priceScheduleID)
+<a name="getPriceSchedules"></a>
+# **getPriceSchedules**
+> PriceSchedule getPriceSchedules(priceScheduleID)
 
 
 
@@ -174,7 +174,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1priceschedulespriceScheduleID(priceScheduleID, callback);
+apiInstance.getPriceSchedules(priceScheduleID, callback);
 ```
 
 ### Parameters
@@ -196,9 +196,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1priceschedules"></a>
-# **listV1priceschedules**
-> ListPriceSchedule listV1priceschedules(opts)
+<a name="listPriceSchedules"></a>
+# **listPriceSchedules**
+> ListPriceSchedule listPriceSchedules(opts)
 
 
 
@@ -226,7 +226,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1priceschedules(opts, callback);
+apiInstance.listPriceSchedules(opts, callback);
 ```
 
 ### Parameters
@@ -253,9 +253,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1priceschedulespriceScheduleID"></a>
-# **patchV1priceschedulespriceScheduleID**
-> PriceSchedule patchV1priceschedulespriceScheduleID(priceScheduleID, priceSchedule)
+<a name="patchPriceSchedules"></a>
+# **patchPriceSchedules**
+> PriceSchedule patchPriceSchedules(priceScheduleID, priceSchedule)
 
 
 
@@ -277,7 +277,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1priceschedulespriceScheduleID(priceScheduleID, priceSchedule, callback);
+apiInstance.patchPriceSchedules(priceScheduleID, priceSchedule, callback);
 ```
 
 ### Parameters
@@ -300,9 +300,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="savePriceBreakV1priceschedulespriceScheduleIDPriceBreaks"></a>
-# **savePriceBreakV1priceschedulespriceScheduleIDPriceBreaks**
-> PriceSchedule savePriceBreakV1priceschedulespriceScheduleIDPriceBreaks(priceScheduleID, priceBreak)
+<a name="savePriceBreakPriceSchedules"></a>
+# **savePriceBreakPriceSchedules**
+> PriceSchedule savePriceBreakPriceSchedules(priceScheduleID, priceBreak)
 
 
 
@@ -324,7 +324,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.savePriceBreakV1priceschedulespriceScheduleIDPriceBreaks(priceScheduleID, priceBreak, callback);
+apiInstance.savePriceBreakPriceSchedules(priceScheduleID, priceBreak, callback);
 ```
 
 ### Parameters
@@ -347,9 +347,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveV1priceschedulespriceScheduleID"></a>
-# **saveV1priceschedulespriceScheduleID**
-> PriceSchedule saveV1priceschedulespriceScheduleID(priceScheduleID, priceSchedule)
+<a name="savePriceSchedules"></a>
+# **savePriceSchedules**
+> PriceSchedule savePriceSchedules(priceScheduleID, priceSchedule)
 
 
 
@@ -371,7 +371,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1priceschedulespriceScheduleID(priceScheduleID, priceSchedule, callback);
+apiInstance.savePriceSchedules(priceScheduleID, priceSchedule, callback);
 ```
 
 ### Parameters

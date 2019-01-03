@@ -4,17 +4,17 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1buyers**](BuyerApi.md#createV1buyers) | **POST** /buyers | 
-[**deleteV1buyersbuyerID**](BuyerApi.md#deleteV1buyersbuyerID) | **DELETE** /buyers/{buyerID} | 
-[**getV1buyersbuyerID**](BuyerApi.md#getV1buyersbuyerID) | **GET** /buyers/{buyerID} | 
-[**listV1buyers**](BuyerApi.md#listV1buyers) | **GET** /buyers | 
-[**patchV1buyersbuyerID**](BuyerApi.md#patchV1buyersbuyerID) | **PATCH** /buyers/{buyerID} | 
-[**saveV1buyersbuyerID**](BuyerApi.md#saveV1buyersbuyerID) | **PUT** /buyers/{buyerID} | 
+[**createBuyers**](BuyerApi.md#createBuyers) | **POST** /buyers | 
+[**deleteBuyers**](BuyerApi.md#deleteBuyers) | **DELETE** /buyers/{buyerID} | 
+[**getBuyers**](BuyerApi.md#getBuyers) | **GET** /buyers/{buyerID} | 
+[**listBuyers**](BuyerApi.md#listBuyers) | **GET** /buyers | 
+[**patchBuyers**](BuyerApi.md#patchBuyers) | **PATCH** /buyers/{buyerID} | 
+[**saveBuyers**](BuyerApi.md#saveBuyers) | **PUT** /buyers/{buyerID} | 
 
 
-<a name="createV1buyers"></a>
-# **createV1buyers**
-> Buyer createV1buyers(buyer)
+<a name="createBuyers"></a>
+# **createBuyers**
+> Buyer createBuyers(buyer)
 
 
 
@@ -35,7 +35,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1buyers(buyer, callback);
+apiInstance.createBuyers(buyer, callback);
 ```
 
 ### Parameters
@@ -57,9 +57,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteV1buyersbuyerID"></a>
-# **deleteV1buyersbuyerID**
-> deleteV1buyersbuyerID(buyerID)
+<a name="deleteBuyers"></a>
+# **deleteBuyers**
+> deleteBuyers(buyerID)
 
 
 
@@ -80,7 +80,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1buyersbuyerID(buyerID, callback);
+apiInstance.deleteBuyers(buyerID, callback);
 ```
 
 ### Parameters
@@ -102,9 +102,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1buyersbuyerID"></a>
-# **getV1buyersbuyerID**
-> Buyer getV1buyersbuyerID(buyerID)
+<a name="getBuyers"></a>
+# **getBuyers**
+> Buyer getBuyers(buyerID)
 
 
 
@@ -125,7 +125,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1buyersbuyerID(buyerID, callback);
+apiInstance.getBuyers(buyerID, callback);
 ```
 
 ### Parameters
@@ -147,9 +147,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1buyers"></a>
-# **listV1buyers**
-> ListBuyer listV1buyers(opts)
+<a name="listBuyers"></a>
+# **listBuyers**
+> ListBuyer listBuyers(opts)
 
 
 
@@ -177,7 +177,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1buyers(opts, callback);
+apiInstance.listBuyers(opts, callback);
 ```
 
 ### Parameters
@@ -204,9 +204,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1buyersbuyerID"></a>
-# **patchV1buyersbuyerID**
-> Buyer patchV1buyersbuyerID(buyerID, buyer)
+<a name="patchBuyers"></a>
+# **patchBuyers**
+> Buyer patchBuyers(buyerID, buyer)
 
 
 
@@ -228,7 +228,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1buyersbuyerID(buyerID, buyer, callback);
+apiInstance.patchBuyers(buyerID, buyer, callback);
 ```
 
 ### Parameters
@@ -251,9 +251,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveV1buyersbuyerID"></a>
-# **saveV1buyersbuyerID**
-> Buyer saveV1buyersbuyerID(buyerID, buyer)
+<a name="saveBuyers"></a>
+# **saveBuyers**
+> Buyer saveBuyers(buyerID, buyer)
 
 
 
@@ -275,7 +275,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1buyersbuyerID(buyerID, buyer, callback);
+apiInstance.saveBuyers(buyerID, buyer, callback);
 ```
 
 ### Parameters

@@ -4,17 +4,17 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1productfacets**](ProductFacetApi.md#createV1productfacets) | **POST** /productfacets | 
-[**deleteV1productfacetsproductFacetID**](ProductFacetApi.md#deleteV1productfacetsproductFacetID) | **DELETE** /productfacets/{productFacetID} | 
-[**getV1productfacetsproductFacetID**](ProductFacetApi.md#getV1productfacetsproductFacetID) | **GET** /productfacets/{productFacetID} | 
-[**listV1productfacets**](ProductFacetApi.md#listV1productfacets) | **GET** /productfacets | 
-[**patchV1productfacetsproductFacetID**](ProductFacetApi.md#patchV1productfacetsproductFacetID) | **PATCH** /productfacets/{productFacetID} | 
-[**saveV1productfacetsproductFacetID**](ProductFacetApi.md#saveV1productfacetsproductFacetID) | **PUT** /productfacets/{productFacetID} | 
+[**createProductFacets**](ProductFacetApi.md#createProductFacets) | **POST** /productfacets | 
+[**deleteProductFacets**](ProductFacetApi.md#deleteProductFacets) | **DELETE** /productfacets/{productFacetID} | 
+[**getProductFacets**](ProductFacetApi.md#getProductFacets) | **GET** /productfacets/{productFacetID} | 
+[**listProductFacets**](ProductFacetApi.md#listProductFacets) | **GET** /productfacets | 
+[**patchProductFacets**](ProductFacetApi.md#patchProductFacets) | **PATCH** /productfacets/{productFacetID} | 
+[**saveProductFacets**](ProductFacetApi.md#saveProductFacets) | **PUT** /productfacets/{productFacetID} | 
 
 
-<a name="createV1productfacets"></a>
-# **createV1productfacets**
-> ProductFacet createV1productfacets(productFacet)
+<a name="createProductFacets"></a>
+# **createProductFacets**
+> ProductFacet createProductFacets(productFacet)
 
 
 
@@ -35,7 +35,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1productfacets(productFacet, callback);
+apiInstance.createProductFacets(productFacet, callback);
 ```
 
 ### Parameters
@@ -57,9 +57,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteV1productfacetsproductFacetID"></a>
-# **deleteV1productfacetsproductFacetID**
-> deleteV1productfacetsproductFacetID(productFacetID)
+<a name="deleteProductFacets"></a>
+# **deleteProductFacets**
+> deleteProductFacets(productFacetID)
 
 
 
@@ -80,7 +80,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1productfacetsproductFacetID(productFacetID, callback);
+apiInstance.deleteProductFacets(productFacetID, callback);
 ```
 
 ### Parameters
@@ -102,9 +102,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1productfacetsproductFacetID"></a>
-# **getV1productfacetsproductFacetID**
-> ProductFacet getV1productfacetsproductFacetID(productFacetID)
+<a name="getProductFacets"></a>
+# **getProductFacets**
+> ProductFacet getProductFacets(productFacetID)
 
 
 
@@ -125,7 +125,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1productfacetsproductFacetID(productFacetID, callback);
+apiInstance.getProductFacets(productFacetID, callback);
 ```
 
 ### Parameters
@@ -147,9 +147,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1productfacets"></a>
-# **listV1productfacets**
-> ListProductFacet listV1productfacets(opts)
+<a name="listProductFacets"></a>
+# **listProductFacets**
+> ListProductFacet listProductFacets(opts)
 
 
 
@@ -177,7 +177,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1productfacets(opts, callback);
+apiInstance.listProductFacets(opts, callback);
 ```
 
 ### Parameters
@@ -204,9 +204,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1productfacetsproductFacetID"></a>
-# **patchV1productfacetsproductFacetID**
-> ProductFacet patchV1productfacetsproductFacetID(productFacetID, productFacet)
+<a name="patchProductFacets"></a>
+# **patchProductFacets**
+> ProductFacet patchProductFacets(productFacetID, productFacet)
 
 
 
@@ -228,7 +228,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1productfacetsproductFacetID(productFacetID, productFacet, callback);
+apiInstance.patchProductFacets(productFacetID, productFacet, callback);
 ```
 
 ### Parameters
@@ -251,9 +251,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveV1productfacetsproductFacetID"></a>
-# **saveV1productfacetsproductFacetID**
-> ProductFacet saveV1productfacetsproductFacetID(productFacetID, productFacet)
+<a name="saveProductFacets"></a>
+# **saveProductFacets**
+> ProductFacet saveProductFacets(productFacetID, productFacet)
 
 
 
@@ -275,7 +275,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1productfacetsproductFacetID(productFacetID, productFacet, callback);
+apiInstance.saveProductFacets(productFacetID, productFacet, callback);
 ```
 
 ### Parameters

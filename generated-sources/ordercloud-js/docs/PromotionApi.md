@@ -4,20 +4,20 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1promotions**](PromotionApi.md#createV1promotions) | **POST** /promotions | 
-[**deleteAssignmentV1promotionspromotionIDassignments**](PromotionApi.md#deleteAssignmentV1promotionspromotionIDassignments) | **DELETE** /promotions/{promotionID}/assignments | 
-[**deleteV1promotionspromotionID**](PromotionApi.md#deleteV1promotionspromotionID) | **DELETE** /promotions/{promotionID} | 
-[**getV1promotionspromotionID**](PromotionApi.md#getV1promotionspromotionID) | **GET** /promotions/{promotionID} | 
-[**listAssignmentsV1promotionsassignments**](PromotionApi.md#listAssignmentsV1promotionsassignments) | **GET** /promotions/assignments | 
-[**listV1promotions**](PromotionApi.md#listV1promotions) | **GET** /promotions | 
-[**patchV1promotionspromotionID**](PromotionApi.md#patchV1promotionspromotionID) | **PATCH** /promotions/{promotionID} | 
-[**saveAssignmentV1promotionsassignments**](PromotionApi.md#saveAssignmentV1promotionsassignments) | **POST** /promotions/assignments | 
-[**saveV1promotionspromotionID**](PromotionApi.md#saveV1promotionspromotionID) | **PUT** /promotions/{promotionID} | 
+[**createPromotions**](PromotionApi.md#createPromotions) | **POST** /promotions | 
+[**deleteAssignmentPromotions**](PromotionApi.md#deleteAssignmentPromotions) | **DELETE** /promotions/{promotionID}/assignments | 
+[**deletePromotions**](PromotionApi.md#deletePromotions) | **DELETE** /promotions/{promotionID} | 
+[**getPromotions**](PromotionApi.md#getPromotions) | **GET** /promotions/{promotionID} | 
+[**listAssignmentsPromotions**](PromotionApi.md#listAssignmentsPromotions) | **GET** /promotions/assignments | 
+[**listPromotions**](PromotionApi.md#listPromotions) | **GET** /promotions | 
+[**patchPromotions**](PromotionApi.md#patchPromotions) | **PATCH** /promotions/{promotionID} | 
+[**saveAssignmentPromotions**](PromotionApi.md#saveAssignmentPromotions) | **POST** /promotions/assignments | 
+[**savePromotions**](PromotionApi.md#savePromotions) | **PUT** /promotions/{promotionID} | 
 
 
-<a name="createV1promotions"></a>
-# **createV1promotions**
-> Promotion createV1promotions(promotion)
+<a name="createPromotions"></a>
+# **createPromotions**
+> Promotion createPromotions(promotion)
 
 
 
@@ -38,7 +38,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1promotions(promotion, callback);
+apiInstance.createPromotions(promotion, callback);
 ```
 
 ### Parameters
@@ -60,9 +60,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteAssignmentV1promotionspromotionIDassignments"></a>
-# **deleteAssignmentV1promotionspromotionIDassignments**
-> deleteAssignmentV1promotionspromotionIDassignments(promotionID, buyerID, opts)
+<a name="deleteAssignmentPromotions"></a>
+# **deleteAssignmentPromotions**
+> deleteAssignmentPromotions(promotionID, buyerID, opts)
 
 
 
@@ -88,7 +88,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteAssignmentV1promotionspromotionIDassignments(promotionID, buyerID, opts, callback);
+apiInstance.deleteAssignmentPromotions(promotionID, buyerID, opts, callback);
 ```
 
 ### Parameters
@@ -113,9 +113,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="deleteV1promotionspromotionID"></a>
-# **deleteV1promotionspromotionID**
-> deleteV1promotionspromotionID(promotionID)
+<a name="deletePromotions"></a>
+# **deletePromotions**
+> deletePromotions(promotionID)
 
 
 
@@ -136,7 +136,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1promotionspromotionID(promotionID, callback);
+apiInstance.deletePromotions(promotionID, callback);
 ```
 
 ### Parameters
@@ -158,9 +158,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1promotionspromotionID"></a>
-# **getV1promotionspromotionID**
-> Promotion getV1promotionspromotionID(promotionID)
+<a name="getPromotions"></a>
+# **getPromotions**
+> Promotion getPromotions(promotionID)
 
 
 
@@ -181,7 +181,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1promotionspromotionID(promotionID, callback);
+apiInstance.getPromotions(promotionID, callback);
 ```
 
 ### Parameters
@@ -203,9 +203,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listAssignmentsV1promotionsassignments"></a>
-# **listAssignmentsV1promotionsassignments**
-> ListPromotionAssignment listAssignmentsV1promotionsassignments(opts)
+<a name="listAssignmentsPromotions"></a>
+# **listAssignmentsPromotions**
+> ListPromotionAssignment listAssignmentsPromotions(opts)
 
 
 
@@ -234,7 +234,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listAssignmentsV1promotionsassignments(opts, callback);
+apiInstance.listAssignmentsPromotions(opts, callback);
 ```
 
 ### Parameters
@@ -262,9 +262,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1promotions"></a>
-# **listV1promotions**
-> ListPromotion listV1promotions(opts)
+<a name="listPromotions"></a>
+# **listPromotions**
+> ListPromotion listPromotions(opts)
 
 
 
@@ -292,7 +292,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1promotions(opts, callback);
+apiInstance.listPromotions(opts, callback);
 ```
 
 ### Parameters
@@ -319,9 +319,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1promotionspromotionID"></a>
-# **patchV1promotionspromotionID**
-> Promotion patchV1promotionspromotionID(promotionID, promotion)
+<a name="patchPromotions"></a>
+# **patchPromotions**
+> Promotion patchPromotions(promotionID, promotion)
 
 
 
@@ -343,7 +343,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1promotionspromotionID(promotionID, promotion, callback);
+apiInstance.patchPromotions(promotionID, promotion, callback);
 ```
 
 ### Parameters
@@ -366,9 +366,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveAssignmentV1promotionsassignments"></a>
-# **saveAssignmentV1promotionsassignments**
-> saveAssignmentV1promotionsassignments(promotionAssignment)
+<a name="saveAssignmentPromotions"></a>
+# **saveAssignmentPromotions**
+> saveAssignmentPromotions(promotionAssignment)
 
 
 
@@ -389,7 +389,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.saveAssignmentV1promotionsassignments(promotionAssignment, callback);
+apiInstance.saveAssignmentPromotions(promotionAssignment, callback);
 ```
 
 ### Parameters
@@ -411,9 +411,9 @@ null (empty response body)
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-<a name="saveV1promotionspromotionID"></a>
-# **saveV1promotionspromotionID**
-> Promotion saveV1promotionspromotionID(promotionID, promotion)
+<a name="savePromotions"></a>
+# **savePromotions**
+> Promotion savePromotions(promotionID, promotion)
 
 
 
@@ -435,7 +435,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1promotionspromotionID(promotionID, promotion, callback);
+apiInstance.savePromotions(promotionID, promotion, callback);
 ```
 
 ### Parameters

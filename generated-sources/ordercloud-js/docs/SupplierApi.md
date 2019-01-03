@@ -4,17 +4,17 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1suppliers**](SupplierApi.md#createV1suppliers) | **POST** /suppliers | 
-[**deleteV1supplierssupplierID**](SupplierApi.md#deleteV1supplierssupplierID) | **DELETE** /suppliers/{supplierID} | 
-[**getV1supplierssupplierID**](SupplierApi.md#getV1supplierssupplierID) | **GET** /suppliers/{supplierID} | 
-[**listV1suppliers**](SupplierApi.md#listV1suppliers) | **GET** /suppliers | 
-[**patchV1supplierssupplierID**](SupplierApi.md#patchV1supplierssupplierID) | **PATCH** /suppliers/{supplierID} | 
-[**saveV1supplierssupplierID**](SupplierApi.md#saveV1supplierssupplierID) | **PUT** /suppliers/{supplierID} | 
+[**createSuppliers**](SupplierApi.md#createSuppliers) | **POST** /suppliers | 
+[**deleteSuppliers**](SupplierApi.md#deleteSuppliers) | **DELETE** /suppliers/{supplierID} | 
+[**getSuppliers**](SupplierApi.md#getSuppliers) | **GET** /suppliers/{supplierID} | 
+[**listSuppliers**](SupplierApi.md#listSuppliers) | **GET** /suppliers | 
+[**patchSuppliers**](SupplierApi.md#patchSuppliers) | **PATCH** /suppliers/{supplierID} | 
+[**saveSuppliers**](SupplierApi.md#saveSuppliers) | **PUT** /suppliers/{supplierID} | 
 
 
-<a name="createV1suppliers"></a>
-# **createV1suppliers**
-> Supplier createV1suppliers(supplier)
+<a name="createSuppliers"></a>
+# **createSuppliers**
+> Supplier createSuppliers(supplier)
 
 
 
@@ -35,7 +35,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1suppliers(supplier, callback);
+apiInstance.createSuppliers(supplier, callback);
 ```
 
 ### Parameters
@@ -57,9 +57,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteV1supplierssupplierID"></a>
-# **deleteV1supplierssupplierID**
-> deleteV1supplierssupplierID(supplierID)
+<a name="deleteSuppliers"></a>
+# **deleteSuppliers**
+> deleteSuppliers(supplierID)
 
 
 
@@ -80,7 +80,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1supplierssupplierID(supplierID, callback);
+apiInstance.deleteSuppliers(supplierID, callback);
 ```
 
 ### Parameters
@@ -102,9 +102,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1supplierssupplierID"></a>
-# **getV1supplierssupplierID**
-> Supplier getV1supplierssupplierID(supplierID)
+<a name="getSuppliers"></a>
+# **getSuppliers**
+> Supplier getSuppliers(supplierID)
 
 
 
@@ -125,7 +125,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1supplierssupplierID(supplierID, callback);
+apiInstance.getSuppliers(supplierID, callback);
 ```
 
 ### Parameters
@@ -147,9 +147,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1suppliers"></a>
-# **listV1suppliers**
-> ListSupplier listV1suppliers(opts)
+<a name="listSuppliers"></a>
+# **listSuppliers**
+> ListSupplier listSuppliers(opts)
 
 
 
@@ -177,7 +177,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1suppliers(opts, callback);
+apiInstance.listSuppliers(opts, callback);
 ```
 
 ### Parameters
@@ -204,9 +204,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1supplierssupplierID"></a>
-# **patchV1supplierssupplierID**
-> Supplier patchV1supplierssupplierID(supplierID, supplier)
+<a name="patchSuppliers"></a>
+# **patchSuppliers**
+> Supplier patchSuppliers(supplierID, supplier)
 
 
 
@@ -228,7 +228,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1supplierssupplierID(supplierID, supplier, callback);
+apiInstance.patchSuppliers(supplierID, supplier, callback);
 ```
 
 ### Parameters
@@ -251,9 +251,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveV1supplierssupplierID"></a>
-# **saveV1supplierssupplierID**
-> Supplier saveV1supplierssupplierID(supplierID, supplier)
+<a name="saveSuppliers"></a>
+# **saveSuppliers**
+> Supplier saveSuppliers(supplierID, supplier)
 
 
 
@@ -275,7 +275,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1supplierssupplierID(supplierID, supplier, callback);
+apiInstance.saveSuppliers(supplierID, supplier, callback);
 ```
 
 ### Parameters

@@ -4,17 +4,17 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1incrementors**](IncrementorApi.md#createV1incrementors) | **POST** /incrementors | 
-[**deleteV1incrementorsincrementorID**](IncrementorApi.md#deleteV1incrementorsincrementorID) | **DELETE** /incrementors/{incrementorID} | 
-[**getV1incrementorsincrementorID**](IncrementorApi.md#getV1incrementorsincrementorID) | **GET** /incrementors/{incrementorID} | 
-[**listV1incrementors**](IncrementorApi.md#listV1incrementors) | **GET** /incrementors | 
-[**patchV1incrementorsincrementorID**](IncrementorApi.md#patchV1incrementorsincrementorID) | **PATCH** /incrementors/{incrementorID} | 
-[**saveV1incrementorsincrementorID**](IncrementorApi.md#saveV1incrementorsincrementorID) | **PUT** /incrementors/{incrementorID} | 
+[**createIncrementors**](IncrementorApi.md#createIncrementors) | **POST** /incrementors | 
+[**deleteIncrementors**](IncrementorApi.md#deleteIncrementors) | **DELETE** /incrementors/{incrementorID} | 
+[**getIncrementors**](IncrementorApi.md#getIncrementors) | **GET** /incrementors/{incrementorID} | 
+[**listIncrementors**](IncrementorApi.md#listIncrementors) | **GET** /incrementors | 
+[**patchIncrementors**](IncrementorApi.md#patchIncrementors) | **PATCH** /incrementors/{incrementorID} | 
+[**saveIncrementors**](IncrementorApi.md#saveIncrementors) | **PUT** /incrementors/{incrementorID} | 
 
 
-<a name="createV1incrementors"></a>
-# **createV1incrementors**
-> Incrementor createV1incrementors(incrementor)
+<a name="createIncrementors"></a>
+# **createIncrementors**
+> Incrementor createIncrementors(incrementor)
 
 
 
@@ -35,7 +35,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1incrementors(incrementor, callback);
+apiInstance.createIncrementors(incrementor, callback);
 ```
 
 ### Parameters
@@ -57,9 +57,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteV1incrementorsincrementorID"></a>
-# **deleteV1incrementorsincrementorID**
-> deleteV1incrementorsincrementorID(incrementorID)
+<a name="deleteIncrementors"></a>
+# **deleteIncrementors**
+> deleteIncrementors(incrementorID)
 
 
 
@@ -80,7 +80,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1incrementorsincrementorID(incrementorID, callback);
+apiInstance.deleteIncrementors(incrementorID, callback);
 ```
 
 ### Parameters
@@ -102,9 +102,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1incrementorsincrementorID"></a>
-# **getV1incrementorsincrementorID**
-> Incrementor getV1incrementorsincrementorID(incrementorID)
+<a name="getIncrementors"></a>
+# **getIncrementors**
+> Incrementor getIncrementors(incrementorID)
 
 
 
@@ -125,7 +125,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1incrementorsincrementorID(incrementorID, callback);
+apiInstance.getIncrementors(incrementorID, callback);
 ```
 
 ### Parameters
@@ -147,9 +147,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1incrementors"></a>
-# **listV1incrementors**
-> ListIncrementor listV1incrementors(opts)
+<a name="listIncrementors"></a>
+# **listIncrementors**
+> ListIncrementor listIncrementors(opts)
 
 
 
@@ -177,7 +177,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1incrementors(opts, callback);
+apiInstance.listIncrementors(opts, callback);
 ```
 
 ### Parameters
@@ -204,9 +204,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchV1incrementorsincrementorID"></a>
-# **patchV1incrementorsincrementorID**
-> Incrementor patchV1incrementorsincrementorID(incrementorID, incrementor)
+<a name="patchIncrementors"></a>
+# **patchIncrementors**
+> Incrementor patchIncrementors(incrementorID, incrementor)
 
 
 
@@ -228,7 +228,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1incrementorsincrementorID(incrementorID, incrementor, callback);
+apiInstance.patchIncrementors(incrementorID, incrementor, callback);
 ```
 
 ### Parameters
@@ -251,9 +251,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveV1incrementorsincrementorID"></a>
-# **saveV1incrementorsincrementorID**
-> Incrementor saveV1incrementorsincrementorID(incrementorID, incrementor)
+<a name="saveIncrementors"></a>
+# **saveIncrementors**
+> Incrementor saveIncrementors(incrementorID, incrementor)
 
 
 
@@ -275,7 +275,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1incrementorsincrementorID(incrementorID, incrementor, callback);
+apiInstance.saveIncrementors(incrementorID, incrementor, callback);
 ```
 
 ### Parameters

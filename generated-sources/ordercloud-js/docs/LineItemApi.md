@@ -4,19 +4,19 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createV1ordersdirectionorderIDlineitems**](LineItemApi.md#createV1ordersdirectionorderIDlineitems) | **POST** /orders/{direction}/{orderID}/lineitems | 
-[**deleteV1ordersdirectionorderIDlineitemslineItemID**](LineItemApi.md#deleteV1ordersdirectionorderIDlineitemslineItemID) | **DELETE** /orders/{direction}/{orderID}/lineitems/{lineItemID} | 
-[**getV1ordersdirectionorderIDlineitemslineItemID**](LineItemApi.md#getV1ordersdirectionorderIDlineitemslineItemID) | **GET** /orders/{direction}/{orderID}/lineitems/{lineItemID} | 
-[**listV1ordersdirectionorderIDlineitems**](LineItemApi.md#listV1ordersdirectionorderIDlineitems) | **GET** /orders/{direction}/{orderID}/lineitems | 
-[**patchShippingAddressV1ordersdirectionorderIDlineitemslineItemIDshipto**](LineItemApi.md#patchShippingAddressV1ordersdirectionorderIDlineitemslineItemIDshipto) | **PATCH** /orders/{direction}/{orderID}/lineitems/{lineItemID}/shipto | 
-[**patchV1ordersdirectionorderIDlineitemslineItemID**](LineItemApi.md#patchV1ordersdirectionorderIDlineitemslineItemID) | **PATCH** /orders/{direction}/{orderID}/lineitems/{lineItemID} | 
-[**saveV1ordersdirectionorderIDlineitemslineItemID**](LineItemApi.md#saveV1ordersdirectionorderIDlineitemslineItemID) | **PUT** /orders/{direction}/{orderID}/lineitems/{lineItemID} | 
-[**setShippingAddressV1ordersdirectionorderIDlineitemslineItemIDshipto**](LineItemApi.md#setShippingAddressV1ordersdirectionorderIDlineitemslineItemIDshipto) | **PUT** /orders/{direction}/{orderID}/lineitems/{lineItemID}/shipto | 
+[**createLineItems**](LineItemApi.md#createLineItems) | **POST** /orders/{direction}/{orderID}/lineitems | 
+[**deleteLineItems**](LineItemApi.md#deleteLineItems) | **DELETE** /orders/{direction}/{orderID}/lineitems/{lineItemID} | 
+[**getLineItems**](LineItemApi.md#getLineItems) | **GET** /orders/{direction}/{orderID}/lineitems/{lineItemID} | 
+[**listLineItems**](LineItemApi.md#listLineItems) | **GET** /orders/{direction}/{orderID}/lineitems | 
+[**patchLineItems**](LineItemApi.md#patchLineItems) | **PATCH** /orders/{direction}/{orderID}/lineitems/{lineItemID} | 
+[**patchShippingAddressLineItems**](LineItemApi.md#patchShippingAddressLineItems) | **PATCH** /orders/{direction}/{orderID}/lineitems/{lineItemID}/shipto | 
+[**saveLineItems**](LineItemApi.md#saveLineItems) | **PUT** /orders/{direction}/{orderID}/lineitems/{lineItemID} | 
+[**setShippingAddressLineItems**](LineItemApi.md#setShippingAddressLineItems) | **PUT** /orders/{direction}/{orderID}/lineitems/{lineItemID}/shipto | 
 
 
-<a name="createV1ordersdirectionorderIDlineitems"></a>
-# **createV1ordersdirectionorderIDlineitems**
-> LineItem createV1ordersdirectionorderIDlineitems(direction, orderID, lineItem)
+<a name="createLineItems"></a>
+# **createLineItems**
+> LineItem createLineItems(direction, orderID, lineItem)
 
 
 
@@ -39,7 +39,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createV1ordersdirectionorderIDlineitems(direction, orderID, lineItem, callback);
+apiInstance.createLineItems(direction, orderID, lineItem, callback);
 ```
 
 ### Parameters
@@ -63,9 +63,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteV1ordersdirectionorderIDlineitemslineItemID"></a>
-# **deleteV1ordersdirectionorderIDlineitemslineItemID**
-> deleteV1ordersdirectionorderIDlineitemslineItemID(direction, orderID, lineItemID)
+<a name="deleteLineItems"></a>
+# **deleteLineItems**
+> deleteLineItems(direction, orderID, lineItemID)
 
 
 
@@ -88,7 +88,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteV1ordersdirectionorderIDlineitemslineItemID(direction, orderID, lineItemID, callback);
+apiInstance.deleteLineItems(direction, orderID, lineItemID, callback);
 ```
 
 ### Parameters
@@ -112,9 +112,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1ordersdirectionorderIDlineitemslineItemID"></a>
-# **getV1ordersdirectionorderIDlineitemslineItemID**
-> LineItem getV1ordersdirectionorderIDlineitemslineItemID(direction, orderID, lineItemID)
+<a name="getLineItems"></a>
+# **getLineItems**
+> LineItem getLineItems(direction, orderID, lineItemID)
 
 
 
@@ -137,7 +137,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1ordersdirectionorderIDlineitemslineItemID(direction, orderID, lineItemID, callback);
+apiInstance.getLineItems(direction, orderID, lineItemID, callback);
 ```
 
 ### Parameters
@@ -161,9 +161,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1ordersdirectionorderIDlineitems"></a>
-# **listV1ordersdirectionorderIDlineitems**
-> ListLineItem listV1ordersdirectionorderIDlineitems(direction, orderID, opts)
+<a name="listLineItems"></a>
+# **listLineItems**
+> ListLineItem listLineItems(direction, orderID, opts)
 
 
 
@@ -193,7 +193,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1ordersdirectionorderIDlineitems(direction, orderID, opts, callback);
+apiInstance.listLineItems(direction, orderID, opts, callback);
 ```
 
 ### Parameters
@@ -222,9 +222,60 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchShippingAddressV1ordersdirectionorderIDlineitemslineItemIDshipto"></a>
-# **patchShippingAddressV1ordersdirectionorderIDlineitemslineItemIDshipto**
-> LineItem patchShippingAddressV1ordersdirectionorderIDlineitemslineItemIDshipto(direction, orderID, lineItemID, address)
+<a name="patchLineItems"></a>
+# **patchLineItems**
+> LineItem patchLineItems(direction, orderID, lineItemID, lineItem)
+
+
+
+### Example
+```javascript
+var OrderCloud = require('order_cloud');
+var defaultClient = OrderCloud.ApiClient.instance;
+// Configure OAuth2 access token for authorization: OAuth2
+var OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new OrderCloud.LineItemApi();
+var direction = "direction_example"; // String | Direction of the order, from the current user's perspective. Possible values: incoming, outgoing.
+var orderID = "orderID_example"; // String | ID of the order.
+var lineItemID = "lineItemID_example"; // String | ID of the line item.
+var lineItem = new OrderCloud.LineItem(); // LineItem | 
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.patchLineItems(direction, orderID, lineItemID, lineItem, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **direction** | **String**| Direction of the order, from the current user&#39;s perspective. Possible values: incoming, outgoing. | 
+ **orderID** | **String**| ID of the order. | 
+ **lineItemID** | **String**| ID of the line item. | 
+ **lineItem** | [**LineItem**](LineItem.md)|  | 
+
+### Return type
+
+[**LineItem**](LineItem.md)
+
+### Authorization
+
+[OAuth2](../README.md#OAuth2)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="patchShippingAddressLineItems"></a>
+# **patchShippingAddressLineItems**
+> LineItem patchShippingAddressLineItems(direction, orderID, lineItemID, address)
 
 
 
@@ -248,7 +299,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchShippingAddressV1ordersdirectionorderIDlineitemslineItemIDshipto(direction, orderID, lineItemID, address, callback);
+apiInstance.patchShippingAddressLineItems(direction, orderID, lineItemID, address, callback);
 ```
 
 ### Parameters
@@ -273,9 +324,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="patchV1ordersdirectionorderIDlineitemslineItemID"></a>
-# **patchV1ordersdirectionorderIDlineitemslineItemID**
-> LineItem patchV1ordersdirectionorderIDlineitemslineItemID(direction, orderID, lineItemID, lineItem)
+<a name="saveLineItems"></a>
+# **saveLineItems**
+> LineItem saveLineItems(direction, orderID, lineItemID, lineItem)
 
 
 
@@ -299,7 +350,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1ordersdirectionorderIDlineitemslineItemID(direction, orderID, lineItemID, lineItem, callback);
+apiInstance.saveLineItems(direction, orderID, lineItemID, lineItem, callback);
 ```
 
 ### Parameters
@@ -324,60 +375,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveV1ordersdirectionorderIDlineitemslineItemID"></a>
-# **saveV1ordersdirectionorderIDlineitemslineItemID**
-> LineItem saveV1ordersdirectionorderIDlineitemslineItemID(direction, orderID, lineItemID, lineItem)
-
-
-
-### Example
-```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.instance;
-// Configure OAuth2 access token for authorization: OAuth2
-var OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-
-var apiInstance = new OrderCloud.LineItemApi();
-var direction = "direction_example"; // String | Direction of the order, from the current user's perspective. Possible values: incoming, outgoing.
-var orderID = "orderID_example"; // String | ID of the order.
-var lineItemID = "lineItemID_example"; // String | ID of the line item.
-var lineItem = new OrderCloud.LineItem(); // LineItem | 
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.saveV1ordersdirectionorderIDlineitemslineItemID(direction, orderID, lineItemID, lineItem, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **direction** | **String**| Direction of the order, from the current user&#39;s perspective. Possible values: incoming, outgoing. | 
- **orderID** | **String**| ID of the order. | 
- **lineItemID** | **String**| ID of the line item. | 
- **lineItem** | [**LineItem**](LineItem.md)|  | 
-
-### Return type
-
-[**LineItem**](LineItem.md)
-
-### Authorization
-
-[OAuth2](../README.md#OAuth2)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="setShippingAddressV1ordersdirectionorderIDlineitemslineItemIDshipto"></a>
-# **setShippingAddressV1ordersdirectionorderIDlineitemslineItemIDshipto**
-> LineItem setShippingAddressV1ordersdirectionorderIDlineitemslineItemIDshipto(direction, orderID, lineItemID, address)
+<a name="setShippingAddressLineItems"></a>
+# **setShippingAddressLineItems**
+> LineItem setShippingAddressLineItems(direction, orderID, lineItemID, address)
 
 
 
@@ -401,7 +401,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.setShippingAddressV1ordersdirectionorderIDlineitemslineItemIDshipto(direction, orderID, lineItemID, address, callback);
+apiInstance.setShippingAddressLineItems(direction, orderID, lineItemID, address, callback);
 ```
 
 ### Parameters

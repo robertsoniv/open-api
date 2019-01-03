@@ -4,48 +4,48 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createAddressV1meaddresses**](MeApi.md#createAddressV1meaddresses) | **POST** /me/addresses | 
-[**createCreditCardV1mecreditcards**](MeApi.md#createCreditCardV1mecreditcards) | **POST** /me/creditcards | 
-[**deleteAddressV1meaddressesaddressID**](MeApi.md#deleteAddressV1meaddressesaddressID) | **DELETE** /me/addresses/{addressID} | 
-[**deleteCreditCardV1mecreditcardscreditcardID**](MeApi.md#deleteCreditCardV1mecreditcardscreditcardID) | **DELETE** /me/creditcards/{creditcardID} | 
-[**getAddressV1meaddressesaddressID**](MeApi.md#getAddressV1meaddressesaddressID) | **GET** /me/addresses/{addressID} | 
-[**getCatalogV1mecatalogscatalogID**](MeApi.md#getCatalogV1mecatalogscatalogID) | **GET** /me/catalogs/{catalogID} | 
-[**getCategoryV1mecategoriescategoryID**](MeApi.md#getCategoryV1mecategoriescategoryID) | **GET** /me/categories/{categoryID} | 
-[**getCreditCardV1mecreditcardscreditcardID**](MeApi.md#getCreditCardV1mecreditcardscreditcardID) | **GET** /me/creditcards/{creditcardID} | 
-[**getProductV1meproductsproductID**](MeApi.md#getProductV1meproductsproductID) | **GET** /me/products/{productID} | 
-[**getPromotionV1mepromotionspromotionID**](MeApi.md#getPromotionV1mepromotionspromotionID) | **GET** /me/promotions/{promotionID} | 
-[**getShipmentV1meshipmentsshipmentID**](MeApi.md#getShipmentV1meshipmentsshipmentID) | **GET** /me/shipments/{shipmentID} | 
-[**getSpecV1meproductsproductIDspecsspecID**](MeApi.md#getSpecV1meproductsproductIDspecsspecID) | **GET** /me/products/{productID}/specs/{specID} | 
-[**getSpendingAccountV1mespendingaccountsspendingAccountID**](MeApi.md#getSpendingAccountV1mespendingaccountsspendingAccountID) | **GET** /me/spendingaccounts/{spendingAccountID} | 
-[**getV1me**](MeApi.md#getV1me) | **GET** /me | 
-[**listAddressesV1meaddresses**](MeApi.md#listAddressesV1meaddresses) | **GET** /me/addresses | 
-[**listApprovableOrdersV1meordersapprovable**](MeApi.md#listApprovableOrdersV1meordersapprovable) | **GET** /me/orders/approvable | 
-[**listCatalogsV1mecatalogs**](MeApi.md#listCatalogsV1mecatalogs) | **GET** /me/catalogs | 
-[**listCategoriesV1mecategories**](MeApi.md#listCategoriesV1mecategories) | **GET** /me/categories | 
-[**listCostCentersV1mecostcenters**](MeApi.md#listCostCentersV1mecostcenters) | **GET** /me/costcenters | 
-[**listCreditCardsV1mecreditcards**](MeApi.md#listCreditCardsV1mecreditcards) | **GET** /me/creditcards | 
-[**listOrdersV1meorders**](MeApi.md#listOrdersV1meorders) | **GET** /me/orders | 
-[**listProductsV1meproducts**](MeApi.md#listProductsV1meproducts) | **GET** /me/products | 
-[**listPromotionsV1mepromotions**](MeApi.md#listPromotionsV1mepromotions) | **GET** /me/promotions | 
-[**listShipmentItemsV1meshipmentsshipmentIDitems**](MeApi.md#listShipmentItemsV1meshipmentsshipmentIDitems) | **GET** /me/shipments/{shipmentID}/items | 
-[**listShipmentsV1meshipments**](MeApi.md#listShipmentsV1meshipments) | **GET** /me/shipments | 
-[**listSpecsV1meproductsproductIDspecs**](MeApi.md#listSpecsV1meproductsproductIDspecs) | **GET** /me/products/{productID}/specs | 
-[**listSpendingAccountsV1mespendingAccounts**](MeApi.md#listSpendingAccountsV1mespendingAccounts) | **GET** /me/spendingAccounts | 
-[**listUserGroupsV1meusergroups**](MeApi.md#listUserGroupsV1meusergroups) | **GET** /me/usergroups | 
-[**patchAddressV1meaddressesaddressID**](MeApi.md#patchAddressV1meaddressesaddressID) | **PATCH** /me/addresses/{addressID} | 
-[**patchCreditCardV1mecreditcardscreditcardID**](MeApi.md#patchCreditCardV1mecreditcardscreditcardID) | **PATCH** /me/creditcards/{creditcardID} | 
-[**patchV1me**](MeApi.md#patchV1me) | **PATCH** /me | 
-[**registerV1meregister**](MeApi.md#registerV1meregister) | **PUT** /me/register | 
-[**resetPasswordByTokenV1mepassword**](MeApi.md#resetPasswordByTokenV1mepassword) | **POST** /me/password | 
-[**saveAddressV1meaddressesaddressID**](MeApi.md#saveAddressV1meaddressesaddressID) | **PUT** /me/addresses/{addressID} | 
-[**saveCreditCardV1mecreditcardscreditcardID**](MeApi.md#saveCreditCardV1mecreditcardscreditcardID) | **PUT** /me/creditcards/{creditcardID} | 
-[**saveV1me**](MeApi.md#saveV1me) | **PUT** /me | 
-[**transferAnonUserOrderV1meorders**](MeApi.md#transferAnonUserOrderV1meorders) | **PUT** /me/orders | 
+[**createAddressMe**](MeApi.md#createAddressMe) | **POST** /me/addresses | 
+[**createCreditCardMe**](MeApi.md#createCreditCardMe) | **POST** /me/creditcards | 
+[**deleteAddressMe**](MeApi.md#deleteAddressMe) | **DELETE** /me/addresses/{addressID} | 
+[**deleteCreditCardMe**](MeApi.md#deleteCreditCardMe) | **DELETE** /me/creditcards/{creditcardID} | 
+[**getAddressMe**](MeApi.md#getAddressMe) | **GET** /me/addresses/{addressID} | 
+[**getCatalogMe**](MeApi.md#getCatalogMe) | **GET** /me/catalogs/{catalogID} | 
+[**getCategoryMe**](MeApi.md#getCategoryMe) | **GET** /me/categories/{categoryID} | 
+[**getCreditCardMe**](MeApi.md#getCreditCardMe) | **GET** /me/creditcards/{creditcardID} | 
+[**getMe**](MeApi.md#getMe) | **GET** /me | 
+[**getProductMe**](MeApi.md#getProductMe) | **GET** /me/products/{productID} | 
+[**getPromotionMe**](MeApi.md#getPromotionMe) | **GET** /me/promotions/{promotionID} | 
+[**getShipmentMe**](MeApi.md#getShipmentMe) | **GET** /me/shipments/{shipmentID} | 
+[**getSpecMe**](MeApi.md#getSpecMe) | **GET** /me/products/{productID}/specs/{specID} | 
+[**getSpendingAccountMe**](MeApi.md#getSpendingAccountMe) | **GET** /me/spendingaccounts/{spendingAccountID} | 
+[**listAddressesMe**](MeApi.md#listAddressesMe) | **GET** /me/addresses | 
+[**listApprovableOrdersMe**](MeApi.md#listApprovableOrdersMe) | **GET** /me/orders/approvable | 
+[**listCatalogsMe**](MeApi.md#listCatalogsMe) | **GET** /me/catalogs | 
+[**listCategoriesMe**](MeApi.md#listCategoriesMe) | **GET** /me/categories | 
+[**listCostCentersMe**](MeApi.md#listCostCentersMe) | **GET** /me/costcenters | 
+[**listCreditCardsMe**](MeApi.md#listCreditCardsMe) | **GET** /me/creditcards | 
+[**listOrdersMe**](MeApi.md#listOrdersMe) | **GET** /me/orders | 
+[**listProductsMe**](MeApi.md#listProductsMe) | **GET** /me/products | 
+[**listPromotionsMe**](MeApi.md#listPromotionsMe) | **GET** /me/promotions | 
+[**listShipmentItemsMe**](MeApi.md#listShipmentItemsMe) | **GET** /me/shipments/{shipmentID}/items | 
+[**listShipmentsMe**](MeApi.md#listShipmentsMe) | **GET** /me/shipments | 
+[**listSpecsMe**](MeApi.md#listSpecsMe) | **GET** /me/products/{productID}/specs | 
+[**listSpendingAccountsMe**](MeApi.md#listSpendingAccountsMe) | **GET** /me/spendingAccounts | 
+[**listUserGroupsMe**](MeApi.md#listUserGroupsMe) | **GET** /me/usergroups | 
+[**patchAddressMe**](MeApi.md#patchAddressMe) | **PATCH** /me/addresses/{addressID} | 
+[**patchCreditCardMe**](MeApi.md#patchCreditCardMe) | **PATCH** /me/creditcards/{creditcardID} | 
+[**patchMe**](MeApi.md#patchMe) | **PATCH** /me | 
+[**registerMe**](MeApi.md#registerMe) | **PUT** /me/register | 
+[**resetPasswordByTokenMe**](MeApi.md#resetPasswordByTokenMe) | **POST** /me/password | 
+[**saveAddressMe**](MeApi.md#saveAddressMe) | **PUT** /me/addresses/{addressID} | 
+[**saveCreditCardMe**](MeApi.md#saveCreditCardMe) | **PUT** /me/creditcards/{creditcardID} | 
+[**saveMe**](MeApi.md#saveMe) | **PUT** /me | 
+[**transferAnonUserOrderMe**](MeApi.md#transferAnonUserOrderMe) | **PUT** /me/orders | 
 
 
-<a name="createAddressV1meaddresses"></a>
-# **createAddressV1meaddresses**
-> BuyerAddress createAddressV1meaddresses(buyerAddress)
+<a name="createAddressMe"></a>
+# **createAddressMe**
+> BuyerAddress createAddressMe(buyerAddress)
 
 
 
@@ -66,7 +66,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createAddressV1meaddresses(buyerAddress, callback);
+apiInstance.createAddressMe(buyerAddress, callback);
 ```
 
 ### Parameters
@@ -88,9 +88,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="createCreditCardV1mecreditcards"></a>
-# **createCreditCardV1mecreditcards**
-> BuyerCreditCard createCreditCardV1mecreditcards(buyerCreditCard)
+<a name="createCreditCardMe"></a>
+# **createCreditCardMe**
+> BuyerCreditCard createCreditCardMe(buyerCreditCard)
 
 
 
@@ -111,7 +111,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createCreditCardV1mecreditcards(buyerCreditCard, callback);
+apiInstance.createCreditCardMe(buyerCreditCard, callback);
 ```
 
 ### Parameters
@@ -133,9 +133,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteAddressV1meaddressesaddressID"></a>
-# **deleteAddressV1meaddressesaddressID**
-> deleteAddressV1meaddressesaddressID(addressID)
+<a name="deleteAddressMe"></a>
+# **deleteAddressMe**
+> deleteAddressMe(addressID)
 
 
 
@@ -156,7 +156,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteAddressV1meaddressesaddressID(addressID, callback);
+apiInstance.deleteAddressMe(addressID, callback);
 ```
 
 ### Parameters
@@ -178,9 +178,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="deleteCreditCardV1mecreditcardscreditcardID"></a>
-# **deleteCreditCardV1mecreditcardscreditcardID**
-> deleteCreditCardV1mecreditcardscreditcardID(creditcardID)
+<a name="deleteCreditCardMe"></a>
+# **deleteCreditCardMe**
+> deleteCreditCardMe(creditcardID)
 
 
 
@@ -201,7 +201,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteCreditCardV1mecreditcardscreditcardID(creditcardID, callback);
+apiInstance.deleteCreditCardMe(creditcardID, callback);
 ```
 
 ### Parameters
@@ -223,9 +223,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getAddressV1meaddressesaddressID"></a>
-# **getAddressV1meaddressesaddressID**
-> BuyerAddress getAddressV1meaddressesaddressID(addressID)
+<a name="getAddressMe"></a>
+# **getAddressMe**
+> BuyerAddress getAddressMe(addressID)
 
 
 
@@ -246,7 +246,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getAddressV1meaddressesaddressID(addressID, callback);
+apiInstance.getAddressMe(addressID, callback);
 ```
 
 ### Parameters
@@ -268,9 +268,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getCatalogV1mecatalogscatalogID"></a>
-# **getCatalogV1mecatalogscatalogID**
-> Catalog getCatalogV1mecatalogscatalogID(catalogID)
+<a name="getCatalogMe"></a>
+# **getCatalogMe**
+> Catalog getCatalogMe(catalogID)
 
 
 
@@ -291,7 +291,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getCatalogV1mecatalogscatalogID(catalogID, callback);
+apiInstance.getCatalogMe(catalogID, callback);
 ```
 
 ### Parameters
@@ -313,9 +313,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getCategoryV1mecategoriescategoryID"></a>
-# **getCategoryV1mecategoriescategoryID**
-> Category getCategoryV1mecategoriescategoryID(categoryID, catalogID)
+<a name="getCategoryMe"></a>
+# **getCategoryMe**
+> Category getCategoryMe(categoryID, catalogID)
 
 
 
@@ -337,7 +337,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getCategoryV1mecategoriescategoryID(categoryID, catalogID, callback);
+apiInstance.getCategoryMe(categoryID, catalogID, callback);
 ```
 
 ### Parameters
@@ -360,9 +360,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getCreditCardV1mecreditcardscreditcardID"></a>
-# **getCreditCardV1mecreditcardscreditcardID**
-> BuyerCreditCard getCreditCardV1mecreditcardscreditcardID(creditcardID)
+<a name="getCreditCardMe"></a>
+# **getCreditCardMe**
+> BuyerCreditCard getCreditCardMe(creditcardID)
 
 
 
@@ -383,7 +383,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getCreditCardV1mecreditcardscreditcardID(creditcardID, callback);
+apiInstance.getCreditCardMe(creditcardID, callback);
 ```
 
 ### Parameters
@@ -405,9 +405,50 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getProductV1meproductsproductID"></a>
-# **getProductV1meproductsproductID**
-> BuyerProduct getProductV1meproductsproductID(productID)
+<a name="getMe"></a>
+# **getMe**
+> MeUser getMe()
+
+
+
+### Example
+```javascript
+var OrderCloud = require('order_cloud');
+var defaultClient = OrderCloud.ApiClient.instance;
+// Configure OAuth2 access token for authorization: OAuth2
+var OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new OrderCloud.MeApi();
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.getMe(callback);
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**MeUser**](MeUser.md)
+
+### Authorization
+
+[OAuth2](../README.md#OAuth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getProductMe"></a>
+# **getProductMe**
+> BuyerProduct getProductMe(productID)
 
 
 
@@ -428,7 +469,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getProductV1meproductsproductID(productID, callback);
+apiInstance.getProductMe(productID, callback);
 ```
 
 ### Parameters
@@ -450,9 +491,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getPromotionV1mepromotionspromotionID"></a>
-# **getPromotionV1mepromotionspromotionID**
-> Promotion getPromotionV1mepromotionspromotionID(promotionID)
+<a name="getPromotionMe"></a>
+# **getPromotionMe**
+> Promotion getPromotionMe(promotionID)
 
 
 
@@ -473,7 +514,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getPromotionV1mepromotionspromotionID(promotionID, callback);
+apiInstance.getPromotionMe(promotionID, callback);
 ```
 
 ### Parameters
@@ -495,9 +536,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getShipmentV1meshipmentsshipmentID"></a>
-# **getShipmentV1meshipmentsshipmentID**
-> Shipment getShipmentV1meshipmentsshipmentID(shipmentID)
+<a name="getShipmentMe"></a>
+# **getShipmentMe**
+> Shipment getShipmentMe(shipmentID)
 
 
 
@@ -518,7 +559,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getShipmentV1meshipmentsshipmentID(shipmentID, callback);
+apiInstance.getShipmentMe(shipmentID, callback);
 ```
 
 ### Parameters
@@ -540,9 +581,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getSpecV1meproductsproductIDspecsspecID"></a>
-# **getSpecV1meproductsproductIDspecsspecID**
-> BuyerSpec getSpecV1meproductsproductIDspecsspecID(productID, specID, opts)
+<a name="getSpecMe"></a>
+# **getSpecMe**
+> BuyerSpec getSpecMe(productID, specID, opts)
 
 
 
@@ -567,7 +608,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getSpecV1meproductsproductIDspecsspecID(productID, specID, opts, callback);
+apiInstance.getSpecMe(productID, specID, opts, callback);
 ```
 
 ### Parameters
@@ -591,9 +632,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getSpendingAccountV1mespendingaccountsspendingAccountID"></a>
-# **getSpendingAccountV1mespendingaccountsspendingAccountID**
-> SpendingAccount getSpendingAccountV1mespendingaccountsspendingAccountID(spendingAccountID)
+<a name="getSpendingAccountMe"></a>
+# **getSpendingAccountMe**
+> SpendingAccount getSpendingAccountMe(spendingAccountID)
 
 
 
@@ -614,7 +655,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getSpendingAccountV1mespendingaccountsspendingAccountID(spendingAccountID, callback);
+apiInstance.getSpendingAccountMe(spendingAccountID, callback);
 ```
 
 ### Parameters
@@ -636,50 +677,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getV1me"></a>
-# **getV1me**
-> MeUser getV1me()
-
-
-
-### Example
-```javascript
-var OrderCloud = require('order_cloud');
-var defaultClient = OrderCloud.ApiClient.instance;
-// Configure OAuth2 access token for authorization: OAuth2
-var OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-
-var apiInstance = new OrderCloud.MeApi();
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.getV1me(callback);
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**MeUser**](MeUser.md)
-
-### Authorization
-
-[OAuth2](../README.md#OAuth2)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-<a name="listAddressesV1meaddresses"></a>
-# **listAddressesV1meaddresses**
-> ListBuyerAddress listAddressesV1meaddresses(opts)
+<a name="listAddressesMe"></a>
+# **listAddressesMe**
+> ListBuyerAddress listAddressesMe(opts)
 
 
 
@@ -707,7 +707,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listAddressesV1meaddresses(opts, callback);
+apiInstance.listAddressesMe(opts, callback);
 ```
 
 ### Parameters
@@ -734,9 +734,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listApprovableOrdersV1meordersapprovable"></a>
-# **listApprovableOrdersV1meordersapprovable**
-> ListOrder listApprovableOrdersV1meordersapprovable(opts)
+<a name="listApprovableOrdersMe"></a>
+# **listApprovableOrdersMe**
+> ListOrder listApprovableOrdersMe(opts)
 
 
 
@@ -766,7 +766,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listApprovableOrdersV1meordersapprovable(opts, callback);
+apiInstance.listApprovableOrdersMe(opts, callback);
 ```
 
 ### Parameters
@@ -795,9 +795,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listCatalogsV1mecatalogs"></a>
-# **listCatalogsV1mecatalogs**
-> ListCatalog listCatalogsV1mecatalogs(opts)
+<a name="listCatalogsMe"></a>
+# **listCatalogsMe**
+> ListCatalog listCatalogsMe(opts)
 
 
 
@@ -825,7 +825,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listCatalogsV1mecatalogs(opts, callback);
+apiInstance.listCatalogsMe(opts, callback);
 ```
 
 ### Parameters
@@ -852,9 +852,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listCategoriesV1mecategories"></a>
-# **listCategoriesV1mecategories**
-> ListCategory listCategoriesV1mecategories(opts)
+<a name="listCategoriesMe"></a>
+# **listCategoriesMe**
+> ListCategory listCategoriesMe(opts)
 
 
 
@@ -885,7 +885,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listCategoriesV1mecategories(opts, callback);
+apiInstance.listCategoriesMe(opts, callback);
 ```
 
 ### Parameters
@@ -915,9 +915,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listCostCentersV1mecostcenters"></a>
-# **listCostCentersV1mecostcenters**
-> ListCostCenter listCostCentersV1mecostcenters(opts)
+<a name="listCostCentersMe"></a>
+# **listCostCentersMe**
+> ListCostCenter listCostCentersMe(opts)
 
 
 
@@ -945,7 +945,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listCostCentersV1mecostcenters(opts, callback);
+apiInstance.listCostCentersMe(opts, callback);
 ```
 
 ### Parameters
@@ -972,9 +972,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listCreditCardsV1mecreditcards"></a>
-# **listCreditCardsV1mecreditcards**
-> ListBuyerCreditCard listCreditCardsV1mecreditcards(opts)
+<a name="listCreditCardsMe"></a>
+# **listCreditCardsMe**
+> ListBuyerCreditCard listCreditCardsMe(opts)
 
 
 
@@ -1002,7 +1002,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listCreditCardsV1mecreditcards(opts, callback);
+apiInstance.listCreditCardsMe(opts, callback);
 ```
 
 ### Parameters
@@ -1029,9 +1029,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listOrdersV1meorders"></a>
-# **listOrdersV1meorders**
-> ListOrder listOrdersV1meorders(opts)
+<a name="listOrdersMe"></a>
+# **listOrdersMe**
+> ListOrder listOrdersMe(opts)
 
 
 
@@ -1061,7 +1061,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listOrdersV1meorders(opts, callback);
+apiInstance.listOrdersMe(opts, callback);
 ```
 
 ### Parameters
@@ -1090,9 +1090,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listProductsV1meproducts"></a>
-# **listProductsV1meproducts**
-> ListBuyerProduct listProductsV1meproducts(opts)
+<a name="listProductsMe"></a>
+# **listProductsMe**
+> ListBuyerProduct listProductsMe(opts)
 
 
 
@@ -1123,7 +1123,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listProductsV1meproducts(opts, callback);
+apiInstance.listProductsMe(opts, callback);
 ```
 
 ### Parameters
@@ -1153,9 +1153,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listPromotionsV1mepromotions"></a>
-# **listPromotionsV1mepromotions**
-> ListPromotion listPromotionsV1mepromotions(opts)
+<a name="listPromotionsMe"></a>
+# **listPromotionsMe**
+> ListPromotion listPromotionsMe(opts)
 
 
 
@@ -1183,7 +1183,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listPromotionsV1mepromotions(opts, callback);
+apiInstance.listPromotionsMe(opts, callback);
 ```
 
 ### Parameters
@@ -1210,9 +1210,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listShipmentItemsV1meshipmentsshipmentIDitems"></a>
-# **listShipmentItemsV1meshipmentsshipmentIDitems**
-> ListShipmentItem listShipmentItemsV1meshipmentsshipmentIDitems(shipmentID, opts)
+<a name="listShipmentItemsMe"></a>
+# **listShipmentItemsMe**
+> ListShipmentItem listShipmentItemsMe(shipmentID, opts)
 
 
 
@@ -1242,7 +1242,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listShipmentItemsV1meshipmentsshipmentIDitems(shipmentID, opts, callback);
+apiInstance.listShipmentItemsMe(shipmentID, opts, callback);
 ```
 
 ### Parameters
@@ -1271,9 +1271,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listShipmentsV1meshipments"></a>
-# **listShipmentsV1meshipments**
-> ListShipment listShipmentsV1meshipments(opts)
+<a name="listShipmentsMe"></a>
+# **listShipmentsMe**
+> ListShipment listShipmentsMe(opts)
 
 
 
@@ -1302,7 +1302,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listShipmentsV1meshipments(opts, callback);
+apiInstance.listShipmentsMe(opts, callback);
 ```
 
 ### Parameters
@@ -1330,9 +1330,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listSpecsV1meproductsproductIDspecs"></a>
-# **listSpecsV1meproductsproductIDspecs**
-> ListBuyerSpec listSpecsV1meproductsproductIDspecs(productID, opts)
+<a name="listSpecsMe"></a>
+# **listSpecsMe**
+> ListBuyerSpec listSpecsMe(productID, opts)
 
 
 
@@ -1362,7 +1362,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listSpecsV1meproductsproductIDspecs(productID, opts, callback);
+apiInstance.listSpecsMe(productID, opts, callback);
 ```
 
 ### Parameters
@@ -1391,9 +1391,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listSpendingAccountsV1mespendingAccounts"></a>
-# **listSpendingAccountsV1mespendingAccounts**
-> ListSpendingAccount listSpendingAccountsV1mespendingAccounts(opts)
+<a name="listSpendingAccountsMe"></a>
+# **listSpendingAccountsMe**
+> ListSpendingAccount listSpendingAccountsMe(opts)
 
 
 
@@ -1421,7 +1421,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listSpendingAccountsV1mespendingAccounts(opts, callback);
+apiInstance.listSpendingAccountsMe(opts, callback);
 ```
 
 ### Parameters
@@ -1448,9 +1448,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listUserGroupsV1meusergroups"></a>
-# **listUserGroupsV1meusergroups**
-> ListUserGroup listUserGroupsV1meusergroups(opts)
+<a name="listUserGroupsMe"></a>
+# **listUserGroupsMe**
+> ListUserGroup listUserGroupsMe(opts)
 
 
 
@@ -1478,7 +1478,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listUserGroupsV1meusergroups(opts, callback);
+apiInstance.listUserGroupsMe(opts, callback);
 ```
 
 ### Parameters
@@ -1505,9 +1505,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="patchAddressV1meaddressesaddressID"></a>
-# **patchAddressV1meaddressesaddressID**
-> patchAddressV1meaddressesaddressID(addressID, buyerAddress)
+<a name="patchAddressMe"></a>
+# **patchAddressMe**
+> patchAddressMe(addressID, buyerAddress)
 
 
 
@@ -1529,7 +1529,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.patchAddressV1meaddressesaddressID(addressID, buyerAddress, callback);
+apiInstance.patchAddressMe(addressID, buyerAddress, callback);
 ```
 
 ### Parameters
@@ -1552,9 +1552,9 @@ null (empty response body)
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-<a name="patchCreditCardV1mecreditcardscreditcardID"></a>
-# **patchCreditCardV1mecreditcardscreditcardID**
-> patchCreditCardV1mecreditcardscreditcardID(creditcardID, buyerCreditCard)
+<a name="patchCreditCardMe"></a>
+# **patchCreditCardMe**
+> patchCreditCardMe(creditcardID, buyerCreditCard)
 
 
 
@@ -1576,7 +1576,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.patchCreditCardV1mecreditcardscreditcardID(creditcardID, buyerCreditCard, callback);
+apiInstance.patchCreditCardMe(creditcardID, buyerCreditCard, callback);
 ```
 
 ### Parameters
@@ -1599,9 +1599,9 @@ null (empty response body)
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-<a name="patchV1me"></a>
-# **patchV1me**
-> MeUser patchV1me(meUser)
+<a name="patchMe"></a>
+# **patchMe**
+> MeUser patchMe(meUser)
 
 
 
@@ -1622,7 +1622,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.patchV1me(meUser, callback);
+apiInstance.patchMe(meUser, callback);
 ```
 
 ### Parameters
@@ -1644,9 +1644,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="registerV1meregister"></a>
-# **registerV1meregister**
-> Authentication registerV1meregister(anonUserToken, meUser)
+<a name="registerMe"></a>
+# **registerMe**
+> Authentication registerMe(anonUserToken, meUser)
 
 
 
@@ -1668,7 +1668,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.registerV1meregister(anonUserToken, meUser, callback);
+apiInstance.registerMe(anonUserToken, meUser, callback);
 ```
 
 ### Parameters
@@ -1691,9 +1691,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="resetPasswordByTokenV1mepassword"></a>
-# **resetPasswordByTokenV1mepassword**
-> resetPasswordByTokenV1mepassword(tokenPasswordReset)
+<a name="resetPasswordByTokenMe"></a>
+# **resetPasswordByTokenMe**
+> resetPasswordByTokenMe(tokenPasswordReset)
 
 
 
@@ -1714,7 +1714,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.resetPasswordByTokenV1mepassword(tokenPasswordReset, callback);
+apiInstance.resetPasswordByTokenMe(tokenPasswordReset, callback);
 ```
 
 ### Parameters
@@ -1736,9 +1736,9 @@ null (empty response body)
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-<a name="saveAddressV1meaddressesaddressID"></a>
-# **saveAddressV1meaddressesaddressID**
-> BuyerAddress saveAddressV1meaddressesaddressID(addressID, buyerAddress)
+<a name="saveAddressMe"></a>
+# **saveAddressMe**
+> BuyerAddress saveAddressMe(addressID, buyerAddress)
 
 
 
@@ -1760,7 +1760,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveAddressV1meaddressesaddressID(addressID, buyerAddress, callback);
+apiInstance.saveAddressMe(addressID, buyerAddress, callback);
 ```
 
 ### Parameters
@@ -1783,9 +1783,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveCreditCardV1mecreditcardscreditcardID"></a>
-# **saveCreditCardV1mecreditcardscreditcardID**
-> BuyerCreditCard saveCreditCardV1mecreditcardscreditcardID(creditcardID, buyerCreditCard)
+<a name="saveCreditCardMe"></a>
+# **saveCreditCardMe**
+> BuyerCreditCard saveCreditCardMe(creditcardID, buyerCreditCard)
 
 
 
@@ -1807,7 +1807,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveCreditCardV1mecreditcardscreditcardID(creditcardID, buyerCreditCard, callback);
+apiInstance.saveCreditCardMe(creditcardID, buyerCreditCard, callback);
 ```
 
 ### Parameters
@@ -1830,9 +1830,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="saveV1me"></a>
-# **saveV1me**
-> MeUser saveV1me(meUser)
+<a name="saveMe"></a>
+# **saveMe**
+> MeUser saveMe(meUser)
 
 
 
@@ -1853,7 +1853,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.saveV1me(meUser, callback);
+apiInstance.saveMe(meUser, callback);
 ```
 
 ### Parameters
@@ -1875,9 +1875,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="transferAnonUserOrderV1meorders"></a>
-# **transferAnonUserOrderV1meorders**
-> transferAnonUserOrderV1meorders(anonUserToken)
+<a name="transferAnonUserOrderMe"></a>
+# **transferAnonUserOrderMe**
+> transferAnonUserOrderMe(anonUserToken)
 
 
 
@@ -1898,7 +1898,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.transferAnonUserOrderV1meorders(anonUserToken, callback);
+apiInstance.transferAnonUserOrderMe(anonUserToken, callback);
 ```
 
 ### Parameters

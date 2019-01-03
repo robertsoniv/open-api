@@ -4,16 +4,16 @@ All URIs are relative to *https://api.ordercloud.io/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**deleteAssignmentV1securityprofilessecurityProfileIDassignments**](SecurityProfileApi.md#deleteAssignmentV1securityprofilessecurityProfileIDassignments) | **DELETE** /securityprofiles/{securityProfileID}/assignments | 
-[**getV1securityprofilessecurityProfileID**](SecurityProfileApi.md#getV1securityprofilessecurityProfileID) | **GET** /securityprofiles/{securityProfileID} | 
-[**listAssignmentsV1securityprofilesassignments**](SecurityProfileApi.md#listAssignmentsV1securityprofilesassignments) | **GET** /securityprofiles/assignments | 
-[**listV1securityprofiles**](SecurityProfileApi.md#listV1securityprofiles) | **GET** /securityprofiles | 
-[**saveAssignmentV1securityprofilesassignments**](SecurityProfileApi.md#saveAssignmentV1securityprofilesassignments) | **POST** /securityprofiles/assignments | 
+[**deleteAssignmentSecurityProfiles**](SecurityProfileApi.md#deleteAssignmentSecurityProfiles) | **DELETE** /securityprofiles/{securityProfileID}/assignments | 
+[**getSecurityProfiles**](SecurityProfileApi.md#getSecurityProfiles) | **GET** /securityprofiles/{securityProfileID} | 
+[**listAssignmentsSecurityProfiles**](SecurityProfileApi.md#listAssignmentsSecurityProfiles) | **GET** /securityprofiles/assignments | 
+[**listSecurityProfiles**](SecurityProfileApi.md#listSecurityProfiles) | **GET** /securityprofiles | 
+[**saveAssignmentSecurityProfiles**](SecurityProfileApi.md#saveAssignmentSecurityProfiles) | **POST** /securityprofiles/assignments | 
 
 
-<a name="deleteAssignmentV1securityprofilessecurityProfileIDassignments"></a>
-# **deleteAssignmentV1securityprofilessecurityProfileIDassignments**
-> deleteAssignmentV1securityprofilessecurityProfileIDassignments(securityProfileID, opts)
+<a name="deleteAssignmentSecurityProfiles"></a>
+# **deleteAssignmentSecurityProfiles**
+> deleteAssignmentSecurityProfiles(securityProfileID, opts)
 
 
 
@@ -40,7 +40,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteAssignmentV1securityprofilessecurityProfileIDassignments(securityProfileID, opts, callback);
+apiInstance.deleteAssignmentSecurityProfiles(securityProfileID, opts, callback);
 ```
 
 ### Parameters
@@ -66,9 +66,9 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a name="getV1securityprofilessecurityProfileID"></a>
-# **getV1securityprofilessecurityProfileID**
-> SecurityProfile getV1securityprofilessecurityProfileID(securityProfileID)
+<a name="getSecurityProfiles"></a>
+# **getSecurityProfiles**
+> SecurityProfile getSecurityProfiles(securityProfileID)
 
 
 
@@ -89,7 +89,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getV1securityprofilessecurityProfileID(securityProfileID, callback);
+apiInstance.getSecurityProfiles(securityProfileID, callback);
 ```
 
 ### Parameters
@@ -111,9 +111,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listAssignmentsV1securityprofilesassignments"></a>
-# **listAssignmentsV1securityprofilesassignments**
-> ListSecurityProfileAssignment listAssignmentsV1securityprofilesassignments(opts)
+<a name="listAssignmentsSecurityProfiles"></a>
+# **listAssignmentsSecurityProfiles**
+> ListSecurityProfileAssignment listAssignmentsSecurityProfiles(opts)
 
 
 
@@ -144,7 +144,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listAssignmentsV1securityprofilesassignments(opts, callback);
+apiInstance.listAssignmentsSecurityProfiles(opts, callback);
 ```
 
 ### Parameters
@@ -174,9 +174,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="listV1securityprofiles"></a>
-# **listV1securityprofiles**
-> ListSecurityProfile listV1securityprofiles(opts)
+<a name="listSecurityProfiles"></a>
+# **listSecurityProfiles**
+> ListSecurityProfile listSecurityProfiles(opts)
 
 
 
@@ -204,7 +204,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.listV1securityprofiles(opts, callback);
+apiInstance.listSecurityProfiles(opts, callback);
 ```
 
 ### Parameters
@@ -231,9 +231,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="saveAssignmentV1securityprofilesassignments"></a>
-# **saveAssignmentV1securityprofilesassignments**
-> saveAssignmentV1securityprofilesassignments(securityProfileAssignment)
+<a name="saveAssignmentSecurityProfiles"></a>
+# **saveAssignmentSecurityProfiles**
+> saveAssignmentSecurityProfiles(securityProfileAssignment)
 
 
 
@@ -254,7 +254,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.saveAssignmentV1securityprofilesassignments(securityProfileAssignment, callback);
+apiInstance.saveAssignmentSecurityProfiles(securityProfileAssignment, callback);
 ```
 
 ### Parameters
