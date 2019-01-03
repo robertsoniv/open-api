@@ -1,0 +1,9 @@
+{
+    "name": "test-generate",
+    "version": "0.0.0",
+    "scripts": {
+        "ordercloud-js": "openapi-generator generate -i ./docs/ordercloud.yaml -g javascript -o generated-sources/ordercloud-js",
+        "ordercloud-ts": "openapi-generator generate -i ./docs/ordercloud.yaml -g typescript-node -o generated-sources/ordercloud-ts --additional-properties=\"modelPropertyNaming=PascalCase\"",
+        "generate": "openapi-generator generate -i ./docs/openapi.yaml -g typescript-angular -o generated-sources/openapi --additional-properties=\"ngVersion=6.1.7\""
+    }
+}
